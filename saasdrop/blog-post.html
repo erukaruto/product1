@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- @include head.html -->
+    <title>How we define MRR, and why the definition matters | Beacon</title>
+    <meta name="description" content="The MRR definition Beacon uses, the edge cases it handles, and how to explain it to your board." />
+  </head>
+  <body data-nav="blog">
+    <!-- @include header.html -->
+
+    <main id="main">
+      <article class="post">
+        <header class="container post-head">
+          <a class="back-link" href="/blog.html">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+            All posts
+          </a>
+          <span class="tag">Metrics</span>
+          <h1>How we define MRR, and why the definition matters</h1>
+          <p class="post-lead">Three teams, three spreadsheets, three different numbers. Here is the definition Beacon uses, the edge cases it handles, and how to explain it to your board.</p>
+          <div class="post-byline">
+            <span class="avatar" aria-hidden="true">PS</span>
+            <span><strong>Priya Sethi</strong><small>Data engineering · <time datetime="2026-10-20">Oct 20, 2026</time> · 6 min read</small></span>
+            <button type="button" class="btn btn-secondary btn-sm" data-copy-link>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+              <span data-copy-label>Copy link</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="container post-layout">
+          <nav class="toc" aria-label="On this page">
+            <strong>On this page</strong>
+            <a href="#the-problem">The problem</a>
+            <a href="#our-definition">Our definition</a>
+            <a href="#edge-cases">Edge cases</a>
+            <a href="#example">A worked example</a>
+            <a href="#board">Explaining it to your board</a>
+          </nav>
+
+          <div class="prose post-body">
+            <h2 id="the-problem">The problem</h2>
+            <p>Ask finance, product and support for last month's revenue and you will often get three answers. Finance counts what was invoiced. Product counts active plans. Support counts the accounts they talk to. None of them is wrong, but they can't all be MRR.</p>
+            <p>When the numbers disagree, every meeting starts with a debate about which one to trust. That is the cost we wanted to remove.</p>
+
+            <h2 id="our-definition">Our definition</h2>
+            <p><strong>MRR is the sum of the normalized monthly price of every active subscription on the last day of the month.</strong> "Normalized" means a yearly plan counts as one twelfth of its price each month.</p>
+            <ul>
+              <li>Discounts are subtracted for as long as they apply.</li>
+              <li>Taxes, one-off fees and usage overages are left out.</li>
+              <li>Trials count as zero until the first successful payment.</li>
+              <li>Past-due subscriptions stay in MRR until they are canceled.</li>
+            </ul>
+
+            <aside class="callout">
+              <strong>Why keep past-due accounts?</strong>
+              <p>Most failed payments recover within a week. Removing them right away makes MRR jump up and down for reasons that have nothing to do with demand.</p>
+            </aside>
+
+            <h2 id="edge-cases">Edge cases</h2>
+            <p>The definition is short. The edge cases are where teams disagree:</p>
+            <ol>
+              <li><strong>Mid-month upgrades</strong> count from the day they happen, so the month-end number reflects the new plan.</li>
+              <li><strong>Pauses</strong> count as zero for the paused months, then return as reactivation, not new MRR.</li>
+              <li><strong>Refunds</strong> don't change MRR. They change cash, which is a different report.</li>
+            </ol>
+
+            <h2 id="example">A worked example</h2>
+            <p>Here is how October's change in MRR breaks down for the Beacon demo workspace:</p>
+            <div class="table-wrap">
+              <table class="compare">
+                <thead><tr><th scope="col">Movement</th><th scope="col">Amount</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">New</th><td>+$2,460</td></tr>
+                  <tr><th scope="row">Expansion</th><td>+$840</td></tr>
+                  <tr><th scope="row">Contraction</th><td>-$410</td></tr>
+                  <tr><th scope="row">Churn</th><td>-$1,010</td></tr>
+                  <tr><th scope="row">Net new MRR</th><td><strong>+$1,880</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>September ended at $46,440, so October ends at $48,320. Every row links to the customers behind it, which is how you settle a disagreement in a minute instead of an hour.</p>
+
+            <h2 id="board">Explaining it to your board</h2>
+            <blockquote>"We count what customers are committed to pay each month, after discounts, before tax."</blockquote>
+            <p>That one sentence covers most questions. When someone asks about an edge case, show the movement table above. It answers "where did the number come from" without a spreadsheet.</p>
+          </div>
+        </div>
+      </article>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Keep reading</h2>
+          </div>
+          <div class="post-grid two">
+            <a class="post-card" href="/blog-post.html">
+              <span class="tag">Metrics</span>
+              <h3>Reading a cohort table without getting lost</h3>
+              <p>Rows, columns and colors: a short guide to the one chart that tells you whether your product keeps customers.</p>
+              <span class="post-meta">Priya Sethi · Sep 10, 2026 · 4 min</span>
+            </a>
+            <a class="post-card" href="/blog-post.html">
+              <span class="tag fixed">Pricing</span>
+              <h3>Monthly vs. yearly billing: what changes in your numbers</h3>
+              <p>Yearly plans improve cash flow but can hide churn for months. How to report both without double counting.</p>
+              <span class="post-meta">Lena Marsh · Sep 24, 2026 · 7 min</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta">
+            <h2>See your own MRR breakdown</h2>
+            <p>Connect your billing provider and Beacon shows this table for every month.</p>
+            <div class="cta-actions">
+              <a class="btn btn-primary btn-lg" href="__APP_URL__/signup">Get started</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- @include footer.html -->
+  </body>
+</html>

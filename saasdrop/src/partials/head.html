@@ -1,0 +1,17 @@
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      /* Theme: ?theme= in the URL, then saved choice, then system setting. Same logic as DashDrop. */
+      (function () {
+        var key = 'beacon-theme', themes = ['light', 'dark', 'sand'], saved = null
+        var fromUrl = new URLSearchParams(location.search).get('theme')
+        try { saved = localStorage.getItem(key) } catch (e) {}
+        var theme = themes.indexOf(fromUrl) > -1 ? fromUrl
+          : themes.indexOf(saved) > -1 ? saved
+          : window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', theme)
+        if (fromUrl === theme) { try { localStorage.setItem(key, theme) } catch (e) {} }
+      })()
+    </script>
+    <script type="module" src="/src/scripts/main.js"></script>

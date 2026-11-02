@@ -1,0 +1,21 @@
+{
+  "name": "saasdrop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SaaSDrop: a multi-page SaaS landing page template (Vite, HTML, CSS, vanilla JS).",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.3.0"
+  },
+  "devDependencies": {
+    "vite": "^8.3.5"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}

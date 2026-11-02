@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- @include head.html -->
+    <title>Help center | Beacon</title>
+    <meta name="description" content="Guides for connecting billing data, reading reports and managing your Beacon workspace." />
+  </head>
+  <body data-nav="help">
+    <!-- @include header.html -->
+
+    <main id="main">
+      <section class="help-hero">
+        <div class="container">
+          <div class="section-head center">
+            <span class="label">Help center</span>
+            <h1>How can we help?</h1>
+          </div>
+          <form class="help-search" role="search" data-help-form>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
+            <label class="sr-only" for="help-search">Search help articles</label>
+            <input class="input" id="help-search" type="search" placeholder="Search help articles" autocomplete="off" data-help-search />
+          </form>
+          <p class="help-count muted" data-help-count aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="section tight-top">
+        <div class="container">
+          <!-- Every article links to the one sample article (help-article.html). Duplicate it for real articles. -->
+          <div class="help-grid" data-help-grid>
+            <section class="help-category">
+              <h2>Getting started</h2>
+              <ul>
+                <li><a href="/help-article.html">Create your workspace</a></li>
+                <li><a href="/help-article.html">Connect your billing provider</a></li>
+                <li><a href="/help-article.html">Import data from a CSV file</a></li>
+                <li><a href="/help-article.html">Invite your team</a></li>
+              </ul>
+            </section>
+            <section class="help-category">
+              <h2>Billing connections</h2>
+              <ul>
+                <li><a href="/help-article.html">Supported billing providers</a></li>
+                <li><a href="/help-article.html">Why an import takes longer than expected</a></li>
+                <li><a href="/help-article.html">Reconnect an expired connection</a></li>
+                <li><a href="/help-article.html">Send events through the API</a></li>
+              </ul>
+            </section>
+            <section class="help-category">
+              <h2>Metrics and reports</h2>
+              <ul>
+                <li><a href="/help-article.html">How Beacon calculates MRR</a></li>
+                <li><a href="/help-article.html">Customer churn vs. revenue churn</a></li>
+                <li><a href="/help-article.html">Read the cohort report</a></li>
+                <li><a href="/help-article.html">Export a report as CSV</a></li>
+              </ul>
+            </section>
+            <section class="help-category">
+              <h2>Alerts</h2>
+              <ul>
+                <li><a href="/help-article.html">Choose which alerts you get</a></li>
+                <li><a href="/help-article.html">Send alerts to a shared inbox</a></li>
+                <li><a href="/help-article.html">Set quiet hours</a></li>
+              </ul>
+            </section>
+            <section class="help-category">
+              <h2>Team and access</h2>
+              <ul>
+                <li><a href="/help-article.html">Admin and viewer roles</a></li>
+                <li><a href="/help-article.html">Turn on two-factor authentication</a></li>
+                <li><a href="/help-article.html">Set up single sign-on</a></li>
+              </ul>
+            </section>
+            <section class="help-category">
+              <h2>Your Beacon account</h2>
+              <ul>
+                <li><a href="/help-article.html">Change your plan</a></li>
+                <li><a href="/help-article.html">Download invoices</a></li>
+                <li><a href="/help-article.html">Export all your data</a></li>
+                <li><a href="/help-article.html">Delete your workspace</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="help-empty" data-help-empty hidden>
+            <strong>No articles match your search.</strong>
+            <p class="muted">Try another word, or <a class="text-link" href="/contact.html">contact support</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="help-contact">
+            <div>
+              <h2>Still stuck?</h2>
+              <p class="muted">Write to support. We reply within one business day, usually faster.</p>
+            </div>
+            <a class="btn btn-primary" href="/contact.html">Contact support</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- @include footer.html -->
+  </body>
+</html>

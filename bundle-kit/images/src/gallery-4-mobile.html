@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css" />
+<style>
+  :root { --w: 1280px; --h: 720px; }
+  .head { position: absolute; left: 64px; top: 52px; display: grid; gap: 10px; }
+  h2 { font-size: 40px; }
+  .head p { font-size: 19px; color: var(--muted); }
+  .phones { position: absolute; left: 64px; right: 64px; top: 176px; display: flex; justify-content: space-between; }
+  .p { display: grid; gap: 10px; justify-items: start; }
+  .p .f { width: 204px; height: 442px; border: 1px solid var(--line); border-radius: 22px; overflow: hidden; }
+  .p img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+  .p span { font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="head">
+    <h2>Built for phones too</h2>
+    <p>Every page was checked at 390px wide in all three themes. Wide tables scroll inside their card, never the page.</p>
+  </div>
+  <div class="phones">
+    <div class="p"><div class="f"><img src="shots/sd-home-mobile-light.png" alt="" /></div><span>SaaSDrop, home</span></div>
+    <div class="p"><div class="f"><img src="shots/sd-help-mobile-light.png" alt="" /></div><span>SaaSDrop, help center</span></div>
+    <div class="p"><div class="f"><img src="shots/dd-overview-mobile-light.png" alt="" /></div><span>DashDrop, overview</span></div>
+    <div class="p"><div class="f"><img src="shots/dd-customers-mobile-light.png" alt="" /></div><span>DashDrop, customers</span></div>
+    <div class="p"><div class="f"><img src="shots/dd-overview-mobile-dark.png" alt="" /></div><span>DashDrop, dark theme</span></div>
+  </div>
+</body>
+</html>

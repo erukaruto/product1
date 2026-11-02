@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css" />
+<style>
+  :root { --w: 1280px; --h: 720px; }
+  .head { position: absolute; left: 64px; top: 52px; right: 64px; display: grid; gap: 10px; }
+  h2 { font-size: 40px; }
+  .head p { font-size: 19px; color: var(--muted); max-width: 900px; line-height: 1.45; }
+  .label { position: absolute; top: 186px; font-size: 15px; font-weight: 500; color: var(--muted); }
+  .site { left: 64px; top: 214px; width: 560px; height: 350px; }
+  .app { left: 656px; top: 214px; width: 560px; height: 350px; }
+  .link { position: absolute; left: 640px; top: 372px; transform: translate(-50%, -50%); z-index: 2; color: var(--accent); }
+  .tokens { position: absolute; left: 64px; right: 64px; top: 596px; display: flex; align-items: center; gap: 18px; }
+  .tokens > span { font-size: 15px; font-weight: 500; color: var(--muted); margin-right: 6px; white-space: nowrap; }
+  .sw { display: grid; gap: 6px; justify-items: center; font-size: 13px; color: var(--muted); }
+  .sw i { width: 64px; height: 36px; border-radius: 8px; border: 1px solid var(--line); }
+</style>
+</head>
+<body>
+  <div class="head">
+    <h2>Landing page to app, same look</h2>
+    <p>Sign in and Get started on the landing page open the app's /login and /signup screens. Both products load the same tokens.css and DM Sans.</p>
+  </div>
+  <span class="label" style="left:64px">SaaSDrop, home page</span>
+  <span class="label" style="left:656px">DashDrop, overview</span>
+  <div class="frame site"><img src="shots/sd-home-light.png" alt="" /></div>
+  <div class="frame app"><img src="shots/dd-overview-light.png" alt="" /></div>
+  <span class="chip link">Get started &rarr; /signup</span>
+  <div class="tokens">
+    <span>Shared tokens</span>
+    <div class="sw"><i style="background:#f6f5f1"></i>bg</div>
+    <div class="sw"><i style="background:#ffffff"></i>surface</div>
+    <div class="sw"><i style="background:#18181b"></i>ink</div>
+    <div class="sw"><i style="background:#5f5e57"></i>muted</div>
+    <div class="sw"><i style="background:#e3e1da"></i>line</div>
+    <div class="sw"><i style="background:#2b50d8"></i>accent</div>
+    <div class="sw"><i style="background:#ffffff"></i>onaccent</div>
+    <div class="sw"><i style="background:#b7861f"></i>gold</div>
+  </div>
+</body>
+</html>

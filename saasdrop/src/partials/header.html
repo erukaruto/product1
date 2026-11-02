@@ -1,0 +1,48 @@
+<a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Beacon home">
+          <!-- @include logo.html -->
+          <span>Beacon</span>
+        </a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="/features.html" data-nav="features">Features</a>
+          <a href="/pricing.html" data-nav="pricing">Pricing</a>
+          <a href="/blog.html" data-nav="blog">Blog</a>
+          <a href="/help.html" data-nav="help">Help</a>
+          <a href="/about.html" data-nav="about">About</a>
+        </nav>
+        <div class="header-actions">
+          <!-- @include theme-switch.html -->
+          <a class="btn btn-ghost" href="__APP_URL__/login" data-app-link="login">Sign in</a>
+          <a class="btn btn-primary" href="__APP_URL__/signup" data-app-link="signup">Get started</a>
+        </div>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="icon icon-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+          <span class="sr-only">Menu</span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu" hidden>
+        <div class="container">
+          <nav aria-label="Mobile">
+            <a href="/features.html" data-nav="features">Features</a>
+            <a href="/integrations.html" data-nav="integrations">Integrations</a>
+            <a href="/pricing.html" data-nav="pricing">Pricing</a>
+            <a href="/blog.html" data-nav="blog">Blog</a>
+            <a href="/help.html" data-nav="help">Help center</a>
+            <a href="/changelog.html" data-nav="changelog">Changelog</a>
+            <a href="/about.html" data-nav="about">About</a>
+            <a href="/contact.html" data-nav="contact">Contact</a>
+          </nav>
+          <div class="mobile-menu-row">
+            <span class="muted">Theme</span>
+            <!-- @include theme-switch.html -->
+          </div>
+          <div class="mobile-menu-actions">
+            <a class="btn btn-secondary" href="__APP_URL__/login">Sign in</a>
+            <a class="btn btn-primary" href="__APP_URL__/signup">Get started</a>
+          </div>
+        </div>
+      </div>
+    </header>

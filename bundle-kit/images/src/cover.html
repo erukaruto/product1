@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css" />
+<style>
+  :root { --w: 1280px; --h: 720px; }
+  .copy { position: absolute; left: 64px; top: 0; bottom: 0; width: 470px; display: flex; flex-direction: column; justify-content: center; gap: 22px; }
+  h1 { font-size: 58px; letter-spacing: -0.035em; }
+  .lead { font-size: 22px; line-height: 1.45; color: var(--muted); }
+  ul { list-style: none; display: grid; gap: 12px; margin-top: 8px; font-size: 18px; }
+  li { display: flex; gap: 12px; align-items: center; }
+  li::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); flex: none; }
+  .site { left: 580px; top: 64px; width: 760px; height: 475px; }
+  .app { left: 680px; top: 262px; width: 760px; height: 475px; }
+  .tag { position: absolute; font-size: 14px; font-weight: 500; color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="copy">
+    <h1>SaaSDrop + DashDrop</h1>
+    <p class="lead">A SaaS landing page and a React + TypeScript admin dashboard that share one design system.</p>
+    <ul>
+      <li>20 landing pages, 55 app screens</li>
+      <li>3 themes from one token file</li>
+      <li>Vite, React 19, TypeScript, plain CSS</li>
+    </ul>
+  </div>
+  <div class="frame site"><img src="shots/sd-home-light.png" alt="" /></div>
+  <div class="frame app"><img src="shots/dd-overview-light.png" alt="" /></div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- @include head.html -->
+    <title>Blog | Beacon</title>
+    <meta name="description" content="Notes on revenue metrics, churn and pricing from the Beacon team." />
+  </head>
+  <body data-nav="blog">
+    <!-- @include header.html -->
+
+    <main id="main">
+      <section class="page-head">
+        <div class="container">
+          <div class="section-head">
+            <span class="label">Blog</span>
+            <h1>Notes on revenue, churn and pricing</h1>
+            <p>What we learn building Beacon, written for founders and finance teams.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section tight-top">
+        <div class="container">
+          <!-- Every card links to the one sample post (blog-post.html). Duplicate it for real posts. -->
+          <a class="post-featured" href="/blog-post.html">
+            <div class="post-cover" aria-hidden="true">
+              <svg viewBox="0 0 400 220" preserveAspectRatio="none">
+                <line class="chart-grid" x1="0" x2="400" y1="55" y2="55" />
+                <line class="chart-grid" x1="0" x2="400" y1="110" y2="110" />
+                <line class="chart-grid" x1="0" x2="400" y1="165" y2="165" />
+                <path class="chart-area" d="M0 180 L60 165 L120 160 L180 130 L240 120 L300 90 L360 70 L400 50 L400 220 L0 220 Z" />
+                <path class="chart-line" d="M0 180 L60 165 L120 160 L180 130 L240 120 L300 90 L360 70 L400 50" />
+              </svg>
+            </div>
+            <div class="post-featured-body">
+              <span class="tag">Metrics</span>
+              <h2>How we define MRR, and why the definition matters</h2>
+              <p>Three teams, three spreadsheets, three different numbers. Here is the definition Beacon uses, the edge cases it handles, and how to explain it to your board.</p>
+              <span class="post-meta"><span class="avatar small" aria-hidden="true">PS</span>Priya Sethi · <time datetime="2026-10-20">Oct 20, 2026</time> · 6 min read</span>
+            </div>
+          </a>
+
+          <div class="filter-chips" role="group" aria-label="Filter posts by topic">
+            <button type="button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="metrics" aria-pressed="false">Metrics</button>
+            <button type="button" data-filter="retention" aria-pressed="false">Retention</button>
+            <button type="button" data-filter="pricing" aria-pressed="false">Pricing</button>
+            <button type="button" data-filter="product" aria-pressed="false">Product</button>
+          </div>
+
+          <div class="post-grid" data-post-grid>
+            <a class="post-card" href="/blog-post.html" data-topic="retention">
+              <span class="tag improved">Retention</span>
+              <h3>Five signs a customer is about to churn</h3>
+              <p>Most cancellations are visible weeks in advance. These are the signals we watch, and what to do when they show up.</p>
+              <span class="post-meta"><span class="avatar small gold" aria-hidden="true">SB</span>Sara Bianchi · <time datetime="2026-10-08">Oct 8, 2026</time> · 5 min</span>
+            </a>
+            <a class="post-card" href="/blog-post.html" data-topic="pricing">
+              <span class="tag fixed">Pricing</span>
+              <h3>Monthly vs. yearly billing: what changes in your numbers</h3>
+              <p>Yearly plans improve cash flow but can hide churn for months. How to report both without double counting.</p>
+              <span class="post-meta"><span class="avatar small" aria-hidden="true">LM</span>Lena Marsh · <time datetime="2026-09-24">Sep 24, 2026</time> · 7 min</span>
+            </a>
+            <a class="post-card" href="/blog-post.html" data-topic="metrics">
+              <span class="tag">Metrics</span>
+              <h3>Reading a cohort table without getting lost</h3>
+              <p>Rows, columns and colors: a short guide to the one chart that tells you whether your product keeps customers.</p>
+              <span class="post-meta"><span class="avatar small" aria-hidden="true">PS</span>Priya Sethi · <time datetime="2026-09-10">Sep 10, 2026</time> · 4 min</span>
+            </a>
+            <a class="post-card" href="/blog-post.html" data-topic="retention">
+              <span class="tag improved">Retention</span>
+              <h3>What our cancellation survey taught us</h3>
+              <p>"Too expensive" rarely means the price. A year of answers, grouped and read one by one.</p>
+              <span class="post-meta"><span class="avatar small gold" aria-hidden="true">DK</span>Daniel Kwame · <time datetime="2026-08-27">Aug 27, 2026</time> · 8 min</span>
+            </a>
+            <a class="post-card" href="/blog-post.html" data-topic="product">
+              <span class="tag neutral">Product</span>
+              <h3>Designing alerts people don't mute</h3>
+              <p>Why we send fewer emails than we could, and the three rules every Beacon alert has to pass.</p>
+              <span class="post-meta"><span class="avatar small" aria-hidden="true">YN</span>Yuki Nakamura · <time datetime="2026-08-13">Aug 13, 2026</time> · 5 min</span>
+            </a>
+            <a class="post-card" href="/blog-post.html" data-topic="pricing">
+              <span class="tag fixed">Pricing</span>
+              <h3>When to raise prices for existing customers</h3>
+              <p>Grandfathering, notice periods and how to tell customers without losing them.</p>
+              <span class="post-meta"><span class="avatar small gold" aria-hidden="true">EW</span>Emma Walsh · <time datetime="2026-07-30">Jul 30, 2026</time> · 6 min</span>
+            </a>
+          </div>
+          <p class="empty-note" data-post-empty hidden>No posts on this topic yet.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <!-- No backend: see "Newsletter form" in src/scripts/main.js. -->
+          <form class="newsletter" data-newsletter novalidate>
+            <div>
+              <h2>Get new posts by email</h2>
+              <p class="muted">One email when a post goes out, about twice a month. Unsubscribe any time.</p>
+            </div>
+            <div class="newsletter-fields">
+              <label class="sr-only" for="newsletter-email">Email</label>
+              <input class="input" id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </div>
+            <p class="field-error" data-newsletter-error hidden>Enter a valid email address.</p>
+            <p class="form-success" data-newsletter-success hidden role="status">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+              <span>You're subscribed. The next post will arrive in your inbox.</span>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- @include footer.html -->
+  </body>
+</html>

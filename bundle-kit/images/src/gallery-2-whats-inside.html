@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css" />
+<style>
+  :root { --w: 1280px; --h: 720px; }
+  h2 { position: absolute; left: 64px; top: 52px; font-size: 40px; }
+  .card { position: absolute; top: 124px; width: 560px; height: 532px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); padding: 24px; display: grid; grid-template-rows: auto 262px auto; gap: 18px; align-content: start; }
+  .card h3 { font-size: 24px; }
+  .card .sub { margin-top: 6px; font-size: 16px; color: var(--muted); line-height: 1.4; }
+  .shot { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 10px; }
+  .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block; }
+  ul { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 9px 20px; font-size: 15.5px; }
+  li { display: flex; gap: 10px; align-items: baseline; }
+  li::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex: none; transform: translateY(-2px); }
+  li small { color: var(--muted); font-size: 14px; }
+  .foot { position: absolute; left: 64px; right: 64px; top: 672px; font-size: 15px; color: var(--muted); }
+</style>
+</head>
+<body>
+  <h2>What's in the bundle</h2>
+  <section class="card" style="left:64px">
+    <div>
+      <h3>SaaSDrop, landing page</h3>
+      <p class="sub">20 pages. Vite, HTML, CSS and one small JS file. No framework.</p>
+    </div>
+    <div class="shot"><img src="shots/sd-pricing-light.png" alt="" /></div>
+    <ul>
+      <li>Home</li>
+      <li>Pricing <small>monthly / yearly</small></li>
+      <li>Blog <small>filter, newsletter</small></li>
+      <li>Help center <small>search</small></li>
+      <li>Features <small>4 pages</small></li>
+      <li>Integrations, security</li>
+      <li>Terms, privacy</li>
+      <li>404</li>
+    </ul>
+  </section>
+  <section class="card" style="left:656px">
+    <div>
+      <h3>DashDrop, admin dashboard</h3>
+      <p class="sub">55 screens. React 19, TypeScript, Vite. SVG charts, no chart library.</p>
+    </div>
+    <div class="shot"><img src="shots/dd-customers-light.png" alt="" /></div>
+    <ul>
+      <li>Auth <small>7 screens</small></li>
+      <li>Onboarding <small>3 steps</small></li>
+      <li>Segments, at risk</li>
+      <li>Reports <small>MRR, churn, cohorts</small></li>
+      <li>Customers <small>search, CSV</small></li>
+      <li>Billing <small>9 screens</small></li>
+      <li>Alerts, inbox, team</li>
+      <li>UI kit <small>6 pages</small></li>
+    </ul>
+  </section>
+  <p class="foot">Also in the ZIP: a README on using both together, deploy notes and the license.</p>
+</body>
+</html>

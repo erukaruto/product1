@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- @include head.html -->
+    <title>Integrations | Beacon</title>
+    <meta name="description" content="Connect Beacon to your billing provider, messaging, data warehouse and your own code." />
+  </head>
+  <body data-nav="integrations">
+    <!-- @include header.html -->
+
+    <main id="main">
+      <section class="page-head">
+        <div class="container">
+          <div class="section-head">
+            <span class="label">Integrations</span>
+            <h1>Works with the tools you already use</h1>
+            <p>Bring billing data in, send alerts and reports out.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section tight-top">
+        <div class="container">
+          <!-- Every card links to the one sample page (integration-detail.html). Duplicate it for each integration. -->
+          <div class="filter-chips" role="group" aria-label="Filter integrations">
+            <button type="button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="billing" aria-pressed="false">Billing data</button>
+            <button type="button" data-filter="messaging" aria-pressed="false">Messaging</button>
+            <button type="button" data-filter="data" aria-pressed="false">Data</button>
+            <button type="button" data-filter="developer" aria-pressed="false">Developers</button>
+            <button type="button" data-filter="security" aria-pressed="false">Security</button>
+          </div>
+          <div class="int-grid" data-post-grid>
+            <a class="int-card" href="/integration-detail.html" data-topic="billing">
+              <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg></span>
+              <h3>Billing provider</h3>
+              <p>Connect with OAuth. Subscriptions, invoices and payments, read-only.</p>
+              <span class="muted small">All plans</span>
+            </a>
+            <a class="int-card" href="/integration-detail.html" data-topic="billing">
+              <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V9M7 14l5-5 5 5M5 4h14"/></svg></span>
+              <h3>CSV import</h3>
+              <p>Upload exports from any system and match the columns.</p>
+              <span class="muted small">All plans</span>
+            </a>
+            <a class="int-card" href="/integration-detail.html" data-topic="messaging">
+              <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span>
+              <h3>Email</h3>
+              <p>Alerts and a weekly digest to any address.</p>
+              <span class="muted small">All plans</span>
+            </a>
+            <a class="int-card" href="/integration-detail.html" data-topic="messaging">
+              <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16v-5a6 6 0 1 1 12 0v5l1.5 2h-15L6 16Z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg></span>
+              <h3>Slack</h3>
+              <p>Post alerts to a channel, with links back to the customer.</p>
+              <span class="muted small">Growth and Scale</span>
+            </a>
+            <a class="int-card" href="/integration-detail.html" data-topic="data">
+              <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></svg></span>
+              <h3>Data warehouse</h3>
+              <p>A nightly copy of every table, ready for your own queries.</p>
+              <span class="muted small">Scale</span>
+            </a>
+            <a class="int-card" href="/integration-detail.html" data-topic="data">
+              <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4zM4 12h16M12 4v16"/></svg></span>
+              <h3>Spreadsheet sync</h3>
+              <p>Keep a spreadsheet updated with MRR by month.</p>
+              <span class="muted small">Growth and Scale</span>
+            </a>
+            <a class="int-card" href="/integration-detail.html" data-topic="developer">
+              <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg></span>
+              <h3>REST API</h3>
+              <p>Read customers, subscriptions and reports as JSON.</p>
+              <span class="muted small">Scale</span>
+            </a>
+            <a class="int-card" href="/integration-detail.html" data-topic="developer">
+              <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3 4 14h7l-1 7 9-11h-7l1-7Z"/></svg></span>
+              <h3>Webhooks</h3>
+              <p>Get a POST request when subscriptions or payments change.</p>
+              <span class="muted small">Scale</span>
+            </a>
+            <a class="int-card" href="/integration-detail.html" data-topic="security">
+              <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="m11 12 8.5-8.5M16 7l2.5 2.5M14 9l2 2"/></svg></span>
+              <h3>Single sign-on</h3>
+              <p>Sign in through your identity provider with SAML.</p>
+              <span class="muted small">Scale</span>
+            </a>
+          </div>
+          <p class="empty-note" data-post-empty hidden>No integrations in this group yet.</p>
+          <div class="help-contact top-space">
+            <div>
+              <h2>Missing something?</h2>
+              <p class="muted">Tell us what you use. The API and webhooks cover most custom setups today.</p>
+            </div>
+            <a class="btn btn-secondary" href="/contact.html">Request an integration</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- @include footer.html -->
+  </body>
+</html>

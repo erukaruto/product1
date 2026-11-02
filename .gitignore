@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+.env.local
+.DS_Store
+*.tsbuildinfo
+bundle-kit/verify-results-*-only.json
+bundle-kit/.verify-export.csv

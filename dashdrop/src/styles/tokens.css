@@ -1,0 +1,94 @@
+/*
+  Beacon design tokens
+  ---------------------------------------------------------------
+  This file is identical in SaaSDrop and DashDrop.
+  If you change it in one product, copy it to the other so the
+  landing page and the app keep the same look.
+
+  Themes are selected with the data-theme attribute on <html>:
+    <html data-theme="light">   (default)
+    <html data-theme="dark">
+    <html data-theme="sand">
+
+  Core tokens (used by both products):
+    --bg        page background
+    --surface   cards, panels, inputs
+    --ink       primary text
+    --muted     secondary text
+    --line      borders and dividers
+    --accent    buttons, links, chart lines
+    --onaccent  text and icons placed on --accent
+    --gold      highlights (badges, marks). Decorative: not for body text.
+
+  Status tokens (used mostly by DashDrop):
+    --good, --warn, --bad
+*/
+
+:root,
+[data-theme="light"] {
+  --bg: #f6f5f1;
+  --surface: #ffffff;
+  --ink: #18181b;
+  --muted: #5f5e57;
+  --line: #e3e1da;
+  --accent: #2b50d8;
+  --onaccent: #ffffff;
+  --gold: #b7861f;
+
+  --good: #1f7a4d;
+  --warn: #9a5800;
+  --bad: #b42318;
+
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: #111113;
+  --surface: #1a1a1d;
+  --ink: #ecebe6;
+  --muted: #a09f98;
+  --line: #2c2c31;
+  --accent: #8ea6ff;
+  --onaccent: #0b1033;
+  --gold: #e0b355;
+
+  --good: #5cc28f;
+  --warn: #e3a548;
+  --bad: #f07167;
+
+  color-scheme: dark;
+}
+
+[data-theme="sand"] {
+  --bg: #f1ebe0;
+  --surface: #faf6ee;
+  --ink: #2a2118;
+  --muted: #685c4d;
+  --line: #ddd2bf;
+  --accent: #a4441f;
+  --onaccent: #ffffff;
+  --gold: #946a10;
+
+  --good: #2f6f45;
+  --warn: #8a5208;
+  --bad: #a8321f;
+
+  color-scheme: light;
+}
+
+/* Derived values. These follow the active theme automatically. */
+:root {
+  --font: "DM Sans Variable", "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --accent-soft: color-mix(in srgb, var(--accent) 12%, transparent);
+  --gold-soft: color-mix(in srgb, var(--gold) 16%, transparent);
+  --good-soft: color-mix(in srgb, var(--good) 14%, transparent);
+  --warn-soft: color-mix(in srgb, var(--warn) 16%, transparent);
+  --bad-soft: color-mix(in srgb, var(--bad) 14%, transparent);
+  --subtle: color-mix(in srgb, var(--ink) 4%, var(--surface));
+  --focus: color-mix(in srgb, var(--accent) 45%, transparent);
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+}

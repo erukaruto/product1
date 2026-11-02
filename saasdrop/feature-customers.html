@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- @include head.html -->
+    <title>Customer profiles | Beacon</title>
+    <meta name="description" content="Before a renewal call or a support reply, open the profile: plan, seats, invoices, health score and the last time anyone logged in." />
+  </head>
+  <body data-nav="features">
+    <!-- @include header.html -->
+
+    <main id="main">
+      <section class="page-head">
+        <div class="container">
+          <a class="back-link" href="/features.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>All features</a>
+          <div class="split feature-hero">
+            <div class="split-copy">
+              <span class="label">Customer profiles</span>
+              <h1>Everything about an account, on one page</h1>
+              <p>Before a renewal call or a support reply, open the profile: plan, seats, invoices, health score and the last time anyone logged in.</p>
+              <div class="hero-actions left">
+                <a class="btn btn-primary btn-lg" href="__APP_URL__/signup">Try it free</a>
+                <a class="btn btn-secondary btn-lg" href="/pricing.html">See pricing</a>
+              </div>
+            </div>
+            <div class="panel profile-mock">
+              <div class="profile-mock-head">
+                <span class="avatar" aria-hidden="true">F</span>
+                <span><strong>Fieldnote</strong><small class="muted">Amara Okafor · Scale plan</small></span>
+                <span class="tag improved">Active</span>
+              </div>
+              <div class="kpis">
+                <div class="kpi"><span>MRR</span><strong>$228</strong></div>
+                <div class="kpi"><span>Seats</span><strong>12</strong></div>
+                <div class="kpi"><span>Customer for</span><strong>7 mo</strong></div>
+                <div class="kpi"><span>Health</span><strong>55</strong></div>
+              </div>
+              <ul class="mock-timeline">
+                <li><strong>Last active</strong><span class="muted">Oct 17, 2026</span></li>
+                <li><strong>Invoice INV-2243 paid</strong><span class="muted">Oct 14, 2026</span></li>
+                <li><strong>Started on Scale, 12 seats</strong><span class="muted">Mar 14, 2026</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="values">
+            <div class="value">
+              <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></svg></span>
+              <h3>Health score</h3>
+              <p>A simple score with the signals behind it, so you know why an account is flagged.</p>
+            </div>
+            <div class="value">
+              <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4zM4 12h16M12 4v16"/></svg></span>
+              <h3>Segments</h3>
+              <p>Save groups like "Scale accounts in Europe" and watch their counts change.</p>
+            </div>
+            <div class="value">
+              <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V9M7 14l5-5 5 5M5 4h14"/></svg></span>
+              <h3>Import</h3>
+              <p>Bring customers from any system with a CSV file and column matching.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head center">
+            <h2>Questions about customer profiles</h2>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>Where does the data come from?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+              <p>From your billing provider, plus CSV imports and API events if you use them.</p>
+            </details>
+            <details>
+              <summary>How is the health score calculated?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+              <p>It starts at 85 and moves with each signal, such as a failed payment or no logins for 14 days. Every signal is shown.</p>
+            </details>
+            <details>
+              <summary>Can I add notes?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary>
+              <p>Yes. Internal notes are visible to your team only.</p>
+            </details>
+          </div>
+          <nav class="related" aria-label="Other features">
+            <span class="muted">Other features</span>
+            <a class="related-link" href="/feature-metrics.html">MRR and growth reports<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="related-link" href="/feature-alerts.html">Churn alerts<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta">
+            <h2>Start your 14-day trial</h2>
+            <p>Connect your billing provider and see this month's numbers before lunch.</p>
+            <div class="cta-actions">
+              <a class="btn btn-primary btn-lg" href="__APP_URL__/signup">Get started</a>
+              <a class="btn btn-ghost btn-lg" href="/pricing.html">See pricing</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- @include footer.html -->
+  </body>
+</html>
