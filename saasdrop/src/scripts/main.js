@@ -248,3 +248,53 @@ document.querySelectorAll('[data-feedback]').forEach((box) => {
     })
   })
 })
+
+/* Roadmap votes. Saved in this browser only; send them to your backend to count real votes. */
+const VOTES_KEY = 'beacon-roadmap-votes'
+const votedButtons = document.querySelectorAll('[data-vote]')
+if (votedButtons.length) {
+  let voted = []
+  try {
+    voted = JSON.parse(localStorage.getItem(VOTES_KEY) || '[]')
+  } catch {
+    voted = []
+  }
+  votedButtons.forEach((button) => {
+    const id = button.getAttribute('aria-label')
+    const count = button.querySelector('[data-count]')
+    const base = Number(count.textContent)
+    const render = () => {
+      const on = voted.includes(id)
+      button.setAttribute('aria-pressed', String(on))
+      count.textContent = String(base + (on ? 1 : 0))
+    }
+    render()
+    button.addEventListener('click', () => {
+      voted = voted.includes(id) ? voted.filter((v) => v !== id) : [...voted, id]
+      try {
+        localStorage.setItem(VOTES_KEY, JSON.stringify(voted))
+      } catch {
+        /* storage blocked: the vote still shows for this visit */
+      }
+      render()
+    })
+  })
+}
+
+/* Copy buttons: data-copy-code copies the code block next to it, data-copy-text copies its attribute. */
+document.querySelectorAll('[data-copy-code], [data-copy-text]').forEach((button) => {
+  button.addEventListener('click', async () => {
+    const text = button.dataset.copyText ?? button.parentElement.querySelector('code')?.textContent ?? ''
+    const label = button.querySelector('span')
+    const original = label.textContent
+    try {
+      await navigator.clipboard.writeText(text)
+      label.textContent = 'Copied'
+    } catch {
+      label.textContent = 'Copy failed'
+    }
+    setTimeout(() => {
+      label.textContent = original
+    }, 2000)
+  })
+})

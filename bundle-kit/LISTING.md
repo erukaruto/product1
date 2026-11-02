@@ -12,7 +12,7 @@ Why not "The Complete SaaS Front-End Kit": "complete" promises more than the ZIP
 
 ## Summary (one line, shown next to the buy button)
 
-A 20-page landing page and a 55-screen React + TypeScript dashboard that share one token file, three themes and one font.
+A 36-page landing page and a 64-screen React + TypeScript dashboard that share one token file, three themes and one font.
 
 ## Call to action (button text)
 
@@ -38,16 +38,16 @@ Don't add `tailwind`, `nextjs` or `figma`. The kit uses none of them.
 
 | | Price |
 | --- | --- |
-| SaaSDrop alone | $25 |
-| DashDrop alone | $39 |
-| Both bought separately | $64 |
-| **Bundle, regular price** | **$49** (save $15, 23%) |
-| **Bundle, launch price** | **$39** until {{LAUNCH_END_DATE}} (save $25, 39%) |
+| SaaSDrop alone | $29 |
+| DashDrop alone | $49 |
+| Both bought separately | $78 |
+| **Bundle, regular price** | **$59** (save $19, 24%) |
+| **Bundle, launch price** | **$45** until {{LAUNCH_END_DATE}} (save $33, 42%) |
 
 Reasoning:
 1. The prices sit in the middle of what comparable templates charge. Similar HTML landing pages on Gumroad sell for about $7 to $10 for a single page; React dashboards for about $14 to $29; TypeScript and shadcn kits for $49 and up.
-2. At $49 the bundle costs $10 more than DashDrop alone, so anyone who wants the dashboard has a clear reason to take both.
-3. The $39 launch price rewards early buyers. Give it a real end date and raise the price when it ends; otherwise "launch price" isn't true.
+2. At $59 the bundle costs $10 more than DashDrop alone, so anyone who wants the dashboard has a clear reason to take both.
+3. The $45 launch price rewards early buyers. Give it a real end date and raise the price when it ends; otherwise "launch price" isn't true.
 
 (These are suggestions. The market figures come from search-result snippets in November 2026, not from checking each listing. If you change the prices, update this table, the upsell amounts in `UPSELL-EMAIL.md`, and the posts below.)
 
@@ -56,7 +56,7 @@ Reasoning:
 | Key | Value |
 | --- | --- |
 | Format | ZIP with source code |
-| Includes | SaaSDrop (20 pages) and DashDrop (55 screens) |
+| Includes | SaaSDrop (36 pages) and DashDrop (64 screens): 100 in total |
 | Built with | Vite 8, React 19, TypeScript, React Router 7, plain CSS |
 | Themes | Light, dark, sand |
 | Requires | Node.js 20.19+ or 22.12+ |
@@ -78,11 +78,14 @@ The demo content is for Beacon, a fictional revenue analytics company, so you ca
 
 ### What's inside
 
-**SaaSDrop: landing page (20 pages)**
+**SaaSDrop: landing page (36 pages)**
 - Home: hero with an app preview, features, feature rows, steps, pricing teaser, quote, FAQ, call to action
 - Pricing: monthly/yearly toggle, three plans, comparison table, billing FAQ
 - Features overview plus three feature detail pages
 - Integrations directory with a filter, plus an integration detail page
+- A second home page layout, three solution pages (founders, finance, customer success), customer stories (sample, clearly marked)
+- API docs with copyable code, status page with 90-day uptime bars, roadmap with voting
+- Careers and a job page with an application form, press kit, book-a-demo with time slots, waitlist, maintenance and 500 pages
 - Security page and a "vs. spreadsheets" comparison page (sample text marked where claims need to be yours)
 - About, Changelog, Contact (form with in-browser validation)
 - Blog index with topic filter and newsletter form, plus a blog post layout with a table of contents
@@ -92,12 +95,12 @@ The demo content is for Beacon, a fictional revenue analytics company, so you ca
 - Shared header and footer, written once and included on every page at build time
 - Built with Vite, HTML, CSS and one small JavaScript file. No framework.
 
-**DashDrop: admin dashboard (55 screens), React + TypeScript**
+**DashDrop: admin dashboard (64 screens), React + TypeScript**
 - Sign in and onboarding (10): sign in, sign up, verify email, two-factor code, reset password, new password, accept invite, and a 3-step onboarding
-- Dashboard and reports (8): overview, getting started, analytics, MRR report, churn report, cohorts, customers, customer detail
+- Dashboard and reports (13): overview, getting started, analytics, MRR, churn, cohorts, revenue by plan, revenue by country, forecast, saved reports, report builder, customers, customer detail
 - Billing (9): subscriptions, subscription detail, invoices, new invoice with live totals, printable invoice, payments, refunds and disputes, plans and prices, coupons
-- Customers (5): segments, segment builder with live preview, at-risk accounts with a health score, CSV import with column matching, edit customer
-- Alerts and messages (4): alert rules, rule editor with a live summary, notifications, inbox with replies
+- Customers (7): pipeline board, renewals calendar, segments, segment builder with live preview, at-risk accounts with a health score, CSV import with column matching, edit customer
+- Alerts, messages and tools (6): alert rules, rule editor with a live summary, notifications, inbox with replies, global search, what's new
 - Team (3): members, roles and permissions, audit log
 - Settings (7): general, security, plan and billing, integrations, API keys, webhooks, data and privacy
 - Error pages: 404, 403, 500
@@ -193,11 +196,11 @@ Yes. Email {{SUPPORT_EMAIL}} and you'll get a code to buy the other product for 
 
 Main post (about 260 characters with a short date such as "Nov 15"; X counts any link as 23):
 
-> SaaSDrop + DashDrop is out: a 20-page landing page and a 55-screen React + TypeScript dashboard that share one token file, three themes and one font.
+> SaaSDrop + DashDrop is out: a 36-page landing page and a 64-screen React + TypeScript dashboard that share one token file, three themes and one font.
 >
 > "Get started" on the site opens the app's signup screen.
 >
-> $39 until {{LAUNCH_END_DATE}}, then $49.
+> $45 until {{LAUNCH_END_DATE}}, then $59.
 > {{GUMROAD_URL_BUNDLE}}
 
 Optional follow-up replies:
@@ -212,7 +215,7 @@ Optional follow-up replies:
 
 > I've released SaaSDrop + DashDrop, a pair of front-end templates for SaaS products.
 >
-> SaaSDrop is the marketing site: 20 pages built with Vite and plain HTML and CSS, including features, integrations, a blog and a help center. DashDrop is the app: 55 screens built with React 19 and TypeScript, from sign-up and onboarding to MRR reports, customers, invoices and subscriptions.
+> SaaSDrop is the marketing site: 36 pages built with Vite and plain HTML and CSS, including features, solutions, a blog, a help center, API docs and a status page. DashDrop is the app: 64 screens built with React 19 and TypeScript, from sign-up and onboarding to MRR reports, customers, invoices and subscriptions.
 >
 > I built them to share one design system. Both read the same token file and use the same font and the same three themes (light, dark, sand). The "Sign in" and "Get started" buttons on the landing page open the dashboard's login and signup screens, so the whole path from first visit to the app looks like one product.
 >
@@ -220,7 +223,7 @@ Optional follow-up replies:
 >
 > There's no backend in the kit. It's the front end, ready to connect to yours.
 >
-> Launch price is $39 until {{LAUNCH_END_DATE}}, then $49.
+> Launch price is $45 until {{LAUNCH_END_DATE}}, then $59.
 >
 > Demos: {{DEMO_URL_SAASDROP}} and {{DEMO_URL_DASHDROP}}
 > Get it: {{GUMROAD_URL_BUNDLE}}

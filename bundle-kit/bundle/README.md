@@ -2,8 +2,8 @@
 
 Two templates for the same fictional product, Beacon:
 
-- `saasdrop/`: the marketing site. 20 pages, built with Vite, HTML, CSS and a little vanilla JavaScript.
-- `dashdrop/`: the app behind it. 55 screens, built with React 19, TypeScript, React Router 7 and Vite.
+- `saasdrop/`: the marketing site. 36 pages, built with Vite, HTML, CSS and a little vanilla JavaScript.
+- `dashdrop/`: the app behind it. 64 screens, built with React 19, TypeScript, React Router 7 and Vite.
 
 Both use the same color tokens, the same three themes and the same font, so a visitor who clicks "Get started" on the landing page lands in an app that looks like it belongs to the same company.
 
@@ -134,7 +134,7 @@ This setup was tested with a local static server that applied the rewrite in ste
 
 - Replace Beacon (name, logo, favicon, copy, demo data) in both products. The README in each folder lists the files.
 - Remove the demo notes from both products. The footer note is in `saasdrop/src/partials/footer.html`; the sign-in notes are in `dashdrop/src/pages/auth/Login.tsx` and `dashdrop/src/components/AuthLayout.tsx`.
-- Replace the sample terms, privacy and security text in `saasdrop/terms.html`, `privacy.html` and `security.html`. It is placeholder text, not legal advice, and the security page must describe your real practices.
+- Replace the sample terms, privacy and security text in `saasdrop/terms.html`, `privacy.html` and `security.html`. It is placeholder text, not legal advice, and the security page must describe your real practices. Customer stories (`customers.html`, `customer-story.html`) and `status.html` are fictional samples too.
 - Connect the forms (`saasdrop/src/scripts/main.js`) and authentication (`dashdrop/src/pages/auth/`).
 - Set `VITE_APP_URL` and `VITE_SITE_URL` for production.
 
@@ -143,7 +143,7 @@ This setup was tested with a local static server that applied the rewrite in ste
 Before release, both templates were built with Node 22.23.4 and checked in Chromium:
 
 - `npm install` and `npm run build` succeed in both folders. DashDrop's build includes a strict TypeScript check.
-- Every page (20 + 55, plus a settings tab URL and the "All screens" index) loads in all three themes at 390, 768 and 1440 pixels wide with no console errors and no sideways page scrolling.
+- Every page (36 + 64, plus a settings tab URL and the "All screens" index) loads in all three themes at 390, 768 and 1440 pixels wide with no console errors and no sideways page scrolling.
 - The tokens read from the page are identical in both products for each theme. DM Sans is the only font in use.
 - Landing page buttons open the app's `/login` and `/signup` routes; the app's "Back to site" link returns to the landing page.
 - The main flows work end to end, including sign-up through onboarding, dialogs (focus stays inside, Escape closes, focus returns), menus inside tables, invoice totals, search and filters.

@@ -418,7 +418,7 @@ textarea {
 
 @media (min-width: 1000px) {
   .footer-grid {
-    grid-template-columns: 1.6fr repeat(5, 1fr);
+    grid-template-columns: 1.4fr repeat(6, 1fr);
   }
 
   .footer-brand {

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- @include head.html -->
+    <title>Beacon for usage-based billing: join the waitlist</title>
+    <meta name="description" content="Usage-based billing support is coming to Beacon. Join the waitlist." />
+  </head>
+  <body data-nav="waitlist">
+    <!-- @include header.html -->
+
+    <main id="main">
+      <section class="center-page">
+        <div class="container narrow-container center-stack">
+          <span class="pill"><span class="dot" aria-hidden="true"></span><strong>Coming soon</strong> Early 2027</span>
+          <h1>MRR for usage-based billing</h1>
+          <p class="muted">Charge per seat, per event or per gigabyte? Beacon will show revenue for plans that bill by usage. Join the waitlist for early access.</p>
+          <!-- No backend: uses the newsletter form script in src/scripts/main.js. -->
+          <form class="newsletter waitlist-form" data-newsletter novalidate>
+            <div class="newsletter-fields">
+              <label class="sr-only" for="newsletter-email">Email</label>
+              <input class="input" id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+              <button class="btn btn-primary" type="submit">Join the waitlist</button>
+            </div>
+            <p class="field-error" data-newsletter-error hidden>Enter a valid email address.</p>
+            <p class="form-success" data-newsletter-success hidden role="status"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>You're on the list. We'll email you when it's ready.</span></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- @include footer.html -->
+  </body>
+</html>

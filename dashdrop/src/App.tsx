@@ -64,6 +64,17 @@ const SettingsData = page(() => import('./pages/settings/DataPrivacy.tsx'))
 const Forbidden = page(() => import('./pages/errors/Forbidden.tsx'))
 const ServerError = page(() => import('./pages/errors/ServerError.tsx'))
 
+// Tahap 3
+const ReportPlans = page(() => import('./pages/reports/ReportPlans.tsx'))
+const ReportCountries = page(() => import('./pages/reports/ReportCountries.tsx'))
+const ReportForecast = page(() => import('./pages/reports/ReportForecast.tsx'))
+const SavedReports = page(() => import('./pages/reports/SavedReports.tsx'))
+const ReportBuilder = page(() => import('./pages/reports/ReportBuilder.tsx'))
+const Search = page(() => import('./pages/tools/Search.tsx'))
+const Renewals = page(() => import('./pages/tools/Renewals.tsx'))
+const Pipeline = page(() => import('./pages/tools/Pipeline.tsx'))
+const WhatsNew = page(() => import('./pages/tools/WhatsNew.tsx'))
+
 // UI kit
 const UiButtons = page(() => import('./pages/ui/UiButtons.tsx'))
 const UiForms = page(() => import('./pages/ui/UiForms.tsx'))
@@ -100,6 +111,15 @@ export default function App() {
         <Route path="reports/mrr" element={<ReportMrr />} />
         <Route path="reports/churn" element={<ReportChurn />} />
         <Route path="reports/cohorts" element={<ReportCohorts />} />
+        <Route path="reports/plans" element={<ReportPlans />} />
+        <Route path="reports/countries" element={<ReportCountries />} />
+        <Route path="reports/forecast" element={<ReportForecast />} />
+        <Route path="reports/saved" element={<SavedReports />} />
+        <Route path="reports/builder" element={<ReportBuilder />} />
+        <Route path="search" element={<Search />} />
+        <Route path="renewals" element={<Renewals />} />
+        <Route path="pipeline" element={<Pipeline />} />
+        <Route path="whats-new" element={<WhatsNew />} />
         <Route path="customers" element={<Customers />} />
         <Route path="customers/import" element={<CustomerImport />} />
         <Route path="customers/at-risk" element={<AtRisk />} />

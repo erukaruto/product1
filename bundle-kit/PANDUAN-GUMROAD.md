@@ -54,7 +54,7 @@ Buka `bundle-kit/LISTING.md` dan ganti semua placeholder (`{{DEMO_URL_...}}`, `{
 
 ## Bagian B. Produk satuan (kalau belum ada)
 
-Agar perbandingan harga dan email upsell masuk akal, SaaSDrop ($25) dan DashDrop ($39) sebaiknya juga dijual sendiri-sendiri. Kalau keduanya belum ada di Gumroad, buat dulu dengan cara yang sama seperti Bagian C. Pakai ZIP berisi satu folder saja: `saasdrop/` atau `dashdrop/`, masing-masing sudah punya `README.md` dan `LICENSE.md` sendiri.
+Agar perbandingan harga dan email upsell masuk akal, SaaSDrop ($29) dan DashDrop ($49) sebaiknya juga dijual sendiri-sendiri. Kalau keduanya belum ada di Gumroad, buat dulu dengan cara yang sama seperti Bagian C. Pakai ZIP berisi satu folder saja: `saasdrop/` atau `dashdrop/`, masing-masing sudah punya `README.md` dan `LICENSE.md` sendiri.
 
 ---
 
@@ -74,7 +74,7 @@ Langkah di bawah memakai cara pertama.
 1. Masuk ke Gumroad, buka **Products**, klik **New product**.
 2. Pilih jenis **Digital product**.
 3. **Name:** salin dari bagian "Name" di `LISTING.md`.
-4. **Price:** isi **49** (USD). Harga peluncuran diatur lewat kode diskon di langkah 15.
+4. **Price:** isi **59** (USD). Harga peluncuran diatur lewat kode diskon di langkah 15.
 5. Klik lanjut ke halaman edit produk.
 6. **Description:** salin bagian "Description" dari `LISTING.md`, per subjudul. Editor Gumroad mendukung judul, teks tebal dan daftar. Periksa daftar berbutir setelah ditempel.
 7. **URL:** ganti permalink menjadi `saas-landing-dashboard-kit`.
@@ -84,7 +84,7 @@ Langkah di bawah memakai cara pertama.
    3. `gallery-2-whats-inside-1280x720.png`
    4. `gallery-3-themes-1280x720.png` (opsional)
    5. `gallery-4-mobile-1280x720.png` (opsional)
-   6. `gallery-5-screens-1280x720.png` (opsional, menampilkan 8 dari 55 layar DashDrop)
+   6. `gallery-5-screens-1280x720.png` (opsional, menampilkan 8 dari 64 layar DashDrop)
 9. **Thumbnail:** upload `thumbnail-600x600.png`.
 10. **Summary:** salin dari bagian "Summary" di `LISTING.md`.
 11. **Additional details:** isi pasangan key/value dari tabel di `LISTING.md`.
@@ -94,10 +94,10 @@ Langkah di bawah memakai cara pertama.
 15. **Harga peluncuran:** buka **Checkout → Discounts → New discount**.
     - Code: misalnya `LAUNCH`
     - Product: hanya bundle ini
-    - Potongan tetap **$10** (49 − 10 = 39)
+    - Potongan tetap **$14** (59 − 14 = 45)
     - Tanggal berakhir: `{{LAUNCH_END_DATE}}`
 
-    Dengan cara ini harga kembali ke $49 secara otomatis. Bagikan link dengan kode terpasang: `https://{{GUMROAD_USERNAME}}.gumroad.com/l/saas-landing-dashboard-kit/LAUNCH`. Uji dulu di jendela private.
+    Dengan cara ini harga kembali ke $59 secara otomatis. Bagikan link dengan kode terpasang: `https://{{GUMROAD_USERNAME}}.gumroad.com/l/saas-landing-dashboard-kit/LAUNCH`. Uji dulu di jendela private.
 16. **Refund policy:** atur di pengaturan produk atau akun, sesuai `{{REFUND_POLICY}}`. Isinya harus sama dengan teks di deskripsi dan di `LICENSE.md`.
 17. **Uji pembelian:** buat kode diskon 100% sekali pakai, beli produk sendiri, unduh ZIP, lalu periksa isinya. Hapus kode itu setelah selesai.
 18. Klik **Publish**.
@@ -122,8 +122,9 @@ Langkah di bawah memakai cara pertama.
 **Halaman produk**
 - [ ] Nama, summary, deskripsi dan FAQ sudah ditempel. Tidak ada `{{...}}` yang tersisa.
 - [ ] Cover (urutan benar) dan thumbnail sudah terpasang.
-- [ ] Harga $49, dan kode `LAUNCH` sudah diuji (harga menjadi $39, dengan tanggal berakhir).
+- [ ] Harga $59, dan kode `LAUNCH` sudah diuji (harga menjadi $45, dengan tanggal berakhir).
 - [ ] Halaman `saasdrop/security.html` tetap ditandai sebagai contoh. Jangan menulis sertifikasi keamanan yang tidak Anda miliki di demo Anda sendiri.
+- [ ] Customer story (`customers.html`, `customer-story.html`) dan halaman status tetap ditandai sebagai contoh. Jangan dipakai sebagai testimoni atau data uptime sungguhan.
 - [ ] Link demo bisa dibuka. Tombol "Get started" di demo SaaSDrop membuka demo DashDrop.
 - [ ] Refund policy di Gumroad sama dengan teks di deskripsi dan lisensi.
 - [ ] Email dukungan aktif dan bisa menerima pesan.

@@ -21,7 +21,7 @@ npm run build      # type-check, then production files in dist/
 npm run preview    # serves dist/ on http://localhost:4174
 ```
 
-## Screens (55)
+## Screens (64)
 
 Open `/screens` in the running app for a clickable list of every screen.
 
@@ -40,7 +40,7 @@ Open `/screens` in the running app for a clickable list of every screen.
 | `/onboarding/billing` | Step 2: connect a provider, upload a CSV, or copy an API key |
 | `/onboarding/team` | Step 3: invite teammates with roles |
 
-**Dashboard and reports (8)**
+**Dashboard and reports (13)**
 
 | Route | Screen |
 | --- | --- |
@@ -50,6 +50,11 @@ Open `/screens` in the running app for a clickable list of every screen.
 | `/reports/mrr` | MRR movement by month (new, expansion, contraction, churn), monthly table, CSV export |
 | `/reports/churn` | Churn rate, revenue churn, cancellation reasons, accounts to follow up |
 | `/reports/cohorts` | 12-month retention table, revenue or customers |
+| `/reports/plans` | Revenue by plan: stacked bars per month and a monthly table |
+| `/reports/countries` | Revenue by country: share, growth, customers, ARPA |
+| `/reports/forecast` | 6-month MRR forecast: three scenarios or your own growth rate |
+| `/reports/saved` | Saved reports: run, schedule, delete |
+| `/reports/builder` | Report builder: metric and grouping with a live chart and table, save |
 | `/customers` | Search, status filter, sortable columns, row selection, pagination, CSV export |
 | `/customers/:id` | KPIs, invoices, details, timeline |
 
@@ -67,7 +72,7 @@ Open `/screens` in the running app for a clickable list of every screen.
 | `/plans` | Monthly/yearly view, edit dialog |
 | `/coupons` | Create a coupon with validation, copy code |
 
-**Customers (5)**
+**Customers (7)**
 
 | Route | Screen |
 | --- | --- |
@@ -76,8 +81,10 @@ Open `/screens` in the running app for a clickable list of every screen.
 | `/customers/at-risk` | Health score with the signals behind it (`healthOf()` in `src/data/workspace.ts`) |
 | `/customers/import` | CSV import in three steps, with column matching and validation |
 | `/customers/:id/edit` | Edit form with validation, delete that needs the typed company name |
+| `/pipeline` | Customer success board: drag cards between stages, or use the arrow buttons (keyboard friendly) |
+| `/renewals` | Renewals calendar: month grid with the renewals due each day |
 
-**Alerts and messages (4)**
+**Alerts, messages and tools (6)**
 
 | Route | Screen |
 | --- | --- |
@@ -85,6 +92,8 @@ Open `/screens` in the running app for a clickable list of every screen.
 | `/alerts/new`, `/alerts/:id` | Rule editor: trigger, threshold, plans, channels, recipients, live summary |
 | `/notifications` | Filters, mark as read, mark all as read |
 | `/inbox` | Conversations with customers, reply, snooze, close |
+| `/search?q=` | Search results across customers, invoices, subscriptions and pages (the top bar search opens it) |
+| `/whats-new` | Release notes with "mark as seen" |
 
 **Team (3):** `/team` (invite, change role, remove), `/team/roles` (permission matrix), `/audit-log` (search, filter, CSV export).
 
@@ -116,8 +125,8 @@ dashdrop/
       Charts.tsx             LineChart, StackedBarChart, MovementChart, ShareBars, Sparkline
       CohortTable.tsx        retention heatmap
       Icon.tsx, Logo.tsx, ThemeSwitch.tsx
-    pages/                   auth/, billing/, customers/, alerts/, team/, settings/, reports/, errors/, ui/
-    data/                    demo data: metrics.ts, customers.ts, invoices.ts, billing.ts, workspace.ts, activity.ts
+    pages/                   auth/, billing/, customers/, alerts/, team/, settings/, reports/, tools/, errors/, ui/
+    data/                    demo data: metrics.ts, customers.ts, invoices.ts, billing.ts, workspace.ts, reports.ts, activity.ts
     lib/                     theme.tsx, format.ts, hooks.ts, config.ts
     styles/                  tokens.css (colors), base.css, app.css
   public/                    favicon.svg, _redirects (Netlify)

@@ -2004,3 +2004,516 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* ------------------------------------------------------------------
+   Tahap 3: home v2, solutions, stories, docs, status, roadmap,
+   careers, press, demo, waitlist, maintenance
+   ------------------------------------------------------------------ */
+
+.narrow-container {
+  max-width: 820px;
+}
+
+.hero-split {
+  padding-top: 56px;
+}
+
+.hero-split h1 {
+  font-size: clamp(2.25rem, 4.6vw, 3.25rem);
+  letter-spacing: -0.03em;
+}
+
+.hero-split .preview {
+  margin: 0;
+}
+
+/* The home v2 preview has no sidebar, so the main area takes the full width. */
+.hero-split .preview-body {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.hero-split .kpis {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hero-split .split-copy > p {
+  font-size: 1.125rem;
+}
+
+.inline-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  font-size: 0.9375rem;
+  color: var(--muted);
+}
+
+.value-link:hover {
+  border-color: color-mix(in srgb, var(--line) 40%, var(--muted));
+}
+
+.value-link:hover h3 {
+  color: var(--accent);
+}
+
+.story-stats {
+  display: grid;
+  gap: 12px;
+  margin: 32px 0 20px;
+}
+
+.story-stats div {
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.story-stats dt {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.story-stats dd {
+  margin: 4px 0 0;
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 760px) {
+  .story-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* API docs */
+.docs-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 32px;
+  padding-top: 48px;
+}
+
+@media (min-width: 1000px) {
+  .docs-layout {
+    grid-template-columns: 220px minmax(0, 760px);
+    gap: 64px;
+  }
+}
+
+.docs-body {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.docs-body h1 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  letter-spacing: -0.03em;
+}
+
+.prose code,
+.code-block pre,
+.code-block code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.875em;
+}
+
+.prose p code,
+.prose td code,
+.prose th code {
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: var(--subtle);
+  color: var(--ink);
+}
+
+.code-block {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.code-block pre {
+  margin: 0;
+  padding: 16px 18px;
+  overflow-x: auto;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+/* On narrow screens the Copy button gets its own row so it never covers the code. */
+@media (max-width: 719px) {
+  .code-block pre {
+    padding-top: 48px;
+  }
+}
+
+.code-block .btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: var(--surface);
+}
+
+.code-block .btn .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.method {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 4px;
+  background: var(--good-soft);
+  color: var(--good);
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+/* Status */
+.status-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  border: 1px solid color-mix(in srgb, var(--good) 35%, var(--line));
+  border-radius: var(--radius-lg);
+  background: var(--good-soft);
+}
+
+.status-banner h1 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.status-dot {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--good);
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--good) 25%, transparent);
+}
+
+.status-list {
+  display: grid;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.status-row {
+  display: grid;
+  gap: 10px;
+  padding: 18px 20px;
+}
+
+.status-row + .status-row {
+  border-top: 1px solid var(--line);
+}
+
+.status-row-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.uptime {
+  display: grid;
+  grid-template-columns: repeat(90, minmax(0, 1fr));
+  gap: 2px;
+  height: 28px;
+}
+
+.uptime span,
+.uptime-legend span {
+  border-radius: 2px;
+}
+
+.up-ok {
+  background: color-mix(in srgb, var(--good) 70%, var(--surface));
+}
+
+.up-degraded {
+  background: var(--warn);
+}
+
+.up-outage {
+  background: var(--bad);
+}
+
+.uptime-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.uptime-legend span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 6px;
+}
+
+.status-h2 {
+  margin: 40px 0 16px;
+  font-size: 1.375rem;
+}
+
+.incident-list {
+  display: grid;
+  gap: 18px;
+}
+
+.incident-list li {
+  display: grid;
+  gap: 2px;
+  padding-left: 16px;
+  border-left: 2px solid var(--line);
+}
+
+/* Roadmap */
+.roadmap {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 860px) {
+  .roadmap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.road-col {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--subtle);
+}
+
+.road-col h2 {
+  margin-bottom: 12px;
+  font-size: 1.0625rem;
+}
+
+.road-col ul {
+  display: grid;
+  gap: 10px;
+}
+
+.road-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: start;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.vote {
+  display: grid;
+  justify-items: center;
+  gap: 0;
+  min-width: 48px;
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  font-weight: 600;
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+
+.vote .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.vote[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* Careers */
+.job-list {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.job-list li + li {
+  border-top: 1px solid var(--line);
+}
+
+.job-list a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 16px;
+  align-items: center;
+  padding: 18px 20px;
+}
+
+.job-list a > span:first-child {
+  display: grid;
+}
+
+.job-list a > span:nth-child(2) {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+}
+
+.job-list .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.job-list a:hover strong {
+  color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .job-list a {
+    grid-template-columns: 1fr auto;
+  }
+
+  .job-list a > span:nth-child(2) {
+    grid-row: 2;
+  }
+}
+
+.form-title {
+  font-size: 1.25rem;
+}
+
+/* Press */
+.press-grid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 760px) {
+  .press-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.press-grid .panel {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+
+.panel-title {
+  font-size: 1.0625rem;
+}
+
+.logo-tile {
+  justify-items: center;
+  align-content: center !important;
+  min-height: 200px;
+}
+
+.big-mark {
+  width: 72px;
+  height: 72px;
+}
+
+.press-grid .btn .icon,
+.press-grid .btn-ghost .icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Demo */
+fieldset.field {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+fieldset.field legend {
+  margin-bottom: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.slot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+}
+
+.choice {
+  position: relative;
+  display: flex;
+}
+
+.choice input {
+  position: absolute;
+  opacity: 0;
+}
+
+.choice span {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+
+.choice input:checked + span {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.choice input:focus-visible + span {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.contact-card .checks {
+  font-size: 0.9375rem;
+}
+
+/* Waitlist, maintenance */
+.center-page {
+  display: grid;
+  place-items: center;
+  min-height: 70vh;
+  padding: 64px 0;
+}
+
+.center-page.full {
+  min-height: 100vh;
+}
+
+.center-stack {
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  text-align: center;
+}
+
+.center-stack h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -0.03em;
+}
+
+.waitlist-form {
+  width: 100%;
+  grid-template-columns: 1fr !important;
+  text-align: left;
+}

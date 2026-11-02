@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- @include head.html -->
+    <title>API reference | Beacon</title>
+    <meta name="description" content="Read customers, subscriptions and metrics from the Beacon REST API." />
+  </head>
+  <body data-nav="docs">
+    <!-- @include header.html -->
+
+    <main id="main">
+      <div class="container docs-layout">
+        <nav class="toc docs-nav" aria-label="API reference">
+          <strong>API reference</strong>
+          <a href="#auth">Authentication</a>
+          <a href="#customers">List customers</a>
+          <a href="#metrics">Get MRR</a>
+          <a href="#errors">Errors</a>
+          <a href="#limits">Rate limits</a>
+        </nav>
+        <article class="prose docs-body">
+          <span class="label">Developers</span>
+          <h1>API reference</h1>
+          <p>The Beacon API returns JSON over HTTPS. All endpoints are read-only except events. Sample documentation for the demo.</p>
+
+          <h2 id="auth">Authentication</h2>
+          <p>Send your API key as a bearer token. Create keys in Settings, API keys. Keep keys on servers, never in browsers or apps.</p>
+          <div class="code-block"><button type="button" class="btn btn-ghost btn-sm" data-copy-code><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11" height="11" rx="2"/><path d="M15.5 8.5v-3a1 1 0 0 0-1-1h-9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3"/></svg><span>Copy</span></button><pre><code>curl https://api.beacon.example/v1/customers \
+  -H "Authorization: Bearer bk_live_..."</code></pre></div>
+
+          <h2 id="customers">List customers</h2>
+          <p><span class="method">GET</span> <code>/v1/customers</code></p>
+          <div class="table-wrap">
+            <table class="compare">
+              <thead><tr><th scope="col">Parameter</th><th scope="col">Type</th><th scope="col">Description</th></tr></thead>
+              <tbody>
+                <tr><th scope="row"><code>status</code></th><td>string</td><td>active, trial, past_due or canceled</td></tr>
+                <tr><th scope="row"><code>plan</code></th><td>string</td><td>Starter, Growth or Scale</td></tr>
+                <tr><th scope="row"><code>limit</code></th><td>integer</td><td>1 to 100, default 25</td></tr>
+                <tr><th scope="row"><code>cursor</code></th><td>string</td><td>From <code>next_cursor</code> in the previous response</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="code-block"><button type="button" class="btn btn-ghost btn-sm" data-copy-code><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11" height="11" rx="2"/><path d="M15.5 8.5v-3a1 1 0 0 0-1-1h-9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3"/></svg><span>Copy</span></button><pre><code>{
+  "data": [
+    {
+      "id": "cus_1002",
+      "company": "Fieldnote",
+      "plan": "Scale",
+      "status": "active",
+      "mrr": 228,
+      "seats": 12
+    }
+  ],
+  "next_cursor": "cus_1003"
+}</code></pre></div>
+
+          <h2 id="metrics">Get MRR</h2>
+          <p><span class="method">GET</span> <code>/v1/metrics/mrr?from=2026-01&amp;to=2026-10</code></p>
+          <div class="code-block"><button type="button" class="btn btn-ghost btn-sm" data-copy-code><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="8.5" y="8.5" width="11" height="11" rx="2"/><path d="M15.5 8.5v-3a1 1 0 0 0-1-1h-9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3"/></svg><span>Copy</span></button><pre><code>{
+  "data": [
+    { "month": "2026-10", "start": 46440, "new": 2460, "expansion": 840,
+      "contraction": 410, "churn": 1010, "end": 48320 }
+  ]
+}</code></pre></div>
+
+          <h2 id="errors">Errors</h2>
+          <p>Errors return a status code and a JSON body with <code>code</code> and <code>message</code>. <code>401</code> means the key is missing or revoked, <code>404</code> that the record doesn't exist, <code>429</code> that you hit the rate limit.</p>
+
+          <h2 id="limits">Rate limits</h2>
+          <p>100 requests per minute per key. The <code>X-RateLimit-Remaining</code> header shows what's left.</p>
+        </article>
+      </div>
+    </main>
+
+    <!-- @include footer.html -->
+  </body>
+</html>

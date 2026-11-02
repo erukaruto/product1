@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 
 const root = import.meta.dirname
-const pages = ['index', 'pricing', 'about', 'changelog', 'contact', 'blog', 'blog-post', 'help', 'help-article', 'terms', 'privacy', 'features', 'feature-metrics', 'feature-alerts', 'feature-customers', 'integrations', 'integration-detail', 'security', 'compare', '404']
+const pages = ['index', 'pricing', 'about', 'changelog', 'contact', 'blog', 'blog-post', 'help', 'help-article', 'terms', 'privacy', 'features', 'feature-metrics', 'feature-alerts', 'feature-customers', 'integrations', 'integration-detail', 'security', 'compare', 'home-2', 'solutions-founders', 'solutions-finance', 'solutions-success', 'customers', 'customer-story', 'docs', 'status', 'roadmap', 'careers', 'job', 'press', 'demo', 'waitlist', 'maintenance', '500', '404']
 
 /*
   Small HTML include plugin:

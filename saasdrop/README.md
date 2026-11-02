@@ -25,6 +25,10 @@ npm run preview   # serves dist/ on http://localhost:4173
 | File | Page |
 | --- | --- |
 | `index.html` | Home: hero with an app preview, features, two feature rows, steps, pricing teaser, quote, FAQ, call to action |
+| `home-2.html` | Second home layout: split hero with the app preview, audience cards, metrics strip. Rename it to `index.html` if you prefer it |
+| `solutions-founders.html`, `solutions-finance.html`, `solutions-success.html` | Solution pages for three audiences: problems, how Beacon helps, related features |
+| `customers.html` | Customer stories grid (fictional samples, marked as such) |
+| `customer-story.html` | One customer story: summary facts, challenge, approach, results (fictional sample) |
 | `pricing.html` | Pricing: monthly/yearly toggle, three plans, comparison table, billing FAQ |
 | `about.html` | About: story, values, team |
 | `changelog.html` | Changelog: dated entries with New / Improved / Fixed tags |
@@ -35,6 +39,14 @@ npm run preview   # serves dist/ on http://localhost:4173
 | `integration-detail.html` | Integration detail: setup steps, table of synced data, facts sidebar |
 | `security.html` | Security practices (sample text, see below) |
 | `compare.html` | Comparison with a spreadsheet: table, when to keep the sheet, migration steps |
+| `docs.html` | API reference: sidebar, endpoints, code samples with Copy buttons, error and rate-limit tables (sample API) |
+| `status.html` | System status: components, 90-day uptime bars, past incidents (made-up data, marked as such) |
+| `roadmap.html` | Roadmap: Now / Next / Later columns with vote buttons (votes saved in the browser only) |
+| `careers.html` | Careers: values, benefits, open roles |
+| `job.html` | Job post with an application form (same validation as the contact form) |
+| `press.html` | Press kit: facts, boilerplate with a Copy button, logo downloads, press contact |
+| `demo.html` | Book a demo: form with validation, what to expect |
+| `waitlist.html` | Waitlist for an upcoming product, with an email form |
 | `blog.html` | Blog: featured post, topic filter, post grid, newsletter form |
 | `blog-post.html` | Blog post: table of contents, callout, table, quote, copy-link button, related posts |
 | `help.html` | Help center: live search with highlighted matches, 6 categories, 22 article links |
@@ -42,8 +54,12 @@ npm run preview   # serves dist/ on http://localhost:4173
 | `terms.html` | Terms of service (sample text, see below) |
 | `privacy.html` | Privacy policy (sample text, see below) |
 | `404.html` | Not found page |
+| `500.html` | Server error page |
+| `maintenance.html` | Maintenance page without header or footer (`noindex`) |
 
 The blog cards all link to the one sample post, and the help center links all go to the one sample article. Copy those two files to add real posts and articles.
+
+The customer stories, the status page and the API reference describe the fictional Beacon. Replace them with your own, or delete the pages and their links in `src/partials/footer.html`.
 
 **The terms, privacy and security pages contain sample text for a fictional company, not legal advice.** On the security page, only describe practices you follow and certifications you hold. Each starts with a visible notice saying so. Replace the text with documents written for your business and reviewed by a lawyer, and remove the notice.
 
@@ -54,11 +70,15 @@ saasdrop/
   index.html, pricing.html, about.html, changelog.html, contact.html,
   features.html, feature-metrics.html, feature-alerts.html, feature-customers.html,
   integrations.html, integration-detail.html, security.html, compare.html,
-  blog.html, blog-post.html, help.html, help-article.html, terms.html, privacy.html, 404.html
+  blog.html, blog-post.html, help.html, help-article.html, terms.html, privacy.html, 404.html,
+  home-2.html, solutions-founders.html, solutions-finance.html, solutions-success.html,
+  customers.html, customer-story.html, docs.html, status.html, roadmap.html, careers.html,
+  job.html, press.html, demo.html, waitlist.html, maintenance.html, 500.html
   src/
     partials/      header.html, footer.html, head.html, logo.html, theme-switch.html
     scripts/       main.js (theme switch, mobile menu, pricing toggle, contact form,
-                   blog filter, newsletter form, help search, copy link, article feedback)
+                   blog filter, newsletter form, help search, copy link, article feedback,
+                   roadmap votes, copy buttons)
     styles/        tokens.css (colors), base.css (layout, buttons, header, footer), sections.css (page sections)
   public/          favicon.svg, robots.txt (copied to dist as-is)
   vite.config.js   page list, HTML includes, app URL
@@ -125,7 +145,7 @@ In the HTML the links are written as `__APP_URL__/login`. Use the same placehold
 
 ## Forms
 
-The contact form, the newsletter form and the "Was this helpful?" buttons work in the browser but send nothing: there is no backend. Each has a comment in `src/scripts/main.js` (search for "Contact form", "Newsletter form" and "Was this helpful") showing where to add the request to your service.
+The contact form (also used on `demo.html` and `job.html`), the newsletter form (also on `waitlist.html`), the roadmap votes and the "Was this helpful?" buttons work in the browser but send nothing: there is no backend. Each has a comment in `src/scripts/main.js` (search for "Contact form", "Newsletter form" and "Was this helpful") showing where to add the request to your service.
 
 ## Deploying
 
@@ -146,7 +166,8 @@ Whether a host shows `404.html` for unknown paths depends on the host. Check you
 - Update `<title>` and `<meta name="description">` on each page.
 - Set `VITE_APP_URL`.
 - Connect the contact and newsletter forms.
-- Replace the sample terms and privacy text, and remove the "Sample text" notice.
+- Replace the sample terms, privacy and security text, and remove the "Sample text" notice.
+- Replace or delete the sample customer stories, status page and API reference.
 
 ## Browser support
 

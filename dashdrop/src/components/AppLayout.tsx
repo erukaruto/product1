@@ -141,7 +141,7 @@ function Topbar({ onMenu }: { onMenu: () => void }) {
   function onSearch(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     const query = new FormData(event.currentTarget).get('q')?.toString().trim()
-    navigate(query ? `/customers?q=${encodeURIComponent(query)}` : '/customers')
+    navigate(query ? `/search?q=${encodeURIComponent(query)}` : '/search')
   }
 
   return (
@@ -156,9 +156,9 @@ function Topbar({ onMenu }: { onMenu: () => void }) {
       <form className="topbar-search" role="search" onSubmit={onSearch}>
         <Icon name="search" size={18} />
         <label className="sr-only" htmlFor="global-search">
-          Search customers
+          Search
         </label>
-        <input id="global-search" name="q" type="search" placeholder="Search customers" autoComplete="off" />
+        <input id="global-search" name="q" type="search" placeholder="Search customers, invoices..." autoComplete="off" />
       </form>
       <div className="topbar-actions">
         <ThemeSwitch />
