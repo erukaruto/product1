@@ -149,9 +149,9 @@ Use both templates in unlimited personal and commercial projects, including clie
 
 ### Updates and refunds
 
-Updates: {{UPDATE_POLICY}}
-Refunds: {{REFUND_POLICY}}
-Questions: {{SUPPORT_EMAIL}}
+Updates: Free updates for the life of the product. New versions are added to your Gumroad library at no extra cost.
+Refunds: Full refund within 7 days of purchase if the templates do not work as described. Email the support address with your order details.
+Questions: alihasanash@gmail.com
 
 ---
 
@@ -182,13 +182,13 @@ The build targets Chrome and Edge 111+, Firefox 114+ and Safari 16.4+. Testing w
 On any static host. SaaSDrop is plain HTML files. DashDrop needs a rule that serves `index.html` for every path; files for Netlify and Vercel are included, but deploys there were not tested.
 
 **I already bought SaaSDrop or DashDrop. Can I upgrade?**
-Yes. Email {{SUPPORT_EMAIL}} and you'll get a code to buy the other product for the difference.
+Yes. Email alihasanash@gmail.com and you'll get a code to buy the other product for the difference.
 
 **Do I get updates?**
-{{UPDATE_POLICY}}
+Free updates for the life of the product. New versions are added to your Gumroad library at no extra cost.
 
 **What is the refund policy?**
-{{REFUND_POLICY}}
+Full refund within 7 days of purchase if the templates do not work as described. Email the support address with your order details.
 
 ---
 

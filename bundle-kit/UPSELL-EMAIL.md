@@ -33,9 +33,9 @@ Demo: {{DEMO_URL_DASHDROP}}
 
 The code works until {{UPSELL_END_DATE}}.
 
-Questions: reply to this email or write to {{SUPPORT_EMAIL}}.
+Questions: reply to this email or write to alihasanash@gmail.com.
 
-{{SELLER_NAME}}
+Hanshi Studio
 
 ---
 
@@ -57,9 +57,9 @@ Demo: {{DEMO_URL_SAASDROP}}
 
 The code works until {{UPSELL_END_DATE}}.
 
-Questions: reply to this email or write to {{SUPPORT_EMAIL}}.
+Questions: reply to this email or write to alihasanash@gmail.com.
 
-{{SELLER_NAME}}
+Hanshi Studio
 
 ---
 
@@ -81,4 +81,4 @@ I couldn't open Gumroad from here, so menu names may differ slightly from what y
 
 ## Placeholders in this file
 
-`{{CODE_ADD_DASHDROP}}`, `{{CODE_ADD_SAASDROP}}`, `{{GUMROAD_URL_DASHDROP}}`, `{{GUMROAD_URL_SAASDROP}}`, `{{DEMO_URL_DASHDROP}}`, `{{DEMO_URL_SAASDROP}}`, `{{UPSELL_END_DATE}}`, `{{SUPPORT_EMAIL}}`, `{{SELLER_NAME}}`
+`{{CODE_ADD_DASHDROP}}`, `{{CODE_ADD_SAASDROP}}`, `{{GUMROAD_URL_DASHDROP}}`, `{{GUMROAD_URL_SAASDROP}}`, `{{DEMO_URL_DASHDROP}}`, `{{DEMO_URL_SAASDROP}}`, `{{UPSELL_END_DATE}}`, `alihasanash@gmail.com`, `Hanshi Studio`

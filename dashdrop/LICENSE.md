@@ -1,7 +1,7 @@
 # SaaSDrop and DashDrop License
 
 Version 1.0
-Copyright (c) 2026 {{SELLER_NAME}}
+Copyright (c) 2026 Hanshi Studio
 
 This license covers SaaSDrop (landing page template), DashDrop (admin dashboard template) and the SaaSDrop + DashDrop bundle. Together they are called "the Templates" below. The same terms apply whether you bought one product or the bundle.
 
@@ -20,7 +20,7 @@ One purchase licenses one buyer: one person, or one company together with its em
 ## What you may not do
 
 - Sell, give away, sublicense or share the Templates, changed or unchanged, as a template, theme, starter kit, UI kit or design system, on their own or inside another product.
-- Publish the Templates' source files where others can download them, for example in a public repository. If you want to open-source an End Product built with the Templates, ask first at {{SUPPORT_EMAIL}}.
+- Publish the Templates' source files where others can download them, for example in a public repository. If you want to open-source an End Product built with the Templates, ask first at alihasanash@gmail.com.
 - Use the Templates in a site builder, theme generator or any service where your users create their own sites or apps from them.
 - Present the demo content as real. Beacon, its customers, team members, numbers and quotes are fictional. Replace them before you publish an End Product.
 
@@ -44,7 +44,7 @@ The license ends if you break these terms. End Products you finished before that
 
 ## Updates and refunds
 
-Updates: {{UPDATE_POLICY}}
-Refunds: {{REFUND_POLICY}}
+Updates: Free updates for the life of the product. New versions are added to your Gumroad library at no extra cost.
+Refunds: Full refund within 7 days of purchase if the templates do not work as described. Email the support address with your order details.
 
-Questions about this license: {{SUPPORT_EMAIL}}
+Questions about this license: alihasanash@gmail.com

@@ -152,6 +152,6 @@ Not tested: Safari, Firefox, real phones, screen readers, and deploys to specifi
 
 ## Support and license
 
-Support: {{SUPPORT_EMAIL}}
-Updates: {{UPDATE_POLICY}}
+Support: alihasanash@gmail.com
+Updates: Free updates for the life of the product. New versions are added to your Gumroad library at no extra cost.
 License: see `LICENSE.md`. One license covers both templates.
