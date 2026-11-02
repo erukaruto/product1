@@ -39,6 +39,8 @@ for (const [name, route] of [
   ['dd-ui-overlays-light', '/ui/overlays?theme=light'],
   ['dd-inbox-light', '/inbox?theme=light'],
   ['dd-at-risk-dark', '/customers/at-risk?theme=dark'],
+  ['dd-report-forecast-light', '/reports/forecast?theme=light'],
+  ['dd-pipeline-dark', '/pipeline?theme=dark'],
 ]) SHOTS.push(['desktop', name, `${APP}${route}`])
 SHOTS.push(['mobile', 'sd-help-mobile-light', `${SITE}/help.html?theme=light`])
 

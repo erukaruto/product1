@@ -344,6 +344,296 @@
     },
     {
       "product": "saasdrop",
+      "route": "/home-2.html",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Beacon: revenue analytics for software teams (home, version 2)",
+      "h1": "Revenue numbers you don't have to rebuild every month",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-founders.html",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Beacon for founders",
+      "h1": "Know your numbers without becoming the spreadsheet person",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-finance.html",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Beacon for finance teams",
+      "h1": "Close the month on numbers that match billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-success.html",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Beacon for customer success",
+      "h1": "Call the right customers before they cancel",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customers.html",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Customer stories | Beacon",
+      "h1": "How teams use Beacon",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customer-story.html",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Fieldnote: closing the month in an hour | Beacon",
+      "h1": "Fieldnote: closing the month in an hour instead of two days",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/docs.html",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "API reference | Beacon",
+      "h1": "API reference",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable",
+        "monospace",
+        "ui-monospace"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/status.html",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "System status | Beacon",
+      "h1": "All systems operational",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/roadmap.html",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Roadmap | Beacon",
+      "h1": "What we're building",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/careers.html",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Careers | Beacon",
+      "h1": "Help teams trust their revenue numbers",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/job.html",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Senior frontend engineer | Beacon careers",
+      "h1": "Senior frontend engineer",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/press.html",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Press kit | Beacon",
+      "h1": "Press kit",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/demo.html",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Book a demo | Beacon",
+      "h1": "See Beacon with your own questions",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/waitlist.html",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Beacon for usage-based billing: join the waitlist",
+      "h1": "MRR for usage-based billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/maintenance.html",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Scheduled maintenance | Beacon",
+      "h1": "We'll be back shortly",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/500.html",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Something went wrong | Beacon",
+      "h1": "Something went wrong on our side",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
       "route": "/404.html",
       "theme": "light",
       "viewport": "desktop",
@@ -704,6 +994,296 @@
     },
     {
       "product": "saasdrop",
+      "route": "/home-2.html",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Beacon: revenue analytics for software teams (home, version 2)",
+      "h1": "Revenue numbers you don't have to rebuild every month",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-founders.html",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Beacon for founders",
+      "h1": "Know your numbers without becoming the spreadsheet person",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-finance.html",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Beacon for finance teams",
+      "h1": "Close the month on numbers that match billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-success.html",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Beacon for customer success",
+      "h1": "Call the right customers before they cancel",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customers.html",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Customer stories | Beacon",
+      "h1": "How teams use Beacon",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customer-story.html",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Fieldnote: closing the month in an hour | Beacon",
+      "h1": "Fieldnote: closing the month in an hour instead of two days",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/docs.html",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "API reference | Beacon",
+      "h1": "API reference",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable",
+        "monospace",
+        "ui-monospace"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/status.html",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "System status | Beacon",
+      "h1": "All systems operational",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/roadmap.html",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Roadmap | Beacon",
+      "h1": "What we're building",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/careers.html",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Careers | Beacon",
+      "h1": "Help teams trust their revenue numbers",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/job.html",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Senior frontend engineer | Beacon careers",
+      "h1": "Senior frontend engineer",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/press.html",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Press kit | Beacon",
+      "h1": "Press kit",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/demo.html",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Book a demo | Beacon",
+      "h1": "See Beacon with your own questions",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/waitlist.html",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Beacon for usage-based billing: join the waitlist",
+      "h1": "MRR for usage-based billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/maintenance.html",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Scheduled maintenance | Beacon",
+      "h1": "We'll be back shortly",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/500.html",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Something went wrong | Beacon",
+      "h1": "Something went wrong on our side",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
       "route": "/404.html",
       "theme": "dark",
       "viewport": "desktop",
@@ -1064,6 +1644,296 @@
     },
     {
       "product": "saasdrop",
+      "route": "/home-2.html",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Beacon: revenue analytics for software teams (home, version 2)",
+      "h1": "Revenue numbers you don't have to rebuild every month",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-founders.html",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Beacon for founders",
+      "h1": "Know your numbers without becoming the spreadsheet person",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-finance.html",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Beacon for finance teams",
+      "h1": "Close the month on numbers that match billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-success.html",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Beacon for customer success",
+      "h1": "Call the right customers before they cancel",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customers.html",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Customer stories | Beacon",
+      "h1": "How teams use Beacon",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customer-story.html",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Fieldnote: closing the month in an hour | Beacon",
+      "h1": "Fieldnote: closing the month in an hour instead of two days",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/docs.html",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "API reference | Beacon",
+      "h1": "API reference",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable",
+        "monospace",
+        "ui-monospace"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/status.html",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "System status | Beacon",
+      "h1": "All systems operational",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/roadmap.html",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Roadmap | Beacon",
+      "h1": "What we're building",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/careers.html",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Careers | Beacon",
+      "h1": "Help teams trust their revenue numbers",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/job.html",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Senior frontend engineer | Beacon careers",
+      "h1": "Senior frontend engineer",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/press.html",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Press kit | Beacon",
+      "h1": "Press kit",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/demo.html",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Book a demo | Beacon",
+      "h1": "See Beacon with your own questions",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/waitlist.html",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Beacon for usage-based billing: join the waitlist",
+      "h1": "MRR for usage-based billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/maintenance.html",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Scheduled maintenance | Beacon",
+      "h1": "We'll be back shortly",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/500.html",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Something went wrong | Beacon",
+      "h1": "Something went wrong on our side",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
       "route": "/404.html",
       "theme": "sand",
       "viewport": "desktop",
@@ -1424,6 +2294,296 @@
     },
     {
       "product": "saasdrop",
+      "route": "/home-2.html",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Beacon: revenue analytics for software teams (home, version 2)",
+      "h1": "Revenue numbers you don't have to rebuild every month",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-founders.html",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Beacon for founders",
+      "h1": "Know your numbers without becoming the spreadsheet person",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-finance.html",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Beacon for finance teams",
+      "h1": "Close the month on numbers that match billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-success.html",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Beacon for customer success",
+      "h1": "Call the right customers before they cancel",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customers.html",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Customer stories | Beacon",
+      "h1": "How teams use Beacon",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customer-story.html",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Fieldnote: closing the month in an hour | Beacon",
+      "h1": "Fieldnote: closing the month in an hour instead of two days",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/docs.html",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "API reference | Beacon",
+      "h1": "API reference",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable",
+        "monospace",
+        "ui-monospace"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/status.html",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "System status | Beacon",
+      "h1": "All systems operational",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/roadmap.html",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Roadmap | Beacon",
+      "h1": "What we're building",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/careers.html",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Careers | Beacon",
+      "h1": "Help teams trust their revenue numbers",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/job.html",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Senior frontend engineer | Beacon careers",
+      "h1": "Senior frontend engineer",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/press.html",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Press kit | Beacon",
+      "h1": "Press kit",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/demo.html",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Book a demo | Beacon",
+      "h1": "See Beacon with your own questions",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/waitlist.html",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Beacon for usage-based billing: join the waitlist",
+      "h1": "MRR for usage-based billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/maintenance.html",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Scheduled maintenance | Beacon",
+      "h1": "We'll be back shortly",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/500.html",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Something went wrong | Beacon",
+      "h1": "Something went wrong on our side",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
       "route": "/404.html",
       "theme": "light",
       "viewport": "tablet",
@@ -1784,6 +2944,296 @@
     },
     {
       "product": "saasdrop",
+      "route": "/home-2.html",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Beacon: revenue analytics for software teams (home, version 2)",
+      "h1": "Revenue numbers you don't have to rebuild every month",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-founders.html",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Beacon for founders",
+      "h1": "Know your numbers without becoming the spreadsheet person",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-finance.html",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Beacon for finance teams",
+      "h1": "Close the month on numbers that match billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-success.html",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Beacon for customer success",
+      "h1": "Call the right customers before they cancel",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customers.html",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Customer stories | Beacon",
+      "h1": "How teams use Beacon",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customer-story.html",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Fieldnote: closing the month in an hour | Beacon",
+      "h1": "Fieldnote: closing the month in an hour instead of two days",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/docs.html",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "API reference | Beacon",
+      "h1": "API reference",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable",
+        "monospace",
+        "ui-monospace"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/status.html",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "System status | Beacon",
+      "h1": "All systems operational",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/roadmap.html",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Roadmap | Beacon",
+      "h1": "What we're building",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/careers.html",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Careers | Beacon",
+      "h1": "Help teams trust their revenue numbers",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/job.html",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Senior frontend engineer | Beacon careers",
+      "h1": "Senior frontend engineer",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/press.html",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Press kit | Beacon",
+      "h1": "Press kit",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/demo.html",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Book a demo | Beacon",
+      "h1": "See Beacon with your own questions",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/waitlist.html",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Beacon for usage-based billing: join the waitlist",
+      "h1": "MRR for usage-based billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/maintenance.html",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Scheduled maintenance | Beacon",
+      "h1": "We'll be back shortly",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/500.html",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Something went wrong | Beacon",
+      "h1": "Something went wrong on our side",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
       "route": "/404.html",
       "theme": "dark",
       "viewport": "tablet",
@@ -2144,6 +3594,296 @@
     },
     {
       "product": "saasdrop",
+      "route": "/home-2.html",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Beacon: revenue analytics for software teams (home, version 2)",
+      "h1": "Revenue numbers you don't have to rebuild every month",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-founders.html",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Beacon for founders",
+      "h1": "Know your numbers without becoming the spreadsheet person",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-finance.html",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Beacon for finance teams",
+      "h1": "Close the month on numbers that match billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-success.html",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Beacon for customer success",
+      "h1": "Call the right customers before they cancel",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customers.html",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Customer stories | Beacon",
+      "h1": "How teams use Beacon",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customer-story.html",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Fieldnote: closing the month in an hour | Beacon",
+      "h1": "Fieldnote: closing the month in an hour instead of two days",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/docs.html",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "API reference | Beacon",
+      "h1": "API reference",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable",
+        "monospace",
+        "ui-monospace"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/status.html",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "System status | Beacon",
+      "h1": "All systems operational",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/roadmap.html",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Roadmap | Beacon",
+      "h1": "What we're building",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/careers.html",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Careers | Beacon",
+      "h1": "Help teams trust their revenue numbers",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/job.html",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Senior frontend engineer | Beacon careers",
+      "h1": "Senior frontend engineer",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/press.html",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Press kit | Beacon",
+      "h1": "Press kit",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/demo.html",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Book a demo | Beacon",
+      "h1": "See Beacon with your own questions",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/waitlist.html",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Beacon for usage-based billing: join the waitlist",
+      "h1": "MRR for usage-based billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/maintenance.html",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Scheduled maintenance | Beacon",
+      "h1": "We'll be back shortly",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/500.html",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Something went wrong | Beacon",
+      "h1": "Something went wrong on our side",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
       "route": "/404.html",
       "theme": "sand",
       "viewport": "tablet",
@@ -2504,6 +4244,296 @@
     },
     {
       "product": "saasdrop",
+      "route": "/home-2.html",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Beacon: revenue analytics for software teams (home, version 2)",
+      "h1": "Revenue numbers you don't have to rebuild every month",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-founders.html",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Beacon for founders",
+      "h1": "Know your numbers without becoming the spreadsheet person",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-finance.html",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Beacon for finance teams",
+      "h1": "Close the month on numbers that match billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-success.html",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Beacon for customer success",
+      "h1": "Call the right customers before they cancel",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customers.html",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Customer stories | Beacon",
+      "h1": "How teams use Beacon",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customer-story.html",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Fieldnote: closing the month in an hour | Beacon",
+      "h1": "Fieldnote: closing the month in an hour instead of two days",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/docs.html",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "API reference | Beacon",
+      "h1": "API reference",
+      "overflowX": 312,
+      "families": [
+        "DM Sans Variable",
+        "monospace",
+        "ui-monospace"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/status.html",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "System status | Beacon",
+      "h1": "All systems operational",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/roadmap.html",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Roadmap | Beacon",
+      "h1": "What we're building",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/careers.html",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Careers | Beacon",
+      "h1": "Help teams trust their revenue numbers",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/job.html",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Senior frontend engineer | Beacon careers",
+      "h1": "Senior frontend engineer",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/press.html",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Press kit | Beacon",
+      "h1": "Press kit",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/demo.html",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Book a demo | Beacon",
+      "h1": "See Beacon with your own questions",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/waitlist.html",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Beacon for usage-based billing: join the waitlist",
+      "h1": "MRR for usage-based billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/maintenance.html",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Scheduled maintenance | Beacon",
+      "h1": "We'll be back shortly",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/500.html",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Something went wrong | Beacon",
+      "h1": "Something went wrong on our side",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
       "route": "/404.html",
       "theme": "light",
       "viewport": "mobile",
@@ -2864,6 +4894,296 @@
     },
     {
       "product": "saasdrop",
+      "route": "/home-2.html",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Beacon: revenue analytics for software teams (home, version 2)",
+      "h1": "Revenue numbers you don't have to rebuild every month",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-founders.html",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Beacon for founders",
+      "h1": "Know your numbers without becoming the spreadsheet person",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-finance.html",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Beacon for finance teams",
+      "h1": "Close the month on numbers that match billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-success.html",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Beacon for customer success",
+      "h1": "Call the right customers before they cancel",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customers.html",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Customer stories | Beacon",
+      "h1": "How teams use Beacon",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customer-story.html",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Fieldnote: closing the month in an hour | Beacon",
+      "h1": "Fieldnote: closing the month in an hour instead of two days",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/docs.html",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "API reference | Beacon",
+      "h1": "API reference",
+      "overflowX": 312,
+      "families": [
+        "DM Sans Variable",
+        "monospace",
+        "ui-monospace"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/status.html",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "System status | Beacon",
+      "h1": "All systems operational",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/roadmap.html",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Roadmap | Beacon",
+      "h1": "What we're building",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/careers.html",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Careers | Beacon",
+      "h1": "Help teams trust their revenue numbers",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/job.html",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Senior frontend engineer | Beacon careers",
+      "h1": "Senior frontend engineer",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/press.html",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Press kit | Beacon",
+      "h1": "Press kit",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/demo.html",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Book a demo | Beacon",
+      "h1": "See Beacon with your own questions",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/waitlist.html",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Beacon for usage-based billing: join the waitlist",
+      "h1": "MRR for usage-based billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/maintenance.html",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Scheduled maintenance | Beacon",
+      "h1": "We'll be back shortly",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/500.html",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Something went wrong | Beacon",
+      "h1": "Something went wrong on our side",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
       "route": "/404.html",
       "theme": "dark",
       "viewport": "mobile",
@@ -3212,6 +5532,296 @@
       "status": 200,
       "title": "Beacon vs. spreadsheets | Beacon",
       "h1": "Beacon vs. a revenue spreadsheet",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/home-2.html",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Beacon: revenue analytics for software teams (home, version 2)",
+      "h1": "Revenue numbers you don't have to rebuild every month",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-founders.html",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Beacon for founders",
+      "h1": "Know your numbers without becoming the spreadsheet person",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-finance.html",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Beacon for finance teams",
+      "h1": "Close the month on numbers that match billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/solutions-success.html",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Beacon for customer success",
+      "h1": "Call the right customers before they cancel",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customers.html",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Customer stories | Beacon",
+      "h1": "How teams use Beacon",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/customer-story.html",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Fieldnote: closing the month in an hour | Beacon",
+      "h1": "Fieldnote: closing the month in an hour instead of two days",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/docs.html",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "API reference | Beacon",
+      "h1": "API reference",
+      "overflowX": 312,
+      "families": [
+        "DM Sans Variable",
+        "monospace",
+        "ui-monospace"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/status.html",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "System status | Beacon",
+      "h1": "All systems operational",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/roadmap.html",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Roadmap | Beacon",
+      "h1": "What we're building",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/careers.html",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Careers | Beacon",
+      "h1": "Help teams trust their revenue numbers",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/job.html",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Senior frontend engineer | Beacon careers",
+      "h1": "Senior frontend engineer",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/press.html",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Press kit | Beacon",
+      "h1": "Press kit",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/demo.html",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Book a demo | Beacon",
+      "h1": "See Beacon with your own questions",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/waitlist.html",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Beacon for usage-based billing: join the waitlist",
+      "h1": "MRR for usage-based billing",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/maintenance.html",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Scheduled maintenance | Beacon",
+      "h1": "We'll be back shortly",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "saasdrop",
+      "route": "/500.html",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Something went wrong | Beacon",
+      "h1": "Something went wrong on our side",
       "overflowX": 0,
       "families": [
         "DM Sans Variable"
@@ -4148,6 +6758,168 @@
       "status": 200,
       "title": "Something went wrong | Beacon",
       "h1": "Something went wrong on our side",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/plans",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Revenue by plan | Beacon",
+      "h1": "Revenue by plan",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/countries",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Revenue by country | Beacon",
+      "h1": "Revenue by country",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/forecast",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Forecast | Beacon",
+      "h1": "Forecast",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/saved",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Saved reports | Beacon",
+      "h1": "Saved reports",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/builder",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Report builder | Beacon",
+      "h1": "Report builder",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/search?q=copper",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Search: copper | Beacon",
+      "h1": "Search",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/renewals",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Renewals | Beacon",
+      "h1": "Renewals",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/pipeline",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Pipeline | Beacon",
+      "h1": "Pipeline",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/whats-new",
+      "theme": "light",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "What's new | Beacon",
+      "h1": "What's new",
       "overflowX": 0,
       "families": [
         "DM Sans Variable"
@@ -5186,6 +7958,168 @@
     },
     {
       "product": "dashdrop",
+      "route": "/reports/plans",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Revenue by plan | Beacon",
+      "h1": "Revenue by plan",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/countries",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Revenue by country | Beacon",
+      "h1": "Revenue by country",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/forecast",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Forecast | Beacon",
+      "h1": "Forecast",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/saved",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Saved reports | Beacon",
+      "h1": "Saved reports",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/builder",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Report builder | Beacon",
+      "h1": "Report builder",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/search?q=copper",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Search: copper | Beacon",
+      "h1": "Search",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/renewals",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Renewals | Beacon",
+      "h1": "Renewals",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/pipeline",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Pipeline | Beacon",
+      "h1": "Pipeline",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/whats-new",
+      "theme": "dark",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "What's new | Beacon",
+      "h1": "What's new",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
       "route": "/ui/buttons",
       "theme": "dark",
       "viewport": "desktop",
@@ -6212,6 +9146,168 @@
     },
     {
       "product": "dashdrop",
+      "route": "/reports/plans",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Revenue by plan | Beacon",
+      "h1": "Revenue by plan",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/countries",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Revenue by country | Beacon",
+      "h1": "Revenue by country",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/forecast",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Forecast | Beacon",
+      "h1": "Forecast",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/saved",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Saved reports | Beacon",
+      "h1": "Saved reports",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/builder",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Report builder | Beacon",
+      "h1": "Report builder",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/search?q=copper",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Search: copper | Beacon",
+      "h1": "Search",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/renewals",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Renewals | Beacon",
+      "h1": "Renewals",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/pipeline",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "Pipeline | Beacon",
+      "h1": "Pipeline",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/whats-new",
+      "theme": "sand",
+      "viewport": "desktop",
+      "status": 200,
+      "title": "What's new | Beacon",
+      "h1": "What's new",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
       "route": "/ui/buttons",
       "theme": "sand",
       "viewport": "desktop",
@@ -7238,6 +10334,168 @@
     },
     {
       "product": "dashdrop",
+      "route": "/reports/plans",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Revenue by plan | Beacon",
+      "h1": "Revenue by plan",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/countries",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Revenue by country | Beacon",
+      "h1": "Revenue by country",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/forecast",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Forecast | Beacon",
+      "h1": "Forecast",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/saved",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Saved reports | Beacon",
+      "h1": "Saved reports",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/builder",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Report builder | Beacon",
+      "h1": "Report builder",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/search?q=copper",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Search: copper | Beacon",
+      "h1": "Search",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/renewals",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Renewals | Beacon",
+      "h1": "Renewals",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/pipeline",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Pipeline | Beacon",
+      "h1": "Pipeline",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/whats-new",
+      "theme": "light",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "What's new | Beacon",
+      "h1": "What's new",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
       "route": "/ui/buttons",
       "theme": "light",
       "viewport": "tablet",
@@ -8264,6 +11522,168 @@
     },
     {
       "product": "dashdrop",
+      "route": "/reports/plans",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Revenue by plan | Beacon",
+      "h1": "Revenue by plan",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/countries",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Revenue by country | Beacon",
+      "h1": "Revenue by country",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/forecast",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Forecast | Beacon",
+      "h1": "Forecast",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/saved",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Saved reports | Beacon",
+      "h1": "Saved reports",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/builder",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Report builder | Beacon",
+      "h1": "Report builder",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/search?q=copper",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Search: copper | Beacon",
+      "h1": "Search",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/renewals",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Renewals | Beacon",
+      "h1": "Renewals",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/pipeline",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Pipeline | Beacon",
+      "h1": "Pipeline",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/whats-new",
+      "theme": "dark",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "What's new | Beacon",
+      "h1": "What's new",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
       "route": "/ui/buttons",
       "theme": "dark",
       "viewport": "tablet",
@@ -9290,6 +12710,168 @@
     },
     {
       "product": "dashdrop",
+      "route": "/reports/plans",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Revenue by plan | Beacon",
+      "h1": "Revenue by plan",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/countries",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Revenue by country | Beacon",
+      "h1": "Revenue by country",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/forecast",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Forecast | Beacon",
+      "h1": "Forecast",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/saved",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Saved reports | Beacon",
+      "h1": "Saved reports",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/builder",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Report builder | Beacon",
+      "h1": "Report builder",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/search?q=copper",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Search: copper | Beacon",
+      "h1": "Search",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/renewals",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Renewals | Beacon",
+      "h1": "Renewals",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/pipeline",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "Pipeline | Beacon",
+      "h1": "Pipeline",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/whats-new",
+      "theme": "sand",
+      "viewport": "tablet",
+      "status": 200,
+      "title": "What's new | Beacon",
+      "h1": "What's new",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
       "route": "/ui/buttons",
       "theme": "sand",
       "viewport": "tablet",
@@ -10316,6 +13898,168 @@
     },
     {
       "product": "dashdrop",
+      "route": "/reports/plans",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Revenue by plan | Beacon",
+      "h1": "Revenue by plan",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/countries",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Revenue by country | Beacon",
+      "h1": "Revenue by country",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/forecast",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Forecast | Beacon",
+      "h1": "Forecast",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/saved",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Saved reports | Beacon",
+      "h1": "Saved reports",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/builder",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Report builder | Beacon",
+      "h1": "Report builder",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/search?q=copper",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Search: copper | Beacon",
+      "h1": "Search",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/renewals",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Renewals | Beacon",
+      "h1": "Renewals",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/pipeline",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Pipeline | Beacon",
+      "h1": "Pipeline",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/whats-new",
+      "theme": "light",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "What's new | Beacon",
+      "h1": "What's new",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
       "route": "/ui/buttons",
       "theme": "light",
       "viewport": "mobile",
@@ -11342,6 +15086,168 @@
     },
     {
       "product": "dashdrop",
+      "route": "/reports/plans",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Revenue by plan | Beacon",
+      "h1": "Revenue by plan",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/countries",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Revenue by country | Beacon",
+      "h1": "Revenue by country",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/forecast",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Forecast | Beacon",
+      "h1": "Forecast",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/saved",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Saved reports | Beacon",
+      "h1": "Saved reports",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/builder",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Report builder | Beacon",
+      "h1": "Report builder",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/search?q=copper",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Search: copper | Beacon",
+      "h1": "Search",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/renewals",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Renewals | Beacon",
+      "h1": "Renewals",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/pipeline",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Pipeline | Beacon",
+      "h1": "Pipeline",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/whats-new",
+      "theme": "dark",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "What's new | Beacon",
+      "h1": "What's new",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
       "route": "/ui/buttons",
       "theme": "dark",
       "viewport": "mobile",
@@ -12356,6 +16262,168 @@
       "status": 200,
       "title": "Something went wrong | Beacon",
       "h1": "Something went wrong on our side",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/plans",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Revenue by plan | Beacon",
+      "h1": "Revenue by plan",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/countries",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Revenue by country | Beacon",
+      "h1": "Revenue by country",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/forecast",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Forecast | Beacon",
+      "h1": "Forecast",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/saved",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Saved reports | Beacon",
+      "h1": "Saved reports",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/reports/builder",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Report builder | Beacon",
+      "h1": "Report builder",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/search?q=copper",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Search: copper | Beacon",
+      "h1": "Search",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/renewals",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Renewals | Beacon",
+      "h1": "Renewals",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/pipeline",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "Pipeline | Beacon",
+      "h1": "Pipeline",
+      "overflowX": 0,
+      "families": [
+        "DM Sans Variable"
+      ],
+      "loadedFonts": [
+        "DM Sans Variable"
+      ],
+      "dmSansRenders": true,
+      "errors": []
+    },
+    {
+      "product": "dashdrop",
+      "route": "/whats-new",
+      "theme": "sand",
+      "viewport": "mobile",
+      "status": 200,
+      "title": "What's new | Beacon",
+      "h1": "What's new",
       "overflowX": 0,
       "families": [
         "DM Sans Variable"
@@ -12657,9 +16725,9 @@
       "detail": "beacon-customers.csv, 49 lines incl. header"
     },
     {
-      "name": "Topbar search opens filtered customers",
+      "name": "Topbar search opens grouped results",
       "pass": true,
-      "detail": "1 row"
+      "detail": "Customers, Invoices, Subscriptions"
     },
     {
       "name": "Customer row opens detail page",
@@ -12819,7 +16887,7 @@
     {
       "name": "All screens: every link opens a real page",
       "pass": true,
-      "detail": "55 links"
+      "detail": "64 links"
     },
     {
       "name": "Blog: topic filter and newsletter validation",
@@ -12935,20 +17003,128 @@
       "name": "No page errors during the Tahap 2 flows",
       "pass": true,
       "detail": ""
+    },
+    {
+      "name": "Revenue by plan: October adds up to $48,320",
+      "pass": true,
+      "detail": "$12,293 $28,273 $7,754 $48,320"
+    },
+    {
+      "name": "Forecast: scenarios and custom growth",
+      "pass": true,
+      "detail": "$61,140 / $66,626 / $48,320"
+    },
+    {
+      "name": "Report builder: grouping and metric update the preview",
+      "pass": true,
+      "detail": "12/8/12"
+    },
+    {
+      "name": "Saved reports: schedule a report",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Renewals: day filter and month switch",
+      "pass": true,
+      "detail": "38 in month, 3 on day"
+    },
+    {
+      "name": "Pipeline: card moves to the next stage",
+      "pass": true,
+      "detail": "Yardstick"
+    },
+    {
+      "name": "What's new: mark as seen",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Search: no results message",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Roadmap: vote counts and is remembered",
+      "pass": true,
+      "detail": "64 -> 65"
+    },
+    {
+      "name": "Book a demo: validation, slot choice, success",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Job application: validation and success",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "API docs: copy button copies the code",
+      "pass": true,
+      "detail": "curl https://api.beacon.example/v1/custo"
+    },
+    {
+      "name": "Status: 5 components with 90 days each",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Waitlist: signup",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Home v2: solution card opens the solution page",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No page errors during the Tahap 3 flows",
+      "pass": true,
+      "detail": ""
     }
   ],
-  "problems": [],
+  "problems": [
+    "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace",
+    "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace",
+    "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace",
+    "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace",
+    "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace",
+    "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace",
+    "saasdrop /docs.html light mobile: horizontal overflow 312px",
+    "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace",
+    "saasdrop /docs.html dark mobile: horizontal overflow 312px",
+    "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace",
+    "saasdrop /docs.html sand mobile: horizontal overflow 312px",
+    "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace"
+  ],
   "summary": {
     "browser": "chromium",
-    "pageLoads": 693,
+    "pageLoads": 918,
     "pageLoadsWithConsoleErrors": 0,
-    "pageLoadsWithOverflow": 0,
+    "pageLoadsWithOverflow": 3,
     "fontFamiliesSeen": [
-      "DM Sans Variable"
+      "DM Sans Variable",
+      "monospace",
+      "ui-monospace"
     ],
     "httpStatuses": [],
-    "flowsPassed": 73,
+    "flowsPassed": 89,
     "flowsFailed": 0,
-    "problems": []
+    "problems": [
+      "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace",
+      "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace",
+      "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace",
+      "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace",
+      "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace",
+      "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace",
+      "saasdrop /docs.html light mobile: horizontal overflow 312px",
+      "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace",
+      "saasdrop /docs.html dark mobile: horizontal overflow 312px",
+      "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace",
+      "saasdrop /docs.html sand mobile: horizontal overflow 312px",
+      "saasdrop /docs.html: other font families in use: DM Sans Variable, monospace, ui-monospace"
+    ]
   }
 }

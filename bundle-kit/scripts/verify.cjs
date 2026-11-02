@@ -27,7 +27,10 @@ const SITE_PAGES = [
   '/', '/pricing.html', '/about.html', '/changelog.html', '/contact.html',
   '/blog.html', '/blog-post.html', '/help.html', '/help-article.html', '/terms.html', '/privacy.html',
   '/features.html', '/feature-metrics.html', '/feature-alerts.html', '/feature-customers.html',
-  '/integrations.html', '/integration-detail.html', '/security.html', '/compare.html', '/404.html',
+  '/integrations.html', '/integration-detail.html', '/security.html', '/compare.html',
+  '/home-2.html', '/solutions-founders.html', '/solutions-finance.html', '/solutions-success.html',
+  '/customers.html', '/customer-story.html', '/docs.html', '/status.html', '/roadmap.html',
+  '/careers.html', '/job.html', '/press.html', '/demo.html', '/waitlist.html', '/maintenance.html', '/500.html', '/404.html',
 ]
 const APP_PAGES = [
   // auth and onboarding (10)
@@ -44,6 +47,9 @@ const APP_PAGES = [
   '/team', '/team/roles', '/audit-log',
   '/settings/security', '/settings/billing', '/settings/integrations', '/settings/api-keys', '/settings/webhooks', '/settings/data',
   '/403', '/500',
+  // Tahap 3 (9)
+  '/reports/plans', '/reports/countries', '/reports/forecast', '/reports/saved', '/reports/builder',
+  '/search?q=copper', '/renewals', '/pipeline', '/whats-new',
   // UI kit (6)
   '/ui/buttons', '/ui/forms', '/ui/tables', '/ui/charts', '/ui/overlays', '/ui/states',
 ]
@@ -75,6 +81,11 @@ async function inspect(page) {
     const families = new Set()
     document.querySelectorAll('body, body *').forEach((el) => {
       if (el.closest('svg')) return
+      // Code samples use the system monospace stack on purpose; everything else must be DM Sans.
+      if (el.closest('pre, code')) {
+        if (!getComputedStyle(el).fontFamily.startsWith('ui-monospace')) families.add('unstyled code: ' + getComputedStyle(el).fontFamily)
+        return
+      }
       families.add(getComputedStyle(el).fontFamily.split(',')[0].trim().replace(/"/g, ''))
     })
     const loaded = [...document.fonts].filter((f) => f.status === 'loaded').map((f) => f.family.replace(/"/g, ''))
@@ -109,7 +120,7 @@ async function checkPages(browser, product, base, routes) {
         if (info.overflowX > 0) problem(`${product} ${route} ${theme} ${vpName}: horizontal overflow ${info.overflowX}px`)
         if (errors.length) problem(`${product} ${route} ${theme} ${vpName}: console errors: ${errors.join(' | ')}`)
         if (!info.h1) problem(`${product} ${route} ${theme} ${vpName}: no h1 rendered`)
-        if (/not found/i.test(info.h1 ?? '') && !/404|does-not-exist/.test(route)) problem(`${product} ${route}: shows "${info.h1}"`)
+        if (/not found|went wrong/i.test(info.h1 ?? '') && !/404|500|does-not-exist/.test(route)) problem(`${product} ${route}: shows "${info.h1}"`)
         if (info.families.some((f) => f !== 'DM Sans Variable')) problem(`${product} ${route}: other font families in use: ${info.families.join(', ')}`)
         if (!info.loadedFonts.includes('DM Sans Variable')) problem(`${product} ${route}: DM Sans not loaded`)
       }
@@ -238,16 +249,17 @@ async function flows(browser) {
   fs.unlinkSync(csvPath)
   ok('Customers CSV export downloads', download.suggestedFilename() === 'beacon-customers.csv' && csvLines.length === 49, `${download.suggestedFilename()}, ${csvLines.length} lines incl. header`)
 
-  // 8. Topbar search routes to customers
+  // 8. Topbar search opens the search page
   await page.goto(APP + '/')
   await page.fill('#global-search', 'copper')
   await page.press('#global-search', 'Enter')
-  await page.waitForURL(/\/customers\?q=copper/)
-  const foundCopper = await seen(page, 'tbody tr strong', 'Copperline')
-  ok('Topbar search opens filtered customers', foundCopper && (await page.locator('tbody tr').count()) === 1, `${await page.locator('tbody tr').count()} row`)
+  await page.waitForURL(/\/search\?q=copper/)
+  const foundCopper = await seen(page, '.result-list strong', 'Copperline')
+  const groups = await page.locator('.card-header h2').allTextContents()
+  ok('Topbar search opens grouped results', foundCopper && groups.includes('Customers') && groups.includes('Invoices'), groups.join(', '))
 
   // 9. Customer detail
-  await page.locator('tbody tr a').first().click()
+  await page.locator('.result-list a').first().click()
   await page.waitForURL(/\/customers\/cus_/)
   ok('Customer row opens detail page', await seen(page, 'h1', 'Copperline'), page.url())
 
@@ -512,7 +524,7 @@ async function flowsV11(browser) {
     const h1 = (await page.locator('h1').first().textContent().catch(() => '')) ?? ''
     if (!h1 || (/not found/i.test(h1) && href !== '/does-not-exist')) broken.push(`${href}: ${h1}`)
   }
-  ok('All screens: every link opens a real page', links.length === 55 && broken.length === 0, `${links.length} links${broken.length ? ', broken: ' + broken.join(', ') : ''}`)
+  ok('All screens: every link opens a real page', links.length === 64 && broken.length === 0, `${links.length} links${broken.length ? ', broken: ' + broken.join(', ') : ''}`)
 
   // SaaSDrop: blog filter and newsletter
   await page.goto(SITE + '/blog.html')
@@ -685,6 +697,130 @@ async function flowsV2(browser) {
   await context.close()
 }
 
+
+async function flowsV3(browser) {
+  const context = await browser.newContext({ viewport: VIEWPORTS.desktop })
+  await context.grantPermissions(['clipboard-read', 'clipboard-write']).catch(() => {})
+  const page = await context.newPage()
+  const errors = []
+  page.on('pageerror', (e) => errors.push(String(e)))
+  const toastSeen = (text) => seen(page, '.toast', text)
+
+  // Revenue by plan: table rows add up to MRR
+  await page.goto(APP + '/reports/plans?theme=light')
+  await page.locator('tbody tr').first().waitFor()
+  const oct = await page.locator('tbody tr').first().locator('td').allTextContents()
+  const sum = oct.slice(0, 3).reduce((a, v) => a + Number(v.replace(/[$,]/g, '')), 0)
+  ok('Revenue by plan: October adds up to $48,320', sum === 48320 && oct[3] === '$48,320', oct.join(' '))
+
+  // Forecast: scenarios and custom growth change the result
+  await page.goto(APP + '/reports/forecast')
+  await page.locator('[data-testid="forecast-end"]').waitFor()
+  const base = await page.locator('[data-testid="forecast-end"]').textContent()
+  await page.click('.segmented button:has-text("Optimistic")')
+  const optimistic = await page.locator('[data-testid="forecast-end"]').textContent()
+  await page.click('.segmented button:has-text("Custom")')
+  await page.fill('#growth', '0')
+  const flat = await page.locator('[data-testid="forecast-end"]').textContent()
+  ok('Forecast: scenarios and custom growth', base !== optimistic && flat === '$48,320', `${base} / ${optimistic} / ${flat}`)
+
+  // Report builder: switching metric and grouping updates the data table
+  await page.goto(APP + '/reports/builder')
+  await page.locator('[data-testid="builder-table"] tbody tr').first().waitFor()
+  const months = await page.locator('[data-testid="builder-table"] tbody tr').count()
+  await page.click('.segmented button:has-text("Country")')
+  const countriesRows = await page.locator('[data-testid="builder-table"] tbody tr').count()
+  await page.click('.segmented button:has-text("Churn rate")')
+  const churnRows = await page.locator('[data-testid="builder-table"] tbody tr').count()
+  ok('Report builder: grouping and metric update the preview', months === 12 && countriesRows === 8 && churnRows === 12, `${months}/${countriesRows}/${churnRows}`)
+
+  // Saved reports: schedule from the row menu
+  await page.goto(APP + '/reports/saved')
+  await page.locator('tbody tr').first().waitFor()
+  await page.click('button[aria-label="Actions for Customers by country"], button:has(.sr-only:text-is("Actions for Customers by country"))')
+  await page.click('[role="menuitem"]:has-text("Email every Monday")')
+  ok('Saved reports: schedule a report', (await page.locator('[data-testid="schedule-rep_3"]').textContent()) === 'Every Monday')
+
+  // Renewals: selecting a day filters the list
+  await page.goto(APP + '/renewals')
+  await page.locator('.cal-day').first().waitFor()
+  const all = await page.locator('[data-testid="renewal-list"] li').count()
+  await page.locator('.cal-day.has-items').first().click()
+  const day = await page.locator('[data-testid="renewal-list"] li').count()
+  await page.click('button:has(.sr-only:text-is("Next month"))')
+  const december = await page.locator('.card-header h2').first().textContent()
+  ok('Renewals: day filter and month switch', all > 0 && day > 0 && day <= all && december === 'December 2026', `${all} in month, ${day} on day`)
+
+  // Pipeline: move a card with the arrow button
+  await page.goto(APP + '/pipeline')
+  await page.locator('.board-card').first().waitFor()
+  const firstCol = page.locator('.board-col').first()
+  const name = await firstCol.locator('.board-card').first().getAttribute('data-card')
+  await firstCol.locator('.board-card').first().locator('button:has(.sr-only:text-matches("Move .* to Onboarding"))').click()
+  const moved = await page.locator('.board-col').nth(1).locator(`[data-card="${name}"]`).count()
+  ok('Pipeline: card moves to the next stage', moved === 1 && (await toastSeen('moved to Onboarding')), name)
+
+  // What's new: mark as seen
+  await page.goto(APP + '/whats-new')
+  await page.click('button:has-text("Mark all as seen")')
+  ok("What's new: mark as seen", await seen(page, 'button', 'All caught up'))
+
+  // Search: empty result message
+  await page.goto(APP + '/search?q=zzzz')
+  ok('Search: no results message', await seen(page, '.empty strong', 'Nothing found'))
+
+  // SaaSDrop: roadmap vote, demo booking, job application, docs copy, status bars
+  await page.goto(SITE + '/roadmap.html')
+  const vote = page.locator('[data-vote]').first()
+  const before = Number(await vote.locator('[data-count]').textContent())
+  await vote.click()
+  const after = Number(await vote.locator('[data-count]').textContent())
+  await page.reload()
+  const kept = await page.locator('[data-vote]').first().getAttribute('aria-pressed')
+  ok('Roadmap: vote counts and is remembered', after === before + 1 && kept === 'true', `${before} -> ${after}`)
+
+  await page.goto(SITE + '/demo.html')
+  await page.click('[data-contact-form] button[type=submit]')
+  const demoErrors = await page.locator('.field-error:not([hidden])').count()
+  await page.fill('#dm-name', 'Sam Lee')
+  await page.fill('#dm-email', 'sam@example.com')
+  await page.click('.choice:has-text("Thu, Nov 5, 16:00")')
+  await page.fill('#dm-note', 'Cohorts for our board')
+  await page.click('[data-contact-form] button[type=submit]')
+  ok('Book a demo: validation, slot choice, success', demoErrors === 3 && (await page.locator('[data-form-success]').isVisible()))
+
+  await page.goto(SITE + '/job.html')
+  await page.fill('#ap-name', 'Sam Lee')
+  await page.fill('#ap-email', 'not-an-email')
+  await page.fill('#ap-note', 'Hello')
+  await page.click('[data-contact-form] button[type=submit]')
+  const jobEmailError = await page.locator('[data-error-for="email"]').isVisible()
+  await page.fill('#ap-email', 'sam@example.com')
+  await page.click('[data-contact-form] button[type=submit]')
+  ok('Job application: validation and success', jobEmailError && (await page.locator('[data-form-success]').isVisible()))
+
+  await page.goto(SITE + '/docs.html')
+  await page.locator('[data-copy-code]').first().click()
+  const clip = await page.evaluate(() => navigator.clipboard.readText()).catch(() => '')
+  ok('API docs: copy button copies the code', clip.includes('Authorization: Bearer'), clip.slice(0, 40))
+
+  await page.goto(SITE + '/status.html')
+  const bars = await page.locator('.status-row').first().locator('.uptime span').count()
+  ok('Status: 5 components with 90 days each', (await page.locator('.status-row').count()) === 5 && bars === 90)
+
+  await page.goto(SITE + '/waitlist.html')
+  await page.fill('#newsletter-email', 'sam@example.com')
+  await page.click('[data-newsletter] button[type=submit]')
+  ok('Waitlist: signup', await page.locator('[data-newsletter-success]').isVisible())
+
+  await page.goto(SITE + '/home-2.html')
+  await page.click('.value-link:has-text("Finance")')
+  ok('Home v2: solution card opens the solution page', await seen(page, 'h1', 'Close the month'))
+
+  ok('No page errors during the Tahap 3 flows', errors.length === 0, errors.join(' | '))
+  await context.close()
+}
+
 ;(async () => {
   const browser = await playwright[BROWSER].launch()
   console.log(`Browser: ${BROWSER} ${browser.version()}`)
@@ -710,6 +846,7 @@ async function flowsV2(browser) {
   await flows(browser)
   await flowsV11(browser)
   await flowsV2(browser)
+  await flowsV3(browser)
   await browser.close()
 
   const summary = {

@@ -1,8 +1,8 @@
-# Audit: SaaSDrop and DashDrop (v1.2)
+# Audit: SaaSDrop and DashDrop (v1.3)
 
 All numbers come from the code and from test runs in this environment (Node 22.23.4, npm 10.9.9, Chromium 153 through Playwright 1.63.0). The raw output of the browser checks is in `verify-results.json`.
 
-v1.1 (Tahap 1) converted DashDrop to TypeScript and took the kit from 16 to 47 pages. v1.2 (Tahap 2) added 20 DashDrop screens and 8 SaaSDrop pages: 75 now.
+v1.1 (Tahap 1) converted DashDrop to TypeScript and took the kit from 16 to 47 pages. v1.2 (Tahap 2) added 20 DashDrop screens and 8 SaaSDrop pages. v1.3 (Tahap 3) added 9 DashDrop screens and 16 SaaSDrop pages: 100 now (36 + 64).
 
 ## 1. Stack, structure, scripts
 
@@ -14,14 +14,16 @@ v1.1 (Tahap 1) converted DashDrop to TypeScript and took the kit from 16 to 47 p
 | Font | DM Sans variable, @fontsource-variable/dm-sans 5.3.0 | Same |
 | Node required | ^20.19.0 or >=22.12.0 (Vite 8) | Same |
 | Scripts | `dev` (5173), `build`, `preview` (4173) | `dev` (5174), `typecheck`, `build` (= `tsc -b && vite build`), `preview` (4174) |
-| Files (without node_modules, dist) | 38 | 96 |
-| Lines of HTML/CSS/JS/TS | 5,052 | 12,679 |
+| Files (without node_modules, dist) | 54 | 106 |
+| Lines of HTML/CSS/JS/TS | 6,643 | 13,973 |
 
 The TypeScript setup copies the official `create-vite` React + TypeScript template (`tsconfig.app.json`, `tsconfig.node.json`, `~7.0.2`), with `strict: true` added explicitly.
 
 ```
 saasdrop/
-  index, pricing, about, changelog, contact, blog, blog-post, help, help-article, terms, privacy, 404 (.html)
+  36 pages (.html): index, home-2, pricing, about, changelog, contact, features (+3 details), integrations (+detail),
+  security, compare, solutions (3), customers, customer-story, docs, status, roadmap, careers, job, press,
+  demo, waitlist, blog, blog-post, help, help-article, terms, privacy, maintenance, 500, 404
   src/partials/  head, header, footer, logo, theme-switch (.html)
   src/scripts/   main.js
   src/styles/    tokens.css  base.css  sections.css
@@ -31,10 +33,12 @@ dashdrop/
   src/components/  AppLayout  AuthLayout  ui  DataTable  Charts  CohortTable  Icon  Logo  ThemeSwitch (.tsx)
   src/pages/       Overview  GettingStarted  Analytics  Customers  CustomerDetail  Settings  Screens  NotFound
   src/pages/auth/      Login  Signup  VerifyEmail  TwoFactor  ResetPassword  NewPassword  AcceptInvite  Onboarding (3 steps)
-  src/pages/reports/   ReportMrr  ReportChurn  ReportCohorts
+  src/pages/reports/   ReportMrr  ReportChurn  ReportCohorts  ReportPlans  ReportCountries  ReportForecast  SavedReports  ReportBuilder
+  src/pages/tools/     Search  Renewals  Pipeline  WhatsNew
+  src/pages/customers/, alerts/, team/, settings/, errors/   (Tahap 2 screens)
   src/pages/billing/   Subscriptions  SubscriptionDetail  Invoices  InvoiceNew  InvoiceDetail  Payments  Disputes  Plans  Coupons
   src/pages/ui/        UiButtons  UiForms  UiTables  UiCharts  UiOverlays  UiStates
-  src/data/        metrics  customers  invoices  billing  activity (.ts)
+  src/data/        metrics  customers  invoices  billing  workspace  reports  activity (.ts)
   src/lib/         theme.tsx  format.ts  hooks.ts  config.ts
   src/styles/      tokens.css  base.css  app.css
 ```
@@ -42,12 +46,12 @@ dashdrop/
 ## 2. Themes and page counts
 
 - **Themes:** 3 in each product: `light`, `dark`, `sand`.
-- **SaaSDrop pages:** 20. Home, features, 3 feature details, integrations, integration detail, security, compare, pricing, about, changelog, contact, blog, blog post, help center, help article, terms, privacy, 404.
-- **DashDrop screens:** 55 (the in-app "All screens" page lists them):
+- **SaaSDrop pages:** 36. Home (two versions), features, 3 feature details, 3 solution pages, integrations, integration detail, security, compare, pricing, customer stories, one customer story, API docs, status, roadmap, careers, job post, press kit, book a demo, waitlist, about, changelog, contact, blog, blog post, help center, help article, terms, privacy, maintenance, 500, 404.
+- **DashDrop screens:** 64 (the in-app "All screens" page lists them):
   - Sign-in and onboarding: 10
-  - Dashboard and reports: 8
-  - Customers: 5
-  - Alerts and messages: 4
+  - Dashboard and reports: 13
+  - Customers: 7
+  - Alerts, messages and tools: 6
   - Billing: 9
   - Team and settings: 10
   - Errors (404, 403, 500): 3
@@ -62,7 +66,7 @@ Checked in the browser: for each theme, the script read the computed value of ev
 | --- | --- |
 | `tokens.css` byte-identical in both products | Yes (same SHA-256) |
 | Computed tokens equal, light / dark / sand | Yes, all 11 in each theme |
-| Fonts rendered on any element, all pages, both products | Only "DM Sans Variable" |
+| Fonts rendered on any element, all pages, both products | Only "DM Sans Variable", except code samples on `docs.html`, which use the system monospace font |
 | Theme storage key and selection logic | Same in both (`beacon-theme`; URL, then saved choice, then system) |
 
 DashDrop adds three chart colors in `app.css` (`--loss`, `--loss-strong`, `--accent-light`), mixed from the shared tokens.
@@ -73,8 +77,8 @@ Contrast (WCAG ratio, computed from the tokens): every text pair passes AA (4.5:
 
 | | `npm install` | `npm run build` | Output |
 | --- | --- | --- | --- |
-| SaaSDrop | OK, 0 vulnerabilities | OK, no warnings | 20 HTML pages, CSS 30.7 kB (6.7 kB gzip), JS 5.3 kB (1.9 kB gzip), 2 font files |
-| DashDrop | OK, 0 vulnerabilities | OK: `tsc -b` with 0 errors, then Vite with no warnings | Main JS 293 kB (90.7 kB gzip), plus 64 chunks loaded on demand; CSS 43.1 kB (9.3 kB gzip) |
+| SaaSDrop | OK, 0 vulnerabilities | OK, no warnings | 36 HTML pages, CSS 36.9 kB (7.8 kB gzip), JS 6.2 kB (2.2 kB gzip), 2 font files |
+| DashDrop | OK, 0 vulnerabilities | OK: `tsc -b` with 0 errors, then Vite with no warnings | Main JS 296 kB (91.3 kB gzip), plus 74 chunks loaded on demand; CSS 46.5 kB (9.8 kB gzip) |
 
 The ZIP was also unzipped into a fresh folder and built there with `npm ci` (see section 6).
 
@@ -85,19 +89,19 @@ Code splitting makes the main DashDrop bundle smaller than in v1.0 (97.3 kB gzip
 - **SaaSDrop and DashDrop:** one license text (`LICENSE.md`), byte-identical in both products and at the bundle root, so there's no conflict. It contains placeholders (`{{SELLER_NAME}}`, `{{SUPPORT_EMAIL}}`, `{{UPDATE_POLICY}}`, `{{REFUND_POLICY}}`). It's a draft, not legal advice.
 - **Shipped in DashDrop builds:** DM Sans (OFL-1.1), react, react-dom, react-router, scheduler, cookie, set-cookie-parser (all MIT). SaaSDrop ships only the font.
 - **Build tools only (not in the ZIP or the build):** 67 packages in DashDrop (TypeScript's native compiler packages are Apache-2.0), licensed MIT, Apache-2.0, MPL-2.0, ISC and BSD-3-Clause. Buyers install these with npm.
-- **Sample legal text:** `saasdrop/terms.html` and `privacy.html` contain placeholder text for the fictional company, each with a visible "Sample text, not legal advice" notice.
+- **Sample text:** `saasdrop/terms.html`, `privacy.html` and `security.html` contain placeholder text for the fictional company, each with a visible "Sample text" notice. Customer stories are labelled "Sample story", and the status page says its data is made up.
 
 ## 6. Browser checks (Chromium)
 
 | Check | Result |
 | --- | --- |
-| Page loads (20 + 57 URLs × 3 themes × 390/768/1440 px) | 693 |
+| Page loads (36 + 66 URLs × 3 themes × 390/768/1440 px) | 918 |
 | With console errors | 0 |
 | With sideways page scroll | 0 |
 | Pages showing "not found" unexpectedly, or no heading | 0 |
-| Interaction checks passed | 73 of 73 |
+| Interaction checks passed | 89 of 89 |
 
-The 57 DashDrop URLs are the 55 screens plus a settings tab URL and the "All screens" index.
+The 66 DashDrop URLs are the 64 screens plus a settings tab URL and the "All screens" index.
 
 The interaction checks include:
 - Sign-up → verify email → 3-step onboarding → getting started
@@ -109,8 +113,10 @@ The interaction checks include:
 - Mark invoice as paid; cancel subscription; respond to dispute; edit plan; coupon validation
 - MRR CSV export (12 months) and the October row adding up
 - Cohort toggle; drawer; toasts
-- All 55 links on the "All screens" page open a real page
+- All 64 links on the "All screens" page open a real page
 - Tahap 2: segment preview updates, import mapping validation, typed delete confirmations, alert rule summary and validation, mark all as read, inbox reply, duplicate invite blocked, audit log search, API key shown once, webhook validation, integrations filter, feature page links
+- Tahap 3: revenue by plan adding up to October's MRR, forecast scenarios and custom growth, report builder preview, scheduling a saved report, renewals day filter and month switch, pipeline card moving to the next stage, what's new "mark as seen", search with no results
+- SaaSDrop Tahap 3: roadmap votes kept after reload, demo booking and job application validation, API docs copy button, status page components, waitlist signup, home v2 solution card link
 - SaaSDrop: blog topic filter, newsletter validation, help search with highlight and empty state, article feedback, footer legal links
 - Landing page buttons opening `/login` and `/signup` in the app
 
@@ -129,7 +135,7 @@ Separate runs:
 - Performance scores (no Lighthouse run), Node 20, and Windows.
 - Anything on Gumroad (no access from here).
 
-## 8. Bugs found during v1.1 and v1.2 (all fixed)
+## 8. Bugs found during v1.1 to v1.3 (all fixed)
 
 | Bug | Where | Fix |
 | --- | --- | --- |
@@ -143,6 +149,12 @@ Separate runs:
 | Help search placeholder was cut off on phones | `help.html` | Shorter placeholder ("Search help articles") |
 | v1.2: `/team`, `/team/roles`, `/settings/api-keys` scrolled sideways on phones and tablets (up to 398px) | Screen-reader labels (`.sr-only`, absolutely positioned) in table cells escaped the scroll container | `.table-scroll { position: relative }` |
 | v1.2: card headings on feature pages did not line up | `.value` grid stretched shorter cards | `align-content: start` |
+| v1.3: `/docs.html` scrolled sideways on phones (312px) | Code samples set the width of the article grid | `minmax(0, 1fr)` columns on the docs layout and article |
+| v1.3: code samples fell back to the browser's default monospace | `<pre>` had no font set | Same monospace stack as inline code |
+| v1.3: Copy button covered the first line of code on phones | Absolutely positioned button | Extra top padding on code blocks under 720px |
+| v1.3: app preview on `home-2.html` squeezed into a 180px column | Preview grid expected a sidebar that this layout leaves out | One column, KPIs in a 2 × 2 grid |
+| v1.3: last pipeline column cut off at 1440px | 240px minimum column width | 200px minimum, all five stages fit |
+| v1.3: "Joined 1 days ago" on the pipeline | Plural text | "Joined yesterday", "Renews tomorrow" |
 
 The v1.0 fixes (contact success message, 404 handling, contrast and so on) are still in place, and their checks still pass.
 
@@ -153,7 +165,11 @@ The v1.0 fixes (contact success message, 404 handling, contrast and so on) are s
 | Forms send nothing (contact, newsletter, article feedback) | `saasdrop/src/scripts/main.js`, comments mark where to add requests |
 | Sign-in, sign-up, 2FA and invite accept any input | `dashdrop/src/pages/auth/` |
 | Billing actions (retry, refund, cancel, edit plan, new coupon) only update the screen and show a toast | `dashdrop/src/pages/billing/` |
-| Blog cards link to one sample post; help links to one sample article | `saasdrop/blog.html`, `saasdrop/help.html` |
+| Blog cards link to one sample post; help links to one sample article; job cards link to one job post | `saasdrop/blog.html`, `help.html`, `careers.html` |
+| Roadmap votes are stored in the visitor's browser only | `saasdrop/src/scripts/main.js` |
+| Customer stories, status page and API docs describe the fictional Beacon | `saasdrop/customers.html`, `customer-story.html`, `status.html`, `docs.html` |
+| Forecast is a simple compound growth projection | `dashdrop/src/data/reports.ts` |
+| Saved reports, pipeline moves and "mark as seen" only update the screen | `dashdrop/src/pages/reports/`, `tools/` |
 | Legal and security pages are sample text | `saasdrop/terms.html`, `privacy.html`, `security.html` |
 | Workspace screens (team, alerts, API keys, webhooks, deletes) only update the screen | `dashdrop/src/pages/` |
 | Demo "today" is fixed to Oct 31, 2026 | `dashdrop/src/data/metrics.ts` (`TODAY`) |

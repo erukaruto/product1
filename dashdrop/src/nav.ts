@@ -34,6 +34,11 @@ export const NAV: NavGroup[] = [
       { to: '/reports/mrr', label: 'MRR', icon: 'lineChart' },
       { to: '/reports/churn', label: 'Churn', icon: 'trendDown' },
       { to: '/reports/cohorts', label: 'Cohorts', icon: 'grid' },
+      { to: '/reports/plans', label: 'By plan', icon: 'layers' },
+      { to: '/reports/countries', label: 'By country', icon: 'globe' },
+      { to: '/reports/forecast', label: 'Forecast', icon: 'trendUp' },
+      { to: '/reports/saved', label: 'Saved reports', icon: 'invoices', end: true },
+      { to: '/reports/builder', label: 'Report builder', icon: 'blocks' },
     ],
   },
   {
@@ -43,6 +48,8 @@ export const NAV: NavGroup[] = [
       { to: '/customers', label: 'Customers', icon: 'customers', end: true },
       { to: '/segments', label: 'Segments', icon: 'filter' },
       { to: '/customers/at-risk', label: 'At risk', icon: 'warning' },
+      { to: '/pipeline', label: 'Pipeline', icon: 'overview' },
+      { to: '/renewals', label: 'Renewals', icon: 'calendar' },
     ],
   },
   {
@@ -92,6 +99,7 @@ export const NAV: NavGroup[] = [
 ]
 
 export const NAV_FOOTER: NavItem[] = [
+  { to: '/whats-new', label: "What's new", icon: 'zap' },
   { to: '/settings', label: 'Settings', icon: 'settings' },
   { to: '/screens', label: 'All screens', icon: 'grid' },
 ]

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- @include head.html -->
+    <title>Senior frontend engineer | Beacon careers</title>
+    <meta name="description" content="Join Beacon as a senior frontend engineer. Remote, Europe." />
+  </head>
+  <body data-nav="careers">
+    <!-- @include header.html -->
+
+    <main id="main">
+      <div class="container article-layout">
+        <article class="article">
+          <a class="back-link" href="/careers.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>All roles</a>
+          <h1>Senior frontend engineer</h1>
+          <p class="muted article-updated">Engineering · Remote, Europe · Full time</p>
+          <div class="prose">
+            <h2>What you'll do</h2>
+            <ul>
+              <li>Build the reports and charts our customers open every morning</li>
+              <li>Keep the app fast, accessible and easy to change</li>
+              <li>Work with design and data on new features from idea to release</li>
+            </ul>
+            <h2>What we're looking for</h2>
+            <ul>
+              <li>Several years building web apps with React and TypeScript</li>
+              <li>Care for details: keyboard use, loading states, empty states</li>
+              <li>Clear written communication</li>
+            </ul>
+            <h2>Salary</h2>
+            <p>EUR 75,000 to 90,000, depending on experience. Sample role for the demo.</p>
+          </div>
+        </article>
+        <aside class="article-side">
+          <!-- No backend: uses the contact form script in src/scripts/main.js. -->
+          <form class="form" data-contact-form novalidate>
+            <h2 class="form-title">Apply</h2>
+            <div class="form-success" data-form-success hidden tabindex="-1" role="status">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Thanks. We read every application and reply within a week.</span>
+            </div>
+            <div class="field"><label for="ap-name">Name</label><input class="input" id="ap-name" name="name" autocomplete="name" required /><span class="field-error" data-error-for="name" hidden></span></div>
+            <div class="field"><label for="ap-email">Email</label><input class="input" id="ap-email" name="email" type="email" autocomplete="email" required /><span class="field-error" data-error-for="email" hidden></span></div>
+            <div class="field"><label for="ap-link">Portfolio or GitHub</label><input class="input" id="ap-link" name="link" type="url" placeholder="https://" /></div>
+            <div class="field"><label for="ap-note">Why Beacon?</label><textarea class="input" id="ap-note" name="message" required></textarea><span class="field-error" data-error-for="message" hidden></span></div>
+            <button class="btn btn-primary btn-block" type="submit">Send application</button>
+          </form>
+        </aside>
+      </div>
+    </main>
+
+    <!-- @include footer.html -->
+  </body>
+</html>

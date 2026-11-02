@@ -3174,3 +3174,289 @@ fieldset.field legend {
 .integration small {
   font-size: 0.8125rem;
 }
+
+/* ------------------------------------------------------------------
+   Tahap 3: reports, search, renewals, pipeline, what's new
+   ------------------------------------------------------------------ */
+
+.share-cell {
+  display: grid;
+  grid-template-columns: minmax(80px, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  min-width: 160px;
+}
+
+.builder-controls {
+  display: grid;
+  gap: 18px;
+}
+
+@media (min-width: 1100px) {
+  .builder-controls {
+    grid-template-columns: auto auto minmax(220px, 1fr);
+    align-items: start;
+  }
+}
+
+.field-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.big-search .input {
+  min-height: 48px;
+  font-size: 1rem;
+}
+
+.result-list li + li {
+  border-top: 1px solid var(--line);
+}
+
+.result-list a {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.result-list a > span:nth-child(2) {
+  display: grid;
+  min-width: 0;
+}
+
+.result-list small {
+  font-size: 0.8125rem;
+}
+
+.result-list a:hover {
+  background: var(--subtle);
+}
+
+.result-list a:hover strong {
+  color: var(--accent);
+}
+
+.result-more {
+  display: block;
+  padding: 12px 20px 16px;
+  border-top: 1px solid var(--line);
+}
+
+/* Calendar */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.cal-head {
+  padding-bottom: 4px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.cal-day {
+  position: relative;
+  display: grid;
+  align-content: space-between;
+  min-height: 64px;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  text-align: left;
+}
+
+.cal-day:hover {
+  border-color: color-mix(in srgb, var(--line) 40%, var(--muted));
+}
+
+.cal-day.has-items {
+  background: var(--subtle);
+}
+
+.cal-day.is-selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.cal-num {
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.cal-count {
+  justify-self: end;
+  min-width: 22px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--onaccent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cal-date {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--subtle);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 640px) {
+  .calendar {
+    gap: 3px;
+  }
+
+  .cal-day {
+    min-height: 44px;
+    padding: 4px;
+  }
+
+  .cal-count {
+    justify-self: start;
+    min-width: 0;
+    padding: 0 5px;
+  }
+}
+
+/* Pipeline board */
+.board {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(200px, 1fr);
+  gap: 14px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.board-col {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  min-height: 300px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--subtle);
+}
+
+.board-col.is-over {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.board-col header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 4px;
+  font-size: 0.875rem;
+}
+
+.board-col ul {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+}
+
+.board-card {
+  display: grid;
+  gap: 6px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  cursor: grab;
+}
+
+.board-card.is-dragging {
+  opacity: 0.5;
+}
+
+.board-card-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+}
+
+.board-card small {
+  font-size: 0.8125rem;
+}
+
+.board-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.board-moves {
+  display: flex;
+  gap: 4px;
+}
+
+.board-empty {
+  padding: 16px;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  font-size: 0.8125rem;
+  text-align: center;
+}
+
+/* What's new */
+.release-list {
+  display: grid;
+  gap: 16px;
+  max-width: 860px;
+}
+
+.release {
+  display: grid;
+  gap: 14px;
+}
+
+.release h2 {
+  margin: 10px 0 6px;
+  font-size: 1.25rem;
+}
+
+.release .feature-list {
+  margin-top: 12px;
+  padding-left: 1.2em;
+  list-style: disc;
+  color: var(--muted);
+}
+
+.release .feature-list li {
+  display: list-item;
+}
+
+.release-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (min-width: 760px) {
+  .release {
+    grid-template-columns: 150px 1fr;
+  }
+
+  .release-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
