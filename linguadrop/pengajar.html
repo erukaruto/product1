@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <!-- @include head.html -->
+  <title>Pengajar · Polyglot Nusantara</title>
+  <meta name="description" content="Daftar 24 pengajar native dan lokal untuk bahasa Inggris, Jepang, Korea, Mandarin, Arab, dan Jerman." />
+</head>
+<body data-nav="pengajar">
+  <!-- @include header.html -->
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Beranda</a></li><li><span aria-current="page">Pengajar</span></li></ol></nav>
+        <span class="eyebrow">Pengajar</span>
+        <h1>24 pengajar native dan lokal</h1>
+        <p class="lead">Pengajar native melatih pelafalan dan rasa bahasa. Pengajar lokal menjelaskan tata bahasa dengan perbandingan ke bahasa Indonesia.</p>
+        <div class="page-hero-meta"><span class="badge badge-outline">10 native</span><span class="badge badge-outline">14 lokal</span><span class="badge badge-outline">Rata-rata 7 tahun mengajar</span></div>
+      </div>
+    </section>
+    <section class="section" aria-label="Daftar pengajar">
+      <div class="container">
+        <form class="filters" data-teacher-filters aria-label="Saring pengajar" style="grid-template-columns:repeat(3,minmax(0,1fr)) auto">
+          <div class="field"><label for="t-lang">Bahasa</label><select class="select" id="t-lang" name="bahasa"><option value="">Semua bahasa</option><option value="en">Inggris</option><option value="ja">Jepang</option><option value="ko">Korea</option><option value="zh">Mandarin</option><option value="ar">Arab</option><option value="de">Jerman</option></select></div>
+          <div class="field"><label for="t-type">Jenis</label><select class="select" id="t-type" name="jenis"><option value="">Native &amp; lokal</option><option value="native">Native</option><option value="lokal">Lokal</option></select></div>
+          <div class="field"><label for="t-q">Cari nama</label><input class="input" id="t-q" name="q" type="search" placeholder="contoh: Haruka" /></div>
+          <button class="btn" type="reset">Reset</button>
+        </form>
+        <p class="muted mt-4" aria-live="polite" data-teacher-count>Menampilkan 24 pengajar</p>
+        <div class="grid grid-4 mt-4" data-teacher-list>
+          <a class="card card-link teacher-card lang-en" href="/profil-pengajar.html?id=daniel-whitmore">
+            <span class="avatar avatar-lg">DW</span>
+            <h3>Daniel Whitmore</h3>
+            <span class="meta"><span class="badge badge-accent">Native</span><span class="badge">Inggris</span></span>
+            <p>IELTS dan Business English. 11 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-en" href="/profil-pengajar.html?id=grace-oconnell">
+            <span class="avatar avatar-lg">GO</span>
+            <h3>Grace O&#x27;Connell</h3>
+            <span class="meta"><span class="badge badge-accent">Native</span><span class="badge">Inggris</span></span>
+            <p>Conversation dan Kids & Teens. 8 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-en" href="/profil-pengajar.html?id=sarah-mitchell">
+            <span class="avatar avatar-lg">SM</span>
+            <h3>Sarah Mitchell</h3>
+            <span class="meta"><span class="badge badge-accent">Native</span><span class="badge">Inggris</span></span>
+            <p>TOEFL iBT dan kelas online. 6 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-en" href="/profil-pengajar.html?id=rizky-pratama">
+            <span class="avatar avatar-lg">RP</span>
+            <h3>Rizky Pratama</h3>
+            <span class="meta"><span class="badge">Lokal</span><span class="badge">Inggris</span></span>
+            <p>TOEFL ITP dan General English. 9 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-en" href="/profil-pengajar.html?id=anindya-kusuma">
+            <span class="avatar avatar-lg">AK</span>
+            <h3>Anindya Kusuma</h3>
+            <span class="meta"><span class="badge">Lokal</span><span class="badge">Inggris</span></span>
+            <p>IELTS Writing dan Speaking. 7 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-ja" href="/profil-pengajar.html?id=haruka-tanaka">
+            <span class="avatar avatar-lg">HT</span>
+            <h3>Haruka Tanaka</h3>
+            <span class="meta"><span class="badge badge-accent">Native</span><span class="badge">Jepang</span></span>
+            <p>JLPT N3–N1 dan persiapan kerja. 10 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-ja" href="/profil-pengajar.html?id=kenji-morimoto">
+            <span class="avatar avatar-lg">KM</span>
+            <h3>Kenji Morimoto</h3>
+            <span class="meta"><span class="badge badge-accent">Native</span><span class="badge">Jepang</span></span>
+            <p>Kaiwa (percakapan) dan budaya kerja. 5 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-ja" href="/profil-pengajar.html?id=dewi-anggraini">
+            <span class="avatar avatar-lg">DA</span>
+            <h3>Dewi Anggraini</h3>
+            <span class="meta"><span class="badge">Lokal</span><span class="badge">Jepang</span></span>
+            <p>JLPT N5–N3 dan kanji. 12 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-ja" href="/profil-pengajar.html?id=fajar-nugroho">
+            <span class="avatar avatar-lg">FN</span>
+            <h3>Fajar Nugroho</h3>
+            <span class="meta"><span class="badge">Lokal</span><span class="badge">Jepang</span></span>
+            <p>Program kerja (Tokutei Ginou). 6 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-ko" href="/profil-pengajar.html?id=kim-jiyeon">
+            <span class="avatar avatar-lg">KJ</span>
+            <h3>Kim Ji-yeon</h3>
+            <span class="meta"><span class="badge badge-accent">Native</span><span class="badge">Korea</span></span>
+            <p>TOPIK II dan pelafalan. 7 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-ko" href="/profil-pengajar.html?id=park-minjun">
+            <span class="avatar avatar-lg">PM</span>
+            <h3>Park Min-jun</h3>
+            <span class="meta"><span class="badge badge-accent">Native</span><span class="badge">Korea</span></span>
+            <p>Percakapan dan EPS-TOPIK. 4 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-ko" href="/profil-pengajar.html?id=salsabila-putri">
+            <span class="avatar avatar-lg">SP</span>
+            <h3>Salsabila Putri</h3>
+            <span class="meta"><span class="badge">Lokal</span><span class="badge">Korea</span></span>
+            <p>TOPIK I dan kelas remaja. 5 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-ko" href="/profil-pengajar.html?id=yoga-saputra">
+            <span class="avatar avatar-lg">YA</span>
+            <h3>Yoga Adi Saputra</h3>
+            <span class="meta"><span class="badge">Lokal</span><span class="badge">Korea</span></span>
+            <p>EPS-TOPIK untuk kerja. 3 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-zh" href="/profil-pengajar.html?id=li-mei">
+            <span class="avatar avatar-lg">LM</span>
+            <h3>Li Mei</h3>
+            <span class="meta"><span class="badge badge-accent">Native</span><span class="badge">Mandarin</span></span>
+            <p>HSK 4–6 dan Business Mandarin. 9 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-zh" href="/profil-pengajar.html?id=chen-wei">
+            <span class="avatar avatar-lg">CW</span>
+            <h3>Chen Wei</h3>
+            <span class="meta"><span class="badge badge-accent">Native</span><span class="badge">Mandarin</span></span>
+            <p>Nada dan percakapan. 6 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-zh" href="/profil-pengajar.html?id=vania-halim">
+            <span class="avatar avatar-lg">VH</span>
+            <h3>Vania Halim</h3>
+            <span class="meta"><span class="badge">Lokal</span><span class="badge">Mandarin</span></span>
+            <p>HSK 1–3 dan Kids Mandarin. 8 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-zh" href="/profil-pengajar.html?id=steven-gunawan">
+            <span class="avatar avatar-lg">SG</span>
+            <h3>Steven Gunawan</h3>
+            <span class="meta"><span class="badge">Lokal</span><span class="badge">Mandarin</span></span>
+            <p>Mandarin untuk bisnis dan dagang. 4 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-ar" href="/profil-pengajar.html?id=yusuf-mahmoud">
+            <span class="avatar avatar-lg">YM</span>
+            <h3>Yusuf Mahmoud</h3>
+            <span class="meta"><span class="badge badge-accent">Native</span><span class="badge">Arab</span></span>
+            <p>Fusha, muhadatsah, dan qira'ah. 10 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-ar" href="/profil-pengajar.html?id=nurul-hidayah">
+            <span class="avatar avatar-lg">NH</span>
+            <h3>Nurul Hidayah</h3>
+            <span class="meta"><span class="badge">Lokal</span><span class="badge">Arab</span></span>
+            <p>Nahwu-sharaf dan persiapan studi Timur Tengah. 9 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-ar" href="/profil-pengajar.html?id=ilham-fauzi">
+            <span class="avatar avatar-lg">MI</span>
+            <h3>Muhammad Ilham Fauzi</h3>
+            <span class="meta"><span class="badge">Lokal</span><span class="badge">Arab</span></span>
+            <p>Arab percakapan untuk umrah dan kerja. 4 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-de" href="/profil-pengajar.html?id=lukas-becker">
+            <span class="avatar avatar-lg">LB</span>
+            <h3>Lukas Becker</h3>
+            <span class="meta"><span class="badge badge-accent">Native</span><span class="badge">Jerman</span></span>
+            <p>B1–C1 dan persiapan studi. 8 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-de" href="/profil-pengajar.html?id=anna-schneider">
+            <span class="avatar avatar-lg">AS</span>
+            <h3>Anna Schneider</h3>
+            <span class="meta"><span class="badge badge-accent">Native</span><span class="badge">Jerman</span></span>
+            <p>Pelafalan dan Sprechen. 5 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-de" href="/profil-pengajar.html?id=teguh-santoso">
+            <span class="avatar avatar-lg">TS</span>
+            <h3>Teguh Santoso</h3>
+            <span class="meta"><span class="badge">Lokal</span><span class="badge">Jerman</span></span>
+            <p>A1–B1 dan program Ausbildung. 11 tahun mengajar.</p>
+          </a>
+          <a class="card card-link teacher-card lang-de" href="/profil-pengajar.html?id=maria-siregar">
+            <span class="avatar avatar-lg">MC</span>
+            <h3>Maria Christina Siregar</h3>
+            <span class="meta"><span class="badge">Lokal</span><span class="badge">Jerman</span></span>
+            <p>Pflege (perawat) dan Au Pair. 6 tahun mengajar.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- @include footer.html -->
+  <script type="module" src="/src/scripts/main.js"></script>
+  <script type="module" src="/src/scripts/pages/teachers.js"></script>
+</body>
+</html>

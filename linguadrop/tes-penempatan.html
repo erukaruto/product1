@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <!-- @include head.html -->
+  <title>Tes Penempatan Gratis · Polyglot Nusantara</title>
+  <meta name="description" content="Tes penempatan bahasa Inggris gratis 15 soal dengan hasil level CEFR A1–C2 dan rekomendasi kelas." />
+</head>
+<body data-nav="tes">
+  <!-- @include header.html -->
+  <main id="main">
+    <section class="page-hero">
+      <div class="container-narrow">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Beranda</a></li><li><span aria-current="page">Tes penempatan</span></li></ol></nav>
+        <span class="eyebrow">Gratis · 15 soal · ± 8 menit</span>
+        <h1>Tes penempatan level bahasa Inggris</h1>
+        <p class="lead">Jawab 15 soal grammar, vocabulary, dan reading. Hasilnya level CEFR (A1–C2) dan rekomendasi kelas. Untuk bahasa lain, tes dilakukan di cabang atau online bersama pengajar.</p>
+        <div class="page-hero-meta"><span class="badge badge-outline">CEFR A1–C2</span><span class="badge badge-outline">Tanpa daftar akun</span><span class="badge badge-outline">Hasil langsung</span></div>
+      </div>
+    </section>
+    <section class="section" aria-label="Kuis tes penempatan">
+      <div class="container-narrow">
+        <div class="card form-card" data-quiz>
+          <div class="stack-sm" data-quiz-intro>
+            <h2 style="font-size:var(--text-xl)">Sebelum mulai</h2>
+            <ul class="check-list">
+              <li>Kerjakan sendiri tanpa kamus agar hasilnya akurat.</li>
+              <li>Soal makin sulit di akhir. Tidak apa-apa jika ada yang tidak tahu.</li>
+              <li>Jawaban tersimpan di browser ini saja, tidak dikirim ke mana pun (demo).</li>
+            </ul>
+            <div class="field" style="max-width:360px"><label for="quiz-name">Nama panggilan (opsional)</label><input class="input" id="quiz-name" name="name" autocomplete="given-name" /></div>
+            <button class="btn btn-primary btn-lg" type="button" data-quiz-start style="justify-self:start">Mulai tes</button>
+          </div>
+          <form data-quiz-form hidden novalidate>
+            <div class="stack">
+              <div class="row between"><span class="muted small" data-quiz-count>Soal 1 dari 15</span><span class="badge" data-quiz-section>Grammar</span></div>
+              <div class="quiz-progress" role="progressbar" aria-label="Kemajuan tes" aria-valuemin="0" aria-valuemax="15" aria-valuenow="1"><span data-quiz-bar></span></div>
+              <fieldset class="stack" data-quiz-question aria-live="polite"></fieldset>
+              <p class="error" data-quiz-error hidden role="alert">Pilih salah satu jawaban dulu.</p>
+              <div class="form-actions">
+                <button class="btn" type="button" data-quiz-prev>Sebelumnya</button>
+                <button class="btn btn-primary" type="submit" data-quiz-next>Berikutnya</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- @include footer.html -->
+  <script type="module" src="/src/scripts/main.js"></script>
+  <script type="module" src="/src/scripts/pages/placement.js"></script>
+</body>
+</html>

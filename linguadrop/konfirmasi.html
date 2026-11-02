@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <!-- @include head.html -->
+  <title>Konfirmasi Pendaftaran · Polyglot Nusantara</title>
+  <meta name="description" content="Konfirmasi pendaftaran siswa baru dan instruksi pembayaran." />
+</head>
+<body data-nav="pendaftaran">
+  <!-- @include header.html -->
+  <main id="main">
+    <section class="page-hero">
+      <div class="container-narrow">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Beranda</a></li><li><a href="/pendaftaran.html">Pendaftaran</a></li><li><span aria-current="page">Konfirmasi</span></li></ol></nav>
+        <span class="eyebrow">Pendaftaran diterima</span>
+        <h1><span data-confirm-title>Terima kasih, pendaftaran Anda tercatat</span></h1>
+        <p class="lead">Selesaikan pembayaran dalam 2×24 jam agar kursi Anda terkunci. Detail juga kami kirim ke WhatsApp (demo: tidak ada pesan terkirim).</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container-narrow stack" style="gap:var(--space-5)">
+        <div class="notice" data-confirm-sample hidden><p>Belum ada pendaftaran di browser ini, jadi yang tampil adalah <b>contoh</b>. <a href="/pendaftaran.html">Isi formulir pendaftaran</a>.</p></div>
+        <div class="card stack">
+          <div class="row between"><h2 style="font-size:var(--text-lg)">Nomor pendaftaran</h2><span class="badge badge-warn">Menunggu pembayaran</span></div>
+          <p class="price mono" data-confirm-ref>PN-2611-0428</p>
+          <dl class="summary-list" data-confirm-summary></dl>
+        </div>
+        <div class="card stack">
+          <h2 style="font-size:var(--text-lg)">Instruksi pembayaran</h2>
+          <div data-confirm-pay></div>
+          <a class="btn" href="/cara-pembayaran.html">Panduan semua metode pembayaran</a>
+        </div>
+        <div class="card stack">
+          <h2 style="font-size:var(--text-lg)">Langkah berikutnya</h2>
+          <ol class="steps" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr))">
+            <li><h3>Bayar</h3><p>Sebelum batas waktu.</p></li>
+            <li><h3>Konfirmasi</h3><p>Admin mengonfirmasi via WhatsApp.</p></li>
+            <li><h3>Grup kelas</h3><p>Anda masuk grup kelas H-3.</p></li>
+            <li><h3>Kelas pertama</h3><p>Datang 10 menit lebih awal.</p></li>
+          </ol>
+        </div>
+        <div class="row"><a class="btn btn-wa" href="https://wa.me/__WA__?text=Halo%2C%20saya%20sudah%20mendaftar." rel="noopener" target="_blank" data-confirm-wa>Konfirmasi via WhatsApp</a><a class="btn" href="/">Kembali ke beranda</a></div>
+      </div>
+    </section>
+  </main>
+  <!-- @include footer.html -->
+  <script type="module" src="/src/scripts/main.js"></script>
+  <script type="module" src="/src/scripts/pages/confirm.js"></script>
+</body>
+</html>

@@ -168,7 +168,7 @@ const classes: ClassGroup[] = []
       const start = rng.pick(STARTS)
       const program = rng.pick(PROGRAM_BY_LANG[code])
       const meetings = level.meetings
-      const startDate = addDays(TODAY, -rng.int(7, 70))
+      const startDate = addDays(TODAY, -rng.int(7, Math.round(level.weeks * 7 * 0.92)))
       const elapsedWeeks = Math.floor((TODAY.getTime() - startDate.getTime()) / (7 * 864e5))
       const meetingsDone = Math.min(meetings - 1, Math.max(1, elapsedWeeks * days.length))
       let room = 'Zoom'
@@ -225,23 +225,19 @@ const students: Student[] = []
     const levels = langByCode(lang).levels
     const levelIndex = Math.max(0, levels.findIndex((l) => l.code === cls.level))
     const ability = 62 + levelIndex * 2 + rng.int(-6, 22)
-    const joinedDays = levelIndex * rng.int(95, 130) + rng.int(10, 80)
-    const joined = dateBack(joinedDays)
-    const history: LevelStep[] = []
-    let cursor = joinedDays
-    for (let l = 0; l <= levelIndex; l++) {
-      const length = Math.round(levels[l].weeks * 7 * (1 + rng.next() * 0.25))
-      const start = dateBack(cursor)
-      const current = l === levelIndex
-      history.push({
-        level: levels[l].code,
-        start,
-        end: current ? undefined : dateBack(Math.max(cursor - length, 1)),
-        final: current ? undefined : rng.int(70, 96),
-        result: current ? 'berjalan' : 'lulus',
-      })
-      cursor = Math.max(cursor - length - rng.int(3, 14), 1)
+    // Work backwards from the class start: the current level began when the class did (or a little later
+    // for students who joined mid-level), each earlier level ended a few days before the next one began.
+    const classStart = new Date(cls.startDate)
+    const currentStart = addDays(classStart, rng.chance(0.8) ? 0 : rng.int(1, 14))
+    const history: LevelStep[] = [{ level: cls.level, start: isoDate(currentStart), result: 'berjalan' }]
+    let nextStart = currentStart
+    for (let l = levelIndex - 1; l >= 0; l--) {
+      const end = addDays(nextStart, -rng.int(3, 21))
+      const start = addDays(end, -Math.round(levels[l].weeks * 7 * (1 + rng.next() * 0.2)))
+      history.unshift({ level: levels[l].code, start: isoDate(start), end: isoDate(end), final: rng.int(70, 96), result: 'lulus' })
+      nextStart = start
     }
+    const joined = history[0].start
     const parentGender = rng.chance(0.6) ? 'P' : 'L'
     students.push({
       id: `S-${String(i).padStart(4, '0')}`,

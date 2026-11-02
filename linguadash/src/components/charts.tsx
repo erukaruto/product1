@@ -89,6 +89,8 @@ function Tooltip({ tip, width }: { tip: Tip | null; width: number }) {
 }
 
 const PAD = { top: 16, right: 16, bottom: 28, left: 56 }
+/** Every n-th x label, plus the last one, never two labels too close together. */
+const showTick = (i: number, count: number, every: number) => i === count - 1 || (i % every === 0 && count - 1 - i >= Math.ceil(every * 0.6))
 
 // ---------- Line chart ----------
 export function LineChart({ labels, series, format, height = 240, label, area, yMax, labelHeader = 'Bulan', endLabels = true }: { labels: string[]; series: Series[]; format: Format; height?: number; label: string; area?: boolean; yMax?: number; labelHeader?: string; endLabels?: boolean }) {
@@ -130,7 +132,7 @@ export function LineChart({ labels, series, format, height = 240, label, area, y
               <text x={PAD.left - 8} y={y(t)} dy="0.32em" textAnchor="end" className="tick">{format(t)}</text>
             </g>
           ))}
-          {labels.map((l, i) => (i % every === 0 || i === labels.length - 1) && (
+          {labels.map((l, i) => showTick(i, labels.length, every) && (
             <text key={l + i} x={x(i)} y={height - 8} textAnchor="middle" className="tick">{l}</text>
           ))}
           {series.map((s) => {
@@ -221,7 +223,7 @@ export function BarChart({ labels, series, format, height = 240, label, stacked,
                 {valueLabels && series.length === 1 && (
                   <text x={cx0} y={y(series[0].values[i] ?? 0) - 6} textAnchor="middle" className="value-label">{format(series[0].values[i] ?? 0)}</text>
                 )}
-                {(i % every === 0 || i === labels.length - 1) && <text x={cx0} y={height - 8} textAnchor="middle" className="tick">{l}</text>}
+                {showTick(i, labels.length, every) && <text x={cx0} y={height - 8} textAnchor="middle" className="tick">{l}</text>}
               </g>
             )
           })}

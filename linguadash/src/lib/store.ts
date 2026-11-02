@@ -7,10 +7,15 @@
 import { useMemo, useSyncExternalStore } from 'react'
 import {
   CLASSES, INVOICES, PAYMENTS, PLACEMENTS, STUDENTS, TRIALS, seedSessions,
-  type AttendanceStatus, type Invoice, type Payment, type Scores, type Session, type Student, type TrialStatus,
+  MOCK_TESTS,
+  type AttendanceStatus, type Invoice, type MockTest, type Payment, type Scores, type Session, type Student, type TrialStatus,
 } from '../data/demo.ts'
+import type { LangCode } from '../data/school.ts'
+
+export interface Question { id: string; lang: LangCode; level: string; skill: string; type: string; prompt: string; note: string; difficulty: 'Mudah' | 'Sedang' | 'Sulit'; used: number }
 import { DEMO_TODAY } from '../data/school.ts'
 import { isoDate } from './format.ts'
+import { allSessions } from './selectors.ts'
 
 export interface GradeEntry { studentId: string; classId: string; type: string; date: string; scores: Scores; note?: string }
 export interface Announcement { id: string; title: string; body: string; audience: string; channel: string; date: string; author: string; pinned?: boolean }
@@ -30,12 +35,14 @@ interface DemoState {
   announcements: Announcement[]
   promoActive: Record<string, boolean>
   readThreads: string[]
+  mockTests: MockTest[]
+  questions: Question[]
 }
 
 const KEY = 'linguadash-demo-v1'
 const EMPTY: DemoState = {
   version: 1, students: {}, added: [], invoices: [], invoicePaid: {}, payments: [], sessions: {}, grades: [],
-  trials: {}, placements: {}, promotions: {}, announcements: [], promoActive: {}, readThreads: [],
+  trials: {}, placements: {}, promotions: {}, announcements: [], promoActive: {}, readThreads: [], mockTests: [], questions: [],
 }
 
 function load(): DemoState {
@@ -133,6 +140,17 @@ export function saveSession(session: Session) {
   update((s) => ({ sessions: { ...s.sessions, [`${session.classId}#${session.meeting}`]: session } }))
 }
 export type { AttendanceStatus }
+
+/** Sessions of every class (seed + saved in this browser). */
+export function useAllSessions() {
+  const s = useDemoState()
+  return useMemo(() => allSessions(s.sessions), [s.sessions])
+}
+
+export function useMockTests() {
+  const s = useDemoState()
+  return useMemo(() => [...s.mockTests, ...MOCK_TESTS], [s.mockTests])
+}
 
 export function useTrials() {
   const s = useDemoState()

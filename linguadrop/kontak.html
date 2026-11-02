@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <!-- @include head.html -->
+  <title>Kontak · Polyglot Nusantara</title>
+  <meta name="description" content="Hubungi Polyglot Nusantara lewat WhatsApp, email, atau formulir kontak." />
+</head>
+<body data-nav="kontak">
+  <!-- @include header.html -->
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Beranda</a></li><li><span aria-current="page">Kontak</span></li></ol></nav>
+        <span class="eyebrow">Kontak</span>
+        <h1>Hubungi kami</h1>
+        <p class="lead">Cara tercepat adalah WhatsApp. Untuk kerja sama perusahaan dan sekolah, gunakan formulir di bawah.</p>
+        <div class="hero-actions"><a class="btn btn-wa btn-lg" href="https://wa.me/__WA__?text=Halo%20Polyglot%20Nusantara%2C%20saya%20ingin%20bertanya." rel="noopener" target="_blank">Chat WhatsApp</a></div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="form-title">
+      <div class="container layout-aside">
+        <form class="card form-card" data-demo-form novalidate>
+          <h2 id="form-title" style="font-size:var(--text-xl)">Kirim pesan</h2>
+          <div class="form-grid">
+            <div class="field"><label for="ct-name">Nama <span class="req" aria-hidden="true">*</span></label><input class="input" id="ct-name" name="name" required autocomplete="name" /></div>
+            <div class="field"><label for="ct-email">Email <span class="req" aria-hidden="true">*</span></label><input class="input" id="ct-email" name="email" type="email" required autocomplete="email" /></div>
+            <div class="field"><label for="ct-topic">Topik</label><select class="select" id="ct-topic" name="topic"><option>Pertanyaan kursus</option><option>Kelas in-house perusahaan</option><option>Kerja sama sekolah/kampus</option><option>Lainnya</option></select></div>
+            <div class="field"><label for="ct-wa">Nomor WhatsApp</label><input class="input" id="ct-wa" name="wa" type="tel" inputmode="tel" autocomplete="tel" /></div>
+            <div class="field span-2"><label for="ct-msg">Pesan <span class="req" aria-hidden="true">*</span></label><textarea class="textarea" id="ct-msg" name="message" required minlength="10"></textarea></div>
+          </div>
+          <div class="form-actions"><p class="muted small">Demo: pesan tidak dikirim ke mana pun.</p><button class="btn btn-primary" type="submit">Kirim pesan</button></div>
+          <div class="notice notice-good" data-success hidden role="status"><p>Pesan diterima (demo). Kami balas dalam 1 hari kerja.</p></div>
+        </form>
+        <aside class="stack" aria-label="Kontak cabang">
+          <div class="card stack-sm"><h2 style="font-size:var(--text-lg)">Bandung – Dago</h2><p class="muted small">Jl. Ir. H. Juanda No. 118, Bandung</p><a class="btn btn-wa btn-sm" href="https://wa.me/__WA__?text=Halo%20cabang%20Bandung" rel="noopener" target="_blank">WhatsApp Bandung</a></div>
+          <div class="card stack-sm"><h2 style="font-size:var(--text-lg)">Jakarta – Tebet</h2><p class="muted small">Jl. Tebet Raya No. 45, Jakarta Selatan</p><a class="btn btn-wa btn-sm" href="https://wa.me/__WA__?text=Halo%20cabang%20Jakarta" rel="noopener" target="_blank">WhatsApp Jakarta</a></div>
+          <div class="card stack-sm"><h2 style="font-size:var(--text-lg)">Email</h2><a href="mailto:halo@polyglotnusantara.example">halo@polyglotnusantara.example</a><p class="muted small">Balasan 1×24 jam kerja</p></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <!-- @include footer.html -->
+  <script type="module" src="/src/scripts/main.js"></script>
+  <script type="module" src="/src/scripts/pages/forms.js"></script>
+</body>
+</html>

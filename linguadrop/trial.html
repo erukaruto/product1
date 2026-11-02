@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <!-- @include head.html -->
+  <title>Booking Kelas Trial Gratis · Polyglot Nusantara</title>
+  <meta name="description" content="Booking kelas trial gratis 60 menit: pilih bahasa, cabang atau online, tanggal, dan slot waktu." />
+</head>
+<body data-nav="trial">
+  <!-- @include header.html -->
+  <main id="main">
+    <section class="page-hero">
+      <div class="container-narrow">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Beranda</a></li><li><span aria-current="page">Kelas trial gratis</span></li></ol></nav>
+        <span class="eyebrow">Gratis · 60 menit</span>
+        <h1>Booking kelas trial gratis</h1>
+        <p class="lead">Pilih bahasa, tempat, dan slot waktu. Kami konfirmasi lewat WhatsApp dalam 1 jam kerja.</p>
+        <div class="page-hero-meta"><span class="badge badge-outline">Tanpa biaya</span><span class="badge badge-outline">Offline atau online</span><span class="badge badge-outline">Satu kali per bahasa</span></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container-narrow">
+        <form class="card form-card" data-trial-form novalidate aria-label="Formulir booking kelas trial">
+          <fieldset class="stack">
+            <legend>1. Pilih kelas</legend>
+            <div class="form-grid">
+              <div class="field"><label for="tr-lang">Bahasa <span class="req" aria-hidden="true">*</span></label><select class="select" id="tr-lang" name="lang" required><option value="">Pilih bahasa</option><option value="en">Inggris</option><option value="ja">Jepang</option><option value="ko">Korea</option><option value="zh">Mandarin</option><option value="ar">Arab</option><option value="de">Jerman</option></select></div>
+              <div class="field"><label for="tr-level">Perkiraan level</label><select class="select" id="tr-level" name="level"><option value="pemula">Pemula / belum pernah belajar</option><option value="dasar">Sudah dasar</option><option value="menengah">Menengah</option><option value="mahir">Mahir</option></select></div>
+              <div class="field"><label for="tr-age">Peserta</label><select class="select" id="tr-age" name="age"><option value="dewasa">Dewasa (17+)</option><option value="remaja">Remaja (11–16)</option><option value="anak">Anak (7–10)</option></select></div>
+              <div class="field"><label for="tr-mode">Tempat <span class="req" aria-hidden="true">*</span></label><select class="select" id="tr-mode" name="mode" required><option value="bdg">Bandung – Dago</option><option value="jkt">Jakarta – Tebet</option><option value="online">Online (Zoom)</option></select></div>
+            </div>
+          </fieldset>
+          <fieldset class="stack">
+            <legend>2. Pilih tanggal</legend>
+            <div class="day-picker" data-days role="radiogroup" aria-label="Tanggal trial"></div>
+          </fieldset>
+          <fieldset class="stack" data-slots-fieldset>
+            <legend>3. Pilih jam (WIB)</legend>
+            <div class="slots" data-slots></div>
+            <p class="muted small">Slot yang dicoret sudah penuh.</p>
+          </fieldset>
+          <fieldset class="stack">
+            <legend>4. Data diri</legend>
+            <div class="form-grid">
+              <div class="field"><label for="tr-name">Nama lengkap <span class="req" aria-hidden="true">*</span></label><input class="input" id="tr-name" name="name" required autocomplete="name" /></div>
+              <div class="field"><label for="tr-wa">Nomor WhatsApp <span class="req" aria-hidden="true">*</span></label><input class="input" id="tr-wa" name="wa" type="tel" required inputmode="tel" autocomplete="tel" pattern="(\+62|62|0)8[0-9\s\-]{7,14}" data-msg="Gunakan nomor Indonesia, contoh: 0812 3456 7890." /></div>
+              <div class="field span-2"><label for="tr-email">Email</label><input class="input" id="tr-email" name="email" type="email" autocomplete="email" /></div>
+              <div class="field span-2"><label for="tr-note">Catatan (tujuan belajar, dll.)</label><textarea class="textarea" id="tr-note" name="note" rows="3"></textarea></div>
+            </div>
+          </fieldset>
+          <div class="form-actions"><p class="muted small">Demo: booking tidak dikirim ke server.</p><button class="btn btn-primary btn-lg" type="submit">Booking trial</button></div>
+        </form>
+        <div class="card stack" data-trial-success hidden tabindex="-1" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+  <!-- @include footer.html -->
+  <script type="module" src="/src/scripts/main.js"></script>
+  <script type="module" src="/src/scripts/pages/trial.js"></script>
+</body>
+</html>

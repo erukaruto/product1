@@ -148,6 +148,7 @@ export function AppLayout() {
           ))}
         </nav>
         <div className="sidebar-foot">
+          <div className="only-narrow"><ThemeSwitch /></div>
           <a className="btn btn-ghost btn-sm" href={siteUrl('/', theme)}>
             <Icon name="globe" size={16} /> Lihat situs LinguaDrop
           </a>

@@ -85,7 +85,7 @@
 .icon-btn-badge .count { position: absolute; top: 4px; right: 4px; min-width: 16px; height: 16px; padding: 0 4px; border-radius: 8px; background: var(--bad); color: var(--surface); font-size: 10px; font-weight: 800; display: grid; place-items: center; line-height: 1; }
 .user-chip { display: flex; align-items: center; gap: 8px; padding: 4px 8px 4px 4px; border-radius: var(--radius-pill); border: 1px solid var(--line); background: var(--surface); text-decoration: none; color: var(--ink); font-size: var(--text-sm); font-weight: 650; }
 .menu-btn { display: none; }
-.content { flex: 1; width: 100%; max-width: 1440px; margin: 0 auto; padding: var(--space-5) var(--space-5) var(--space-7); display: grid; gap: var(--space-5); align-content: start; }
+.content { flex: 1; width: 100%; max-width: 1440px; margin: 0 auto; padding: var(--space-5) var(--space-5) var(--space-7); display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-5); align-content: start; }
 .demo-note { font-size: var(--text-xs); color: var(--muted); text-align: center; padding: 12px; border-top: 1px solid var(--line); }
 
 .theme-switch { display: inline-flex; padding: 3px; gap: 2px; border: 1px solid var(--line); border-radius: var(--radius-pill); background: var(--surface); }
@@ -377,3 +377,58 @@
 .screen-list { display: grid; gap: 8px; padding: 0; margin: 0; list-style: none; font-size: var(--text-sm); }
 .screen-list li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; }
 .screen-list code { font-size: var(--text-xs); color: var(--muted); font-family: var(--font-mono); overflow-wrap: anywhere; }
+
+/* Simple lists inside panels */
+.list { display: grid; gap: 2px; padding: 0; margin: 0; list-style: none; }
+.list-link { display: flex; align-items: center; gap: 10px; padding: 8px 10px; margin: 0 -10px; border-radius: var(--radius-xs); color: var(--ink); text-decoration: none; font-size: var(--text-sm); }
+.list-link:hover { background: var(--surface-2); }
+.block { display: block; }
+.list-row { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: var(--text-sm); }
+.list-row:last-child { border-bottom: 0; }
+.timeline-list { display: grid; gap: 10px; padding: 0; margin: 0; list-style: none; font-size: var(--text-sm); }
+.timeline-list li { display: flex; align-items: center; gap: 10px; color: var(--muted); }
+.timeline-list li[data-done='true'] { color: var(--ink); font-weight: 600; }
+.tl-dot { width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center; border: 2px solid var(--line-strong); flex-shrink: 0; }
+li[data-done='true'] .tl-dot { background: var(--good); border-color: var(--good); color: var(--surface); }
+
+/* Attendance sheet */
+.att-head { display: grid; gap: var(--space-3); padding: var(--space-4) var(--space-5); border-bottom: 1px solid var(--line); justify-items: start; }
+.att-head .form-grid { width: 100%; }
+.att-list { padding: 0; margin: 0; list-style: none; }
+.att-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); padding: 10px var(--space-5); border-bottom: 1px solid var(--line); }
+.att-row:last-child { border-bottom: 0; }
+.att-options { display: flex; gap: 4px; flex-wrap: wrap; }
+.att-option { position: relative; cursor: pointer; }
+.att-option input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.att-option span { display: inline-block; padding: 6px 12px; border-radius: var(--radius-xs); border: 1px solid var(--line-strong); font-size: var(--text-xs); font-weight: 650; background: var(--surface); }
+.att-option input:focus-visible + span { outline: 2px solid var(--focus); outline-offset: 2px; }
+.att-hadir input:checked + span { background: var(--good-soft); border-color: var(--good); color: var(--good); }
+.att-izin input:checked + span, .att-sakit input:checked + span { background: var(--warn-soft); border-color: var(--warn); color: var(--warn); }
+.att-alpa input:checked + span { background: var(--bad-soft); border-color: var(--bad); color: var(--bad); }
+.att-dot-hadir { color: var(--good); }
+.att-dot-izin, .att-dot-sakit { color: var(--warn); }
+.att-dot-alpa { color: var(--bad); }
+.inbox-list { padding: 0; margin: 0; list-style: none; }
+.wa-preview { justify-self: start; max-width: 520px; padding: 10px 14px; border-radius: 14px 14px 14px 4px; background: var(--good-soft); font-size: var(--text-sm); }
+.wa-preview time { display: block; font-size: 10px; color: var(--muted); text-align: right; margin-top: 4px; }
+.item-row { display: grid; grid-template-columns: minmax(0, 1fr) 80px 140px auto; gap: var(--space-2); align-items: end; }
+@media (max-width: 640px) { .item-row { grid-template-columns: 1fr 1fr auto; } .item-row > .field:first-child { grid-column: 1 / -1; } }
+.subnav { display: flex; gap: 4px; overflow-x: auto; padding-bottom: 2px; border-bottom: 1px solid var(--line); }
+.subnav a { flex-shrink: 0; padding: 8px 12px; border-radius: var(--radius-xs) var(--radius-xs) 0 0; color: var(--muted); font-weight: 650; font-size: var(--text-sm); text-decoration: none; border-bottom: 2px solid transparent; margin-bottom: -3px; }
+.subnav a:hover { color: var(--ink); }
+.subnav a[aria-current='page'] { color: var(--accent-ink); border-bottom-color: var(--accent); }
+.perm-yes { color: var(--good); display: inline-flex; }
+.panel-actions .toggle-row { padding: 0; border: 0; gap: var(--space-2); align-items: center; }
+.ui-row { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
+.swatch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: var(--space-3); }
+.swatch-card { border: 1px solid var(--line); border-radius: var(--radius-sm); overflow: hidden; font-size: var(--text-xs); }
+.swatch-card span { display: block; height: 48px; }
+.swatch-card p { padding: 6px 8px; }
+.spinner { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--line-strong); border-top-color: var(--accent); animation: spin 0.8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (min-width: 1081px) {
+  /* Fill the sidebar column below the sticky sidebar (visible on long pages and full-page screenshots). */
+  .shell { background: linear-gradient(to right, var(--surface) 263px, var(--line) 263px, var(--line) 264px, transparent 264px); }
+}
+.only-narrow { display: none; }
+@media (max-width: 400px) { .only-narrow { display: flex; justify-content: center; } }

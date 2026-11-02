@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <!-- @include head.html -->
+  <title>Blog · Polyglot Nusantara</title>
+  <meta name="description" content="Tips belajar bahasa Inggris, Jepang, Korea, Mandarin, Arab, dan Jerman dari pengajar Polyglot Nusantara." />
+</head>
+<body data-nav="blog">
+  <!-- @include header.html -->
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Beranda</a></li><li><span aria-current="page">Blog</span></li></ol></nav>
+        <span class="eyebrow">Blog</span>
+        <h1>Tips belajar bahasa dari pengajar kami</h1>
+        <p class="lead">Artikel praktis tentang cara belajar, persiapan ujian, dan studi ke luar negeri. Artikel di demo ini contoh.</p>
+        <div class="page-hero-meta"><span class="badge badge-outline">6 artikel</span><span class="badge badge-outline">Terbit tiap minggu</span></div>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="artikel-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="artikel-title">Artikel terbaru</h2>
+        </div>
+        <div class="segmented" role="group" aria-label="Saring artikel berdasarkan bahasa" data-filter-group>
+          <button type="button" aria-pressed="true" data-filter="all">Semua</button>
+          <button type="button" aria-pressed="false" data-filter="en">Inggris</button>
+          <button type="button" aria-pressed="false" data-filter="ja">Jepang</button>
+          <button type="button" aria-pressed="false" data-filter="ko">Korea</button>
+          <button type="button" aria-pressed="false" data-filter="zh">Mandarin</button>
+          <button type="button" aria-pressed="false" data-filter="ar">Arab</button>
+          <button type="button" aria-pressed="false" data-filter="de">Jerman</button>
+        </div>
+        <p class="muted small mt-2" data-filter-count aria-live="polite">Menampilkan 6 artikel</p>
+        <div class="grid grid-3 mt-6" data-filter-list>
+          <a class="card card-link post-card" href="/artikel.html" data-lang="ja">
+            <span class="post-cover lang-ja"><span class="foreign" lang="ja">漢字</span></span>
+            <span class="post-meta"><span class="badge">Tips belajar</span><span>12 Okt 2026</span><span>8 menit baca</span></span>
+            <h3>7 cara menghafal kanji tanpa stres</h3>
+            <span class="more">Baca artikel →</span>
+          </a>
+          <a class="card card-link post-card" href="/artikel.html" data-lang="en">
+            <span class="post-cover lang-en">IELTS</span>
+            <span class="post-meta"><span class="badge">Persiapan ujian</span><span>3 Okt 2026</span><span>6 menit baca</span></span>
+            <h3>Writing Task 2: struktur 4 paragraf yang aman untuk band 6,5</h3>
+            <span class="more">Baca artikel →</span>
+          </a>
+          <a class="card card-link post-card" href="/artikel.html" data-lang="ko">
+            <span class="post-cover lang-ko"><span class="foreign" lang="ko">한글</span></span>
+            <span class="post-meta"><span class="badge">Tips belajar</span><span>27 Sep 2026</span><span>5 menit baca</span></span>
+            <h3>Membaca hangeul dalam satu sore: panduan 90 menit</h3>
+            <span class="more">Baca artikel →</span>
+          </a>
+          <a class="card card-link post-card" href="/artikel.html" data-lang="zh">
+            <span class="post-cover lang-zh"><span class="foreign" lang="zh-Hans">四声</span></span>
+            <span class="post-meta"><span class="badge">Pelafalan</span><span>19 Sep 2026</span><span>7 menit baca</span></span>
+            <h3>Empat nada Mandarin: kesalahan umum orang Indonesia</h3>
+            <span class="more">Baca artikel →</span>
+          </a>
+          <a class="card card-link post-card" href="/artikel.html" data-lang="de">
+            <span class="post-cover lang-de"><span class="foreign" lang="de">B1</span></span>
+            <span class="post-meta"><span class="badge">Studi & kerja</span><span>8 Sep 2026</span><span>9 menit baca</span></span>
+            <h3>Berapa lama sampai B1 untuk Ausbildung? Hitungan realistis</h3>
+            <span class="more">Baca artikel →</span>
+          </a>
+          <a class="card card-link post-card" href="/artikel.html" data-lang="ar">
+            <span class="post-cover lang-ar"><span class="foreign" lang="ar" dir="rtl">نحو</span></span>
+            <span class="post-meta"><span class="badge">Tata bahasa</span><span>30 Agu 2026</span><span>6 menit baca</span></span>
+            <h3>Nahwu untuk pemula: tiga pola yang membuka ribuan kalimat</h3>
+            <span class="more">Baca artikel →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- @include footer.html -->
+  <script type="module" src="/src/scripts/main.js"></script>
+  <script type="module" src="/src/scripts/pages/filter.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <!-- @include head.html -->
+  <title>Jadwal Kelas · Polyglot Nusantara</title>
+  <meta name="description" content="Jadwal kelas bahasa yang segera dimulai dengan filter bahasa, level, cabang, dan online/offline." />
+</head>
+<body data-nav="jadwal">
+  <!-- @include header.html -->
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Beranda</a></li><li><span aria-current="page">Jadwal kelas</span></li></ol></nav>
+        <span class="eyebrow">Jadwal kelas</span>
+        <h1>Jadwal kelas yang segera dimulai</h1>
+        <p class="lead">Saring berdasarkan bahasa, level, cabang, dan mode. Kursi terkunci setelah pembayaran.</p>
+        <div class="page-hero-meta"><span class="badge badge-outline">Diperbarui setiap hari</span><span class="badge badge-outline">Kelas dibuka minimal 4 siswa</span></div>
+      </div>
+    </section>
+    <section class="section" aria-label="Jadwal">
+      <div class="container">
+        <form class="filters" data-schedule-filters aria-label="Saring jadwal">
+          <div class="field"><label for="f-lang">Bahasa</label><select class="select" id="f-lang" name="bahasa"><option value="">Semua bahasa</option><option value="en">Inggris</option><option value="ja">Jepang</option><option value="ko">Korea</option><option value="zh">Mandarin</option><option value="ar">Arab</option><option value="de">Jerman</option></select></div>
+          <div class="field"><label for="f-level">Level</label><select class="select" id="f-level" name="level"><option value="">Semua level</option></select></div>
+          <div class="field"><label for="f-branch">Cabang</label><select class="select" id="f-branch" name="cabang"><option value="">Semua cabang</option><option value="bdg">Bandung – Dago</option><option value="jkt">Jakarta – Tebet</option></select></div>
+          <div class="field"><label for="f-mode">Mode</label><select class="select" id="f-mode" name="mode"><option value="">Online &amp; offline</option><option value="offline">Offline</option><option value="online">Online</option></select></div>
+          <button class="btn" type="reset">Reset filter</button>
+        </form>
+        <div class="result-bar"><p aria-live="polite" data-schedule-count>Memuat jadwal…</p><p>Urut: tanggal mulai</p></div>
+        <div class="class-list" data-schedule-list></div>
+      </div>
+    </section>
+  </main>
+  <!-- @include footer.html -->
+  <script type="module" src="/src/scripts/main.js"></script>
+  <script type="module" src="/src/scripts/pages/schedule.js"></script>
+</body>
+</html>

@@ -128,6 +128,14 @@ export function Foreign({ lang, children, block }: { lang: LangCode; children: R
   return <Tag lang={HTML_LANG[lang]} dir={lang === 'ar' ? 'rtl' : undefined} className="foreign-text">{children}</Tag>
 }
 
+/** "あいさつ (Salam)": the foreign part gets its lang attribute, the Indonesian gloss stays Indonesian. */
+export function Topic({ lang, text }: { lang: LangCode; text: string }) {
+  if (lang === 'en' || lang === 'de') return <Foreign lang={lang}>{text}</Foreign>
+  const m = text.match(/^(.*?)\s*\((.*)\)$/)
+  if (!m) return <Foreign lang={lang}>{text}</Foreign>
+  return <><Foreign lang={lang}>{m[1]}</Foreign> <span className="muted">({m[2]})</span></>
+}
+
 export function Avatar({ name, lang, size = 36 }: { name: string; lang?: LangCode; size?: number }) {
   return (
     <span className={cx('avatar', lang && `lang-${lang}`)} style={{ ['--size' as string]: `${size}px` }} aria-hidden="true">

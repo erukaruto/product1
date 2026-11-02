@@ -277,7 +277,7 @@ main { display: block; }
 .rung .badge { justify-self: start; }
 
 /* Samples */
-.sample { display: grid; gap: var(--space-2); padding: var(--space-5); border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); }
+.sample { display: grid; gap: var(--space-2); align-content: start; padding: var(--space-5); border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); }
 .sample .foreign { font-size: var(--text-xl); font-weight: 600; }
 .sample-label { font-size: var(--text-xs); font-weight: 750; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
 .dialog { display: grid; gap: var(--space-3); }
@@ -478,3 +478,4 @@ main { display: block; }
 .mt-6 { margin-top: var(--space-6); }
 .center { text-align: center; }
 .stack > .btn, .hero-copy > .btn { justify-self: start; }
+.badge-wrap { white-space: normal; line-height: 1.4; padding-block: 4px; }

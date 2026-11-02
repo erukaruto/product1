@@ -25,6 +25,7 @@ body {
   overflow-wrap: break-word;
 }
 
+[hidden] { display: none !important; }
 img, svg, video { display: block; max-width: 100%; }
 svg { flex-shrink: 0; }
 button, input, select, textarea { font: inherit; color: inherit; }
@@ -252,7 +253,7 @@ legend { padding: 0; font-weight: 700; font-size: var(--text-sm); margin-bottom:
 .avatar-xl { --size: 112px; }
 
 /* Tables */
-.table-wrap { width: 100%; overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.table-wrap { position: relative; width: 100%; overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 .table { width: 100%; font-size: var(--text-sm); }
 .table th, .table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: middle; }
 .table th { font-size: var(--text-xs); font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; background: var(--surface-2); white-space: nowrap; }

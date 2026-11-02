@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <!-- @include head.html -->
+  <title>Pendaftaran Siswa Baru · Polyglot Nusantara</title>
+  <meta name="description" content="Formulir pendaftaran siswa baru 4 langkah: data diri, program dan jadwal, wali dan persetujuan, pembayaran." />
+</head>
+<body data-nav="pendaftaran">
+  <!-- @include header.html -->
+  <main id="main">
+    <section class="page-hero">
+      <div class="container-narrow">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Beranda</a></li><li><span aria-current="page">Pendaftaran siswa baru</span></li></ol></nav>
+        <span class="eyebrow">Pendaftaran</span>
+        <h1>Pendaftaran siswa baru</h1>
+        <p class="lead">Empat langkah singkat. Data tersimpan di browser sampai Anda mengirim formulir.</p>
+        <div class="page-hero-meta"><span class="badge badge-outline">± 4 menit</span><span class="badge badge-outline">Biaya pendaftaran Rp 150.000</span></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container-narrow">
+        <ol class="stepper" style="--steps:4" data-stepper aria-label="Langkah pendaftaran">
+          <li aria-current="step">1. Data diri</li><li>2. Program</li><li>3. Wali &amp; persetujuan</li><li>4. Pembayaran</li>
+        </ol>
+        <form class="card form-card" data-register-form novalidate aria-label="Formulir pendaftaran">
+          <section class="stack" data-step="1" aria-labelledby="step1-title">
+            <h2 id="step1-title" style="font-size:var(--text-xl)">Data diri</h2>
+            <div class="form-grid">
+              <div class="field span-2"><label for="rg-name">Nama lengkap (sesuai KTP/akta) <span class="req" aria-hidden="true">*</span></label><input class="input" id="rg-name" name="name" required autocomplete="name" minlength="3" /></div>
+              <div class="field"><label for="rg-birth">Tanggal lahir <span class="req" aria-hidden="true">*</span></label><input class="input" id="rg-birth" name="birth" type="date" required min="1950-01-01" max="2019-12-31" /></div>
+              <div class="field"><label for="rg-gender">Jenis kelamin</label><select class="select" id="rg-gender" name="gender"><option value="P">Perempuan</option><option value="L">Laki-laki</option></select></div>
+              <div class="field"><label for="rg-wa">Nomor WhatsApp <span class="req" aria-hidden="true">*</span></label><input class="input" id="rg-wa" name="wa" type="tel" required inputmode="tel" autocomplete="tel" pattern="(\+62|62|0)8[0-9\s\-]{7,14}" data-msg="Gunakan nomor Indonesia, contoh: 0812 3456 7890." /></div>
+              <div class="field"><label for="rg-email">Email <span class="req" aria-hidden="true">*</span></label><input class="input" id="rg-email" name="email" type="email" required autocomplete="email" /></div>
+              <div class="field span-2"><label for="rg-address">Kota domisili</label><input class="input" id="rg-address" name="city" autocomplete="address-level2" /></div>
+            </div>
+          </section>
+          <section class="stack" data-step="2" hidden aria-labelledby="step2-title">
+            <h2 id="step2-title" style="font-size:var(--text-xl)">Pilih program</h2>
+            <div class="form-grid">
+              <div class="field"><label for="rg-lang">Bahasa <span class="req" aria-hidden="true">*</span></label><select class="select" id="rg-lang" name="lang" required><option value="">Pilih bahasa</option><option value="en">Inggris</option><option value="ja">Jepang</option><option value="ko">Korea</option><option value="zh">Mandarin</option><option value="ar">Arab</option><option value="de">Jerman</option></select></div>
+              <div class="field"><label for="rg-level">Level <span class="req" aria-hidden="true">*</span></label><select class="select" id="rg-level" name="level" required><option value="">Pilih bahasa dulu</option></select></div>
+              <div class="field"><label for="rg-program">Program</label><select class="select" id="rg-program" name="program"><option>General</option><option>Conversation</option><option>Business English</option><option>Kids &amp; Teens</option><option>Intensif</option><option>Persiapan ujian</option></select></div>
+              <div class="field"><label for="rg-mode">Tempat <span class="req" aria-hidden="true">*</span></label><select class="select" id="rg-mode" name="mode" required><option value="bdg">Bandung – Dago</option><option value="jkt">Jakarta – Tebet</option><option value="online">Online (Zoom)</option></select></div>
+            </div>
+            <fieldset class="stack">
+              <legend>Pilih jadwal <span class="req" aria-hidden="true">*</span></legend>
+              <div class="choices" data-register-classes></div>
+              <p class="muted small" data-register-classes-note>Pilih bahasa dan level untuk melihat jadwal.</p>
+            </fieldset>
+            <div class="field"><label for="rg-promo">Kode promo</label><input class="input" id="rg-promo" name="promo" placeholder="contoh: EARLYBIRD" style="text-transform:uppercase" /></div>
+          </section>
+          <section class="stack" data-step="3" hidden aria-labelledby="step3-title">
+            <h2 id="step3-title" style="font-size:var(--text-xl)">Wali &amp; persetujuan</h2>
+            <p class="muted" data-guardian-note>Wajib diisi untuk peserta di bawah 17 tahun.</p>
+            <div class="form-grid" data-guardian>
+              <div class="field"><label for="rg-parent">Nama orang tua/wali</label><input class="input" id="rg-parent" name="parent" /></div>
+              <div class="field"><label for="rg-parent-wa">WhatsApp orang tua/wali</label><input class="input" id="rg-parent-wa" name="parentWa" type="tel" inputmode="tel" pattern="(\+62|62|0)8[0-9\s\-]{7,14}" data-msg="Gunakan nomor Indonesia, contoh: 0812 3456 7890." /></div>
+            </div>
+            <div class="field"><label for="rg-source">Tahu kami dari mana?</label><select class="select" id="rg-source" name="source"><option>Instagram</option><option>Google</option><option>Rekomendasi teman</option><option>TikTok</option><option>Sekolah/kampus</option></select></div>
+            <fieldset class="stack-sm">
+              <legend>Persetujuan</legend>
+              <label class="check"><input type="checkbox" name="terms" required /> Saya setuju dengan <a href="/syarat.html" target="_blank">syarat &amp; ketentuan</a> dan <a href="/privasi.html" target="_blank">kebijakan privasi</a>.</label>
+              <label class="check"><input type="checkbox" name="updates" checked /> Kirim info jadwal dan promo lewat WhatsApp.</label>
+            </fieldset>
+          </section>
+          <section class="stack" data-step="4" hidden aria-labelledby="step4-title">
+            <h2 id="step4-title" style="font-size:var(--text-xl)">Ringkasan &amp; pembayaran</h2>
+            <dl class="summary-list card card-flat" data-register-summary></dl>
+            <fieldset class="stack">
+              <legend>Metode pembayaran <span class="req" aria-hidden="true">*</span></legend>
+              <div class="choices">
+                <label class="choice"><input type="radio" name="pay" value="va" required /><span>Virtual account<small>BCA, Mandiri, BNI, BRI</small></span></label>
+                <label class="choice"><input type="radio" name="pay" value="qris" /><span>QRIS<small>Semua e-wallet & m-banking</small></span></label>
+                <label class="choice"><input type="radio" name="pay" value="transfer" /><span>Transfer manual<small>Konfirmasi via WhatsApp</small></span></label>
+                <label class="choice"><input type="radio" name="pay" value="tunai" /><span>Tunai di cabang<small>Maks. 2×24 jam</small></span></label>
+              </div>
+            </fieldset>
+            <p class="notice small">Demo template: tidak ada payment gateway. Setelah kirim, Anda melihat halaman konfirmasi dengan contoh instruksi pembayaran.</p>
+          </section>
+          <p class="error" data-register-error hidden role="alert"></p>
+          <div class="form-actions">
+            <button class="btn" type="button" data-prev hidden>Kembali</button>
+            <button class="btn btn-primary" type="submit" data-next>Lanjut</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- @include footer.html -->
+  <script type="module" src="/src/scripts/main.js"></script>
+  <script type="module" src="/src/scripts/pages/register.js"></script>
+</body>
+</html>

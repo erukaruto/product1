@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <!-- @include head.html -->
+  <title>Hasil Tes Penempatan · Polyglot Nusantara</title>
+  <meta name="description" content="Hasil tes penempatan: level CEFR, rincian per bagian, dan rekomendasi kelas." />
+</head>
+<body data-nav="tes">
+  <!-- @include header.html -->
+  <main id="main">
+    <section class="page-hero">
+      <div class="container-narrow">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Beranda</a></li><li><a href="/tes-penempatan.html">Tes penempatan</a></li><li><span aria-current="page">Hasil</span></li></ol></nav>
+        <span class="eyebrow">Hasil tes penempatan</span>
+        <h1><span data-result-title>Hasil tes Anda</span></h1>
+        <p class="lead"><span data-result-lead>Berikut level CEFR berdasarkan jawaban Anda, rincian per bagian, dan kelas yang kami sarankan.</span></p>
+      </div>
+    </section>
+    <section class="section" aria-label="Rincian hasil">
+      <div class="container-narrow stack" style="gap:var(--space-5)">
+        <div class="notice" data-result-sample hidden><p>Anda belum mengerjakan tes di browser ini, jadi yang tampil adalah <b>contoh hasil</b>. <a href="/tes-penempatan.html">Kerjakan tes sekarang</a>.</p></div>
+        <div class="card split" style="align-items:center">
+          <div class="stack-sm">
+            <span class="sample-label">Level CEFR Anda</span>
+            <p class="result-level" data-result-level>B1</p>
+            <p data-result-desc>Intermediate: bisa menangani situasi saat bepergian dan menulis teks pendek yang runtut.</p>
+          </div>
+          <div class="stack">
+            <div class="cefr-scale" aria-label="Skala CEFR" data-result-scale>
+              <span>A1</span><span>A2</span><span aria-current="true">B1</span><span>B2</span><span>C1</span><span>C2</span>
+            </div>
+            <p class="muted small"><b data-result-score>8</b> dari 15 jawaban benar.</p>
+          </div>
+        </div>
+        <div class="card stack">
+          <h2 style="font-size:var(--text-lg)">Rincian per bagian</h2>
+          <div class="hbars lang-en" data-result-sections></div>
+        </div>
+        <div class="card stack">
+          <h2 style="font-size:var(--text-lg)">Rekomendasi kelas</h2>
+          <p data-result-reco>Kelas General English B1, 12 minggu (24 pertemuan), Rp 1.950.000.</p>
+          <div class="row">
+            <a class="btn btn-primary" href="/pendaftaran.html?bahasa=en&amp;level=B1" data-result-register>Daftar kelas ini</a>
+            <a class="btn" href="/jadwal.html?bahasa=en&amp;level=B1" data-result-schedule>Lihat jadwal level ini</a>
+            <a class="btn btn-ghost" href="/trial.html?bahasa=en">Coba kelas trial</a>
+          </div>
+        </div>
+        <details class="card" data-result-review>
+          <summary class="strong" style="cursor:pointer"><b>Lihat jawaban Anda</b></summary>
+          <ol class="stack-sm mt-4" data-result-answers></ol>
+        </details>
+        <p class="muted small">Tes ini bersifat perkiraan. Pengajar dapat menyesuaikan level setelah sesi trial atau tes lisan singkat.</p>
+      </div>
+    </section>
+  </main>
+  <!-- @include footer.html -->
+  <script type="module" src="/src/scripts/main.js"></script>
+  <script type="module" src="/src/scripts/pages/result.js"></script>
+</body>
+</html>
