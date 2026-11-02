@@ -45,9 +45,11 @@ export function WeekGrid({ classes, weekStart }: { classes: ClassGroup[]; weekSt
                 const endMin = hh * 60 + mm + c.minutes
                 const end = `${String(Math.floor(endMin / 60)).padStart(2, '0')}.${String(endMin % 60).padStart(2, '0')}`
                 return (
-                  <Link key={c.id} to={`/kelas/${c.id}`} className={`week-event lang-${c.lang}`} style={{ top, height, left: `calc(${((lanes.get(c.id) ?? 0) / laneCount) * 100}% + 2px)`, width: `calc(${100 / laneCount}% - 4px)`, right: 'auto' }} aria-label={`${hariPendek(d)} ${c.start.replace(':', '.')}–${end}, ${c.name}, ${teacherById(c.teacherId)?.name}`}>
+                  <Link key={c.id} to={`/kelas/${c.id}`} className={`week-event lang-${c.lang}`} style={{ top, height, left: `calc(${((lanes.get(c.id) ?? 0) / laneCount) * 100}% + 2px)`, width: `calc(${100 / laneCount}% - 4px)`, right: 'auto' }}>
+                    <span className="sr-only">{hariPendek(d)} </span>
                     <b>{c.start.replace(':', '.')}–{end} · {c.level}</b>
                     {c.program} · {c.branch === 'online' ? 'Online' : c.room.replace('Ruang ', '')}
+                    <span className="sr-only">, {c.name}, {teacherById(c.teacherId)?.name}</span>
                   </Link>
                 )
               })}

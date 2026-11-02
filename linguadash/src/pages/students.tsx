@@ -9,7 +9,7 @@ import { BRANCH_LIST, CLASSES, SKILLS, SKILL_LABEL, classById, invoiceStatus, in
 import { DEMO_TODAY, LANGUAGES, SCHOOL, branchName, langByCode, type BranchId, type LangCode } from '../data/school.ts'
 import { downloadText, parseCsv, toCsv } from '../lib/csv.ts'
 import { isoDate, num, pct, rupiah, tanggal, tanggalPanjang } from '../lib/format.ts'
-import { useParam } from '../lib/params.ts'
+import { useParam, useSetParams } from '../lib/params.ts'
 import { attendanceStats, skillAvg, waLink } from '../lib/selectors.ts'
 import { nextStudentId, update, useClasses, useInvoices, useSessions, useStudent, useStudents } from '../lib/store.ts'
 
@@ -23,8 +23,9 @@ const STATUS_OPTIONS: [string, string][] = [['', 'Semua status'], ['aktif', 'Akt
 export function StudentList() {
   const students = useStudents()
   const [q, setQ] = useParam('q')
-  const [lang, setLang] = useParam('bahasa')
+  const [lang] = useParam('bahasa')
   const [level, setLevel] = useParam('level')
+  const setMany = useSetParams()
   const [status, setStatus] = useParam('status')
   const [branch, setBranch] = useParam('cabang')
 
@@ -65,7 +66,7 @@ export function StudentList() {
       />
       <div className="toolbar" role="search" aria-label="Saring siswa">
         <SearchInput id="f-q" label="Cari" value={q} onChange={setQ} placeholder="Nama, ID, atau nomor WA" />
-        <LangSelect id="f-lang" value={lang} onChange={(v) => { setLang(v); setLevel('') }} />
+        <LangSelect id="f-lang" value={lang} onChange={(v) => setMany({ bahasa: v, level: '' })} />
         <LevelSelect id="f-level" value={level} onChange={setLevel} lang={lang} />
         <SelectFilter id="f-status" label="Status" value={status} onChange={setStatus} options={STATUS_OPTIONS} />
         <BranchSelect id="f-branch" value={branch} onChange={setBranch} />

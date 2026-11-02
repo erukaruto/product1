@@ -83,7 +83,7 @@
 .topbar-actions { display: flex; align-items: center; gap: var(--space-2); margin-left: auto; }
 .icon-btn-badge { position: relative; }
 .icon-btn-badge .count { position: absolute; top: 4px; right: 4px; min-width: 16px; height: 16px; padding: 0 4px; border-radius: 8px; background: var(--bad); color: var(--surface); font-size: 10px; font-weight: 800; display: grid; place-items: center; line-height: 1; }
-.user-chip { display: flex; align-items: center; gap: 8px; padding: 4px 8px 4px 4px; border-radius: var(--radius-pill); border: 1px solid var(--line); background: var(--surface); text-decoration: none; color: var(--ink); font-size: var(--text-sm); font-weight: 650; }
+.user-chip { position: relative; display: flex; align-items: center; gap: 8px; padding: 4px 8px 4px 4px; border-radius: var(--radius-pill); border: 1px solid var(--line); background: var(--surface); text-decoration: none; color: var(--ink); font-size: var(--text-sm); font-weight: 650; }
 .menu-btn { display: none; }
 .content { flex: 1; width: 100%; max-width: 1440px; margin: 0 auto; padding: var(--space-5) var(--space-5) var(--space-7); display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-5); align-content: start; }
 .demo-note { font-size: var(--text-xs); color: var(--muted); text-align: center; padding: 12px; border-top: 1px solid var(--line); }
@@ -104,7 +104,8 @@
 @media (max-width: 720px) {
   .topbar { padding: 0 12px; gap: 6px; }
   .topbar-search { display: none; }
-  .user-chip span:not(.avatar) { display: none; }
+  /* Visually hidden but still the link's accessible name. */
+  .user-chip .user-name { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .content { padding: var(--space-4) 12px var(--space-6); gap: var(--space-4); }
   .hide-sm { display: none !important; }
   .topbar .theme-switch button { width: 28px; height: 28px; }
@@ -432,3 +433,4 @@ li[data-done='true'] .tl-dot { background: var(--good); border-color: var(--good
 }
 .only-narrow { display: none; }
 @media (max-width: 400px) { .only-narrow { display: flex; justify-content: center; } }
+#content:focus { outline: none; }

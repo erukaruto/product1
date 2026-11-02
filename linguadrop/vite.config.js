@@ -1,5 +1,5 @@
 import { defineConfig, loadEnv } from 'vite'
-import { readFileSync, readdirSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { resolve } from 'node:path'
 
 const root = /** @type {string} */ (import.meta.dirname)
@@ -40,6 +40,32 @@ function htmlPartials(env) {
   }
 }
 
+/**
+ * `vite preview` answers unknown URLs with an empty 404. Serve dist/404.html instead, like Netlify,
+ * Vercel and Cloudflare Pages do, so the preview behaves the same as production.
+ * @returns {import('vite').Plugin}
+ */
+function notFoundPage() {
+  return {
+    name: 'lingua-404-page',
+    configurePreviewServer(server) {
+      return () => {
+        server.middlewares.use((req, res, next) => {
+          const file = resolve(root, 'dist/404.html')
+          if (req.method !== 'GET' || !existsSync(file)) return next()
+          // Let Vite serve real pages ("/" -> index.html, "/harga" -> harga.html); only unknown paths get the 404 page.
+          const path = decodeURIComponent((req.url || '/').split('?')[0])
+          const page = path.endsWith('/') ? `${path}index.html` : path
+          if (existsSync(resolve(root, `dist${page}`)) || existsSync(resolve(root, `dist${page}.html`))) return next()
+          res.statusCode = 404
+          res.setHeader('Content-Type', 'text/html; charset=utf-8')
+          res.end(readFileSync(file))
+        })
+      }
+    },
+  }
+}
+
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, root, '')
   const appUrl = (env.VITE_APP_URL || 'http://localhost:5174').replace(/\/+$/, '')
@@ -48,7 +74,7 @@ export default defineConfig(({ mode }) => {
   return {
     // Multi-page site: unknown paths get the 404 page instead of falling back to index.html.
     appType: 'mpa',
-    plugins: [htmlPartials({ appUrl, wa })],
+    plugins: [htmlPartials({ appUrl, wa }), notFoundPage()],
     server: { port: 5173 },
     preview: { port: 4173 },
     build: {

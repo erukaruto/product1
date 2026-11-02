@@ -9,6 +9,7 @@ import { ThemeProvider } from './lib/theme.tsx'
 import { ToastProvider } from './components/ui.tsx'
 import App from './App.tsx'
 import { watchScriptFonts } from './lib/scriptFonts.ts'
+import { watchScrollRegions } from './lib/scrollRegions.ts'
 
 const root = document.getElementById('root')
 if (!root) throw new Error('Missing #root element in index.html')
@@ -25,3 +26,4 @@ createRoot(root).render(
   </StrictMode>,
 )
 watchScriptFonts()
+watchScrollRegions()

@@ -8,7 +8,7 @@ import { BarChart, HBars } from '../components/charts.tsx'
 import { CLASSES, SKILLS, SKILL_LABEL, mockResults, teacherById, topicFor, type MockTest, type Scores } from '../data/demo.ts'
 import { DEMO_TODAY, LANGUAGES, branchName, langByCode, type LangCode } from '../data/school.ts'
 import { isoDate, num, pct, tanggal, tanggalPanjang } from '../lib/format.ts'
-import { useParam } from '../lib/params.ts'
+import { useParam, useSetParams } from '../lib/params.ts'
 import { average } from '../lib/selectors.ts'
 import { update, useClasses, useDemoState, useMockTests, useStudents, type Question } from '../lib/store.ts'
 
@@ -17,9 +17,10 @@ const FOCUS = ['Listening & speaking', 'Reading', 'Writing', 'Grammar', 'Vocabul
 const BOOKS: Record<LangCode, string> = { en: 'English Pathways', ja: 'Minna no Nihongo', ko: 'Seoul Korean', zh: 'HSK Standard Course', ar: 'Al-Arabiyyah Baina Yadaik', de: 'Netzwerk neu' }
 
 export function Curriculum() {
-  const [lang, setLang] = useParam('bahasa', 'en')
+  const [lang] = useParam('bahasa', 'en')
   const levels = langByCode(lang).levels
   const [level, setLevel] = useParam('level', levels[0].code)
+  const setMany = useSetParams({ bahasa: 'en' })
   const lv = levels.find((l) => l.code === level) ?? levels[0]
   const units = Math.min(12, Math.round(lv.meetings / 2))
   return (
@@ -27,7 +28,7 @@ export function Curriculum() {
       <PageHeader title="Kurikulum per level" description={`Bahasa ${langByCode(lang).name} ${lv.code} · ${lv.weeks} minggu · ${lv.meetings} pertemuan · buku ${BOOKS[lang as LangCode]}`} crumbs={[{ label: 'Akademik' }, { label: 'Kurikulum' }]}
         actions={<button type="button" className="btn" onClick={() => window.print()}><Icon name="printer" size={16} /> Cetak silabus</button>} />
       <div className="toolbar">
-        <LangSelect id="cur-lang" value={lang} onChange={(v) => { setLang(v); setLevel(langByCode(v).levels[0].code) }} all="" />
+        <LangSelect id="cur-lang" value={lang} onChange={(v) => setMany({ bahasa: v, level: langByCode(v).levels[0].code })} all="" />
         <LevelSelect id="cur-level" value={lv.code} onChange={setLevel} lang={lang} />
       </div>
       <div className="grid grid-4">
@@ -72,11 +73,11 @@ const SEED_QUESTIONS: Omit<Question, 'id' | 'used'>[] = [
   { lang: 'en', level: 'B2', skill: 'Writing', type: 'Esai', prompt: 'Some people think public transport should be free. Discuss both views and give your opinion.', note: 'IELTS Task 2, 250 kata', difficulty: 'Sulit' },
   { lang: 'en', level: 'C1', skill: 'Speaking', type: 'Rekaman', prompt: 'Describe a decision you made that changed your career. You have 1 minute to prepare.', note: 'Long turn 2 menit', difficulty: 'Sulit' },
   { lang: 'ja', level: 'N5', skill: 'Reading', type: 'Pilihan ganda', prompt: 'わたしは まいあさ コーヒーを のみます。', note: 'Tentukan arti kalimat: kebiasaan pagi', difficulty: 'Mudah' },
-  { lang: 'ja', level: 'N4', skill: 'Grammar', type: 'Isian', prompt: 'ごはんを ___ から、がっこうに いきます。（たべる）', note: 'Bentuk て + から', difficulty: 'Sedang' },
+  { lang: 'ja', level: 'N4', skill: 'Grammar', type: 'Isian', prompt: 'ごはんを ___ から、がっこうに いきます。（たべる）', note: 'Bentuk -te + kara (setelah melakukan)', difficulty: 'Sedang' },
   { lang: 'ja', level: 'N3', skill: 'Listening', type: 'Pilihan ganda', prompt: '会話を聞いて、男の人が明日することを選んでください。', note: 'Choukai: rencana besok', difficulty: 'Sedang' },
   { lang: 'ja', level: 'N2', skill: 'Writing', type: 'Esai', prompt: '「在宅勤務のメリットとデメリット」について400字で書いてください。', note: 'Esai 400 karakter', difficulty: 'Sulit' },
   { lang: 'ko', level: 'TOPIK 1', skill: 'Reading', type: 'Pilihan ganda', prompt: '저는 학생이에요. 학교에 가요.', note: 'Pilih gambar yang sesuai', difficulty: 'Mudah' },
-  { lang: 'ko', level: 'TOPIK 2', skill: 'Grammar', type: 'Isian', prompt: '한국에 ___ 싶어요. (가다)', note: 'Pola -고 싶다', difficulty: 'Mudah' },
+  { lang: 'ko', level: 'TOPIK 2', skill: 'Grammar', type: 'Isian', prompt: '한국에 ___ 싶어요. (가다)', note: 'Pola -go sipda (ingin)', difficulty: 'Mudah' },
   { lang: 'ko', level: 'TOPIK 3', skill: 'Writing', type: 'Esai', prompt: '여러분은 휴일에 무엇을 해요? 200~300자로 쓰십시오.', note: 'Menulis 200–300 karakter', difficulty: 'Sedang' },
   { lang: 'ko', level: 'TOPIK 4', skill: 'Listening', type: 'Pilihan ganda', prompt: '다음을 듣고 여자의 중심 생각을 고르십시오.', note: 'Ide utama dialog', difficulty: 'Sulit' },
   { lang: 'zh', level: 'HSK 1', skill: 'Reading', type: 'Pilihan ganda', prompt: '我是印度尼西亚人。', note: 'Pilih terjemahan yang benar', difficulty: 'Mudah' },

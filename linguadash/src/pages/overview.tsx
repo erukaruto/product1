@@ -133,7 +133,7 @@ export function Overview() {
                     <td><Link to={`/keuangan/invoice/${a.invoice.id}`} className="mono">{a.invoice.id}</Link></td>
                     <td className="num"><b>{rupiah(a.due)}</b></td>
                     <td className="num hide-sm">{a.days} hari</td>
-                    <td>{a.student && <a className="btn btn-sm btn-wa" href={waLink(a.student.parent?.phone ?? a.student.phone, `Halo ${a.student.parent?.name ?? a.student.name}, pengingat tagihan ${a.invoice.id} sebesar ${rupiah(a.due)} sudah lewat jatuh tempo ${tanggal(a.invoice.due)}. Terima kasih.`)} target="_blank" rel="noopener" aria-label={`Kirim pengingat WhatsApp ke ${a.student.name}`}><Icon name="whatsapp" size={14} /> Ingatkan</a>}</td>
+                    <td>{a.student && <a className="btn btn-sm btn-wa" href={waLink(a.student.parent?.phone ?? a.student.phone, `Halo ${a.student.parent?.name ?? a.student.name}, pengingat tagihan ${a.invoice.id} sebesar ${rupiah(a.due)} sudah lewat jatuh tempo ${tanggal(a.invoice.due)}. Terima kasih.`)} target="_blank" rel="noopener" aria-label={`Ingatkan ${a.student.name} lewat WhatsApp`}><Icon name="whatsapp" size={14} /> Ingatkan</a>}</td>
                   </tr>
                 ))}
               </tbody>

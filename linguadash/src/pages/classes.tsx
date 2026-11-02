@@ -8,7 +8,7 @@ import { WeekGrid } from '../components/WeekGrid.tsx'
 import { CLASSES, ROOMS, meetingDate, teacherById, type ClassGroup } from '../data/demo.ts'
 import { BRANCHES, DEMO_TODAY, branchName, langByCode } from '../data/school.ts'
 import { addDays, hari, isoDate, pct, startOfWeek, tanggal, tanggalPendek } from '../lib/format.ts'
-import { useParam } from '../lib/params.ts'
+import { useParam, useSetParams } from '../lib/params.ts'
 import { attendanceStats } from '../lib/selectors.ts'
 import { useAllSessions, useClasses, useSessions, useStudents } from '../lib/store.ts'
 
@@ -60,9 +60,10 @@ export function WeekCalendar() {
 
 export function ClassList() {
   const classes = useClasses()
-  const [lang, setLang] = useParam('bahasa')
+  const [lang] = useParam('bahasa')
   const [level, setLevel] = useParam('level')
   const [branch, setBranch] = useParam('cabang')
+  const setMany = useSetParams()
   const rows = useMemo(() => classes.filter((c) => (!lang || c.lang === lang) && (!level || c.level === level) && (!branch || c.branch === branch)), [classes, lang, level, branch])
   type Row = (typeof classes)[number]
   const columns: Column<Row>[] = [
@@ -79,7 +80,7 @@ export function ClassList() {
       <PageHeader title="Daftar kelas" description={`${classes.length} kelas berjalan di 2 cabang dan online`} crumbs={[{ label: 'Kelas & jadwal' }, { label: 'Daftar kelas' }]}
         actions={<Link className="btn" to="/jadwal"><Icon name="calendar" size={16} /> Kalender</Link>} />
       <div className="toolbar">
-        <LangSelect id="cl-lang" value={lang} onChange={(v) => { setLang(v); setLevel('') }} />
+        <LangSelect id="cl-lang" value={lang} onChange={(v) => setMany({ bahasa: v, level: '' })} />
         <LevelSelect id="cl-level" value={level} onChange={setLevel} lang={lang} />
         <BranchSelect id="cl-branch" value={branch} onChange={setBranch} />
       </div>

@@ -479,3 +479,4 @@ main { display: block; }
 .center { text-align: center; }
 .stack > .btn, .hero-copy > .btn { justify-self: start; }
 .badge-wrap { white-space: normal; line-height: 1.4; padding-block: 4px; }
+main:focus { outline: none; }

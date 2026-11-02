@@ -5,8 +5,10 @@ import '../styles/base.css'
 import '../styles/site.css'
 
 import { watchScriptFonts } from './script-fonts.js'
+import { watchScrollRegions } from './scroll-regions.js'
 
 watchScriptFonts()
+watchScrollRegions()
 
 const THEMES = ['light', 'dark', 'batik']
 const THEME_COLORS = { light: '#3b3fc4', dark: '#0f1117', batik: '#8e3210' }

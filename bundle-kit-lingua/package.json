@@ -1,0 +1,14 @@
+{
+  "name": "bundle-kit-lingua",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Test suite, marketing images and ZIP builder for the LinguaDrop + LinguaDash bundle.",
+  "scripts": {
+    "verify": "bash scripts/run-verify.sh",
+    "images": "node scripts/render-images.cjs",
+    "zip": "bash scripts/make-zip.sh"
+  },
+  "devDependencies": {
+    "axe-core": "^4.14.0"
+  }
+}

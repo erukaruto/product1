@@ -176,7 +176,7 @@ export function AppLayout() {
             </Link>
             <Link to="/pengaturan/tim" className="user-chip">
               <Avatar name="Rina Kartika" size={30} />
-              <span>Rina Kartika</span>
+              <span className="user-name">Rina Kartika</span>
             </Link>
           </div>
         </header>
@@ -193,6 +193,7 @@ export function AuthLayout({ children, title, wide }: { children: ReactNode; tit
   const { theme } = useTheme()
   return (
     <div className="auth">
+      <a className="skip-link" href="#content">Langsung ke konten</a>
       <aside className="auth-aside" aria-label="Tentang LinguaDash">
         <div className="row"><Logo size={40} inverted /><b>{SCHOOL.short}</b></div>
         <div className="stack">
@@ -209,7 +210,7 @@ export function AuthLayout({ children, title, wide }: { children: ReactNode; tit
         </div>
         <p className="small"><a href={siteUrl('/', theme)}>← Kembali ke situs</a></p>
       </aside>
-      <main className="auth-main" id="content">
+      <main className="auth-main" id="content" tabIndex={-1}>
         <div className={`auth-top${wide ? ' auth-wide' : ''}`}>
           <a href={siteUrl('/', theme)} className="row small">
             <Icon name="arrowLeft" size={16} /> Kembali ke situs
