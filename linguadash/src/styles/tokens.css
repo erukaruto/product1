@@ -1,0 +1,164 @@
+/*
+  Lingua design tokens. This file is shared by LinguaDrop and LinguaDash and must stay
+  byte-for-byte identical in both products (the test suite compares them).
+
+  Themes: data-theme="light" | "dark" | "batik" on <html>.
+  "batik" is the signature theme: cream paper, sogan brown, indigo details.
+
+  Contrast (WCAG 2.x, measured with bundle-kit-lingua/scripts/contrast.cjs):
+    text  --ink, --muted, --accent-ink, --good/--warn/--bad on --bg/--surface/--surface-2: >= 4.5:1
+    text  --on-accent on --accent: >= 7:1
+    UI    --line-strong (input borders) on --surface: >= 3:1
+*/
+
+:root,
+[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f7f6f2;
+  --surface: #ffffff;
+  --surface-2: #f0eee8;
+  --ink: #15161c;
+  --muted: #555764;
+  --line: #e2dfd7;
+  --line-strong: #8c887f;
+  --accent: #3b3fc4;
+  --accent-hover: #2f33a6;
+  --accent-ink: #3337b5;
+  --accent-soft: #e9e9fb;
+  --on-accent: #ffffff;
+  --pop: #e4572e;
+  --pop-soft: #fde7df;
+  --good: #16784a;
+  --good-soft: #e2f3e9;
+  --warn: #8a5600;
+  --warn-soft: #fbefd8;
+  --bad: #b3341e;
+  --bad-soft: #fbe6e1;
+  --focus: #3b3fc4;
+  --shadow: 0 1px 2px rgb(21 22 28 / 6%), 0 8px 24px rgb(21 22 28 / 6%);
+  --shadow-lg: 0 2px 6px rgb(21 22 28 / 8%), 0 24px 48px rgb(21 22 28 / 12%);
+  --grid: #e8e6df;
+  --axis: #c3c2b7;
+  /* Chart colours follow the language, never its rank: en, ja, ko, zh, ar, de */
+  --c-en: #2a78d6;
+  --c-ja: #eb6834;
+  --c-ko: #1baf7a;
+  --c-zh: #eda100;
+  --c-ar: #e87ba4;
+  --c-de: #008300;
+  --hero-glow: rgb(59 63 196 / 10%);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0f1117;
+  --surface: #171a23;
+  --surface-2: #1f2330;
+  --ink: #ecedf3;
+  --muted: #a4a8b7;
+  --line: #2b303d;
+  --line-strong: #606679;
+  --accent: #8e94ff;
+  --accent-hover: #a7acff;
+  --accent-ink: #a3a8ff;
+  --accent-soft: #262a52;
+  --on-accent: #0f1117;
+  --pop: #ff8a63;
+  --pop-soft: #3a2219;
+  --good: #53c68d;
+  --good-soft: #16302a;
+  --warn: #e6b34d;
+  --warn-soft: #332a16;
+  --bad: #ff8a73;
+  --bad-soft: #3a1f1b;
+  --focus: #a3a8ff;
+  --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 8px 24px rgb(0 0 0 / 25%);
+  --shadow-lg: 0 2px 6px rgb(0 0 0 / 35%), 0 24px 48px rgb(0 0 0 / 40%);
+  --grid: #252a36;
+  --axis: #3a4050;
+  --c-en: #3987e5;
+  --c-ja: #d95926;
+  --c-ko: #199e70;
+  --c-zh: #c98500;
+  --c-ar: #d55181;
+  --c-de: #008300;
+  --hero-glow: rgb(142 148 255 / 12%);
+}
+
+[data-theme='batik'] {
+  color-scheme: light;
+  --bg: #f3ebdc;
+  --surface: #fbf6ec;
+  --surface-2: #ede1cb;
+  --ink: #2a1a10;
+  --muted: #664f3e;
+  --line: #ddcbaf;
+  --line-strong: #9a8163;
+  --accent: #8e3210;
+  --accent-hover: #74280c;
+  --accent-ink: #86300f;
+  --accent-soft: #f2dcc8;
+  --on-accent: #fff8ee;
+  --pop: #1f4e79;
+  --pop-soft: #dbe5ee;
+  --good: #2d6a2e;
+  --good-soft: #e1ebd6;
+  --warn: #82530a;
+  --warn-soft: #f5e5c4;
+  --bad: #a2271a;
+  --bad-soft: #f6dad2;
+  --focus: #1f4e79;
+  --shadow: 0 1px 2px rgb(42 26 16 / 8%), 0 8px 24px rgb(42 26 16 / 8%);
+  --shadow-lg: 0 2px 6px rgb(42 26 16 / 10%), 0 24px 48px rgb(42 26 16 / 14%);
+  --grid: #e6d8c0;
+  --axis: #c7b394;
+  --c-en: #2a78d6;
+  --c-ja: #eb6834;
+  --c-ko: #1baf7a;
+  --c-zh: #eda100;
+  --c-ar: #e87ba4;
+  --c-de: #008300;
+  --hero-glow: rgb(142 50 16 / 10%);
+}
+
+:root {
+  --font-sans: 'Plus Jakarta Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-ja: 'Noto Sans JP Variable', 'Plus Jakarta Sans Variable', sans-serif;
+  --font-ko: 'Noto Sans KR Variable', 'Plus Jakarta Sans Variable', sans-serif;
+  --font-zh: 'Noto Sans SC Variable', 'Plus Jakarta Sans Variable', sans-serif;
+  --font-ar: 'Noto Sans Arabic Variable', 'Plus Jakarta Sans Variable', sans-serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 72px;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: clamp(2rem, 1.4rem + 2.4vw, 2.75rem);
+  --text-4xl: clamp(2.25rem, 1.5rem + 3.4vw, 3.75rem);
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* Foreign-language samples pick their typeface from the lang attribute. */
+:lang(ja) { font-family: var(--font-ja); }
+:lang(ko) { font-family: var(--font-ko); }
+:lang(zh) { font-family: var(--font-zh); }
+:lang(ar) { font-family: var(--font-ar); }
+[dir='rtl'] { text-align: right; }

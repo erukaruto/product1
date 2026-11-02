@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="id" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#3b3fc4" />
+    <title>LinguaDash · Polyglot Nusantara</title>
+    <script>
+      /* Theme before first paint: ?theme= wins, then the saved choice, then the OS setting. Same logic as LinguaDrop. */
+      (function () {
+        var themes = ['light', 'dark', 'batik']
+        var theme = null
+        try {
+          var fromUrl = new URLSearchParams(location.search).get('theme')
+          if (themes.indexOf(fromUrl) > -1) { theme = fromUrl; localStorage.setItem('lingua-theme', fromUrl) }
+          else theme = localStorage.getItem('lingua-theme')
+        } catch (e) {}
+        if (themes.indexOf(theme) < 0) theme = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', theme)
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

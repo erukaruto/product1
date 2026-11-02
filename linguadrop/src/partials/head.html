@@ -1,0 +1,18 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<meta name="theme-color" content="#3b3fc4" />
+<script>
+  /* Theme before first paint: ?theme= wins, then the saved choice, then the OS setting. */
+  (function () {
+    var themes = ['light', 'dark', 'batik']
+    var theme = null
+    try {
+      var fromUrl = new URLSearchParams(location.search).get('theme')
+      if (themes.indexOf(fromUrl) > -1) { theme = fromUrl; localStorage.setItem('lingua-theme', fromUrl) }
+      else theme = localStorage.getItem('lingua-theme')
+    } catch (e) {}
+    if (themes.indexOf(theme) < 0) theme = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    document.documentElement.setAttribute('data-theme', theme)
+  })()
+</script>
